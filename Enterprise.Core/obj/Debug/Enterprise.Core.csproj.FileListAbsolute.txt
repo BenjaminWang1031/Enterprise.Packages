@@ -1,0 +1,12 @@
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Core\bin\Debug\Enterprise.Core.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Core\bin\Debug\Enterprise.Core.pdb
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Core\obj\Debug\Enterprise.Core.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Core\obj\Debug\Enterprise.Core.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Core\bin\Debug\Enterprise.Core.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Core\bin\Debug\Enterprise.Core.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Core\obj\Debug\Enterprise.Core.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Core\obj\Debug\Enterprise.Core.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Core\bin\Debug\Enterprise.Core.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Core\bin\Debug\Enterprise.Core.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Core\obj\Debug\Enterprise.Core.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Core\obj\Debug\Enterprise.Core.pdb

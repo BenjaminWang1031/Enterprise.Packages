@@ -1,0 +1,1687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="EF5TestModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="EF5TestModelStoreContainer">
+          <EntitySet Name="FLEXOrgs" EntityType="EF5TestModel.Store.FLEXOrgs" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OrderTypeTranslations" EntityType="EF5TestModel.Store.OrderTypeTranslations" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Access" EntityType="EF5TestModel.Store.T_F_Access" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Accessories" EntityType="EF5TestModel.Store.T_F_Accessories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_AccessoriesContent" EntityType="EF5TestModel.Store.T_F_AccessoriesContent" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_AccessoriesEntry" EntityType="EF5TestModel.Store.T_F_AccessoriesEntry" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_BusinessFlow" EntityType="EF5TestModel.Store.T_F_BusinessFlow" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_BusinessFlowActivity" EntityType="EF5TestModel.Store.T_F_BusinessFlowActivity" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_BusinessFlowActivityOutput" EntityType="EF5TestModel.Store.T_F_BusinessFlowActivityOutput" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_BusinessFlowCatalog" EntityType="EF5TestModel.Store.T_F_BusinessFlowCatalog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_BusinessFlowCondition" EntityType="EF5TestModel.Store.T_F_BusinessFlowCondition" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_BusinessFlowEntity" EntityType="EF5TestModel.Store.T_F_BusinessFlowEntity" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_BusinessFlowVariable" EntityType="EF5TestModel.Store.T_F_BusinessFlowVariable" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Demo" EntityType="EF5TestModel.Store.T_F_Demo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_DeskInfo" EntityType="EF5TestModel.Store.T_F_DeskInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_HistoryData" EntityType="EF5TestModel.Store.T_F_HistoryData" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Images" EntityType="EF5TestModel.Store.T_F_Images" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_ItemTemplate" EntityType="EF5TestModel.Store.T_F_ItemTemplate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Log" EntityType="EF5TestModel.Store.T_F_Log" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Menu" EntityType="EF5TestModel.Store.T_F_Menu" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Message" EntityType="EF5TestModel.Store.T_F_Message" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_MetaData" EntityType="EF5TestModel.Store.T_F_MetaData" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_MetaData_DataEntity" EntityType="EF5TestModel.Store.T_F_MetaData_DataEntity" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_MetaData_DataEntityCol" EntityType="EF5TestModel.Store.T_F_MetaData_DataEntityCol" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_MetaData_DataTypeNative" EntityType="EF5TestModel.Store.T_F_MetaData_DataTypeNative" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_MetaData_UIInstance" EntityType="EF5TestModel.Store.T_F_MetaData_UIInstance" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Offices" EntityType="EF5TestModel.Store.T_F_Offices" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_OperationLog" EntityType="EF5TestModel.Store.T_F_OperationLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Parameter" EntityType="EF5TestModel.Store.T_F_Parameter" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_PrintConfig" EntityType="EF5TestModel.Store.T_F_PrintConfig" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_ProcedureGroup" EntityType="EF5TestModel.Store.T_F_ProcedureGroup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_ProcedureInfo" EntityType="EF5TestModel.Store.T_F_ProcedureInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_ProcedureParamInfo" EntityType="EF5TestModel.Store.T_F_ProcedureParamInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_ProcedureReference" EntityType="EF5TestModel.Store.T_F_ProcedureReference" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Project" EntityType="EF5TestModel.Store.T_F_Project" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_ProjectType" EntityType="EF5TestModel.Store.T_F_ProjectType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_ReportQuerySchema" EntityType="EF5TestModel.Store.T_F_ReportQuerySchema" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_Solution" EntityType="EF5TestModel.Store.T_F_Solution" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_TypeTemplate" EntityType="EF5TestModel.Store.T_F_TypeTemplate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="T_F_TypeTemplateGroup" EntityType="EF5TestModel.Store.T_F_TypeTemplateGroup" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FKBA8E5F7776F262F" Association="EF5TestModel.Store.FKBA8E5F7776F262F">
+            <End Role="T_F_TypeTemplateGroup" EntitySet="T_F_TypeTemplateGroup" />
+            <End Role="T_F_TypeTemplate" EntitySet="T_F_TypeTemplate" />
+          </AssociationSet>
+          <AssociationSet Name="FKEBFF586191A0AFB2" Association="EF5TestModel.Store.FKEBFF586191A0AFB2">
+            <End Role="T_F_Menu" EntitySet="T_F_Menu" />
+            <End Role="T_F_Menu1" EntitySet="T_F_Menu" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="FLEXOrgs">
+          <Key>
+            <PropertyRef Name="ORGANIZATION_CODE" />
+          </Key>
+          <Property Name="ORGANIZATION_CODE" Type="varchar" Nullable="false" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="OrderTypeTranslations">
+          <Key>
+            <PropertyRef Name="Organization_ID" />
+            <PropertyRef Name="Transaction_Type_Id" />
+          </Key>
+          <Property Name="Organization_ID" Type="int" Nullable="false" />
+          <Property Name="Transaction_Type_Id" Type="int" Nullable="false" />
+          <Property Name="LBPValue" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="T_F_Access">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Num" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Mask" Type="int" Nullable="false" />
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="ParentID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="LevelNum" Type="int" Nullable="false" />
+          <Property Name="IsDetail" Type="bit" Nullable="false" />
+          <Property Name="IsGroup" Type="bit" Nullable="false" />
+          <Property Name="Message" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Forbidden" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_Accessories">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Logic" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_AccessoriesContent">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="AccessoriesEntryID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="BinaryData" Type="varbinary" />
+        </EntityType>
+        <EntityType Name="T_F_AccessoriesEntry">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="AccessoriesID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="RecordNum" Type="int" Nullable="false" />
+          <Property Name="Exp" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="FileName" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="FileSize" Type="int" Nullable="false" />
+          <Property Name="SysUserID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="UpdateTime" Type="datetime" Nullable="false" />
+          <Property Name="OriginalPath" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="FileType" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="SysUserName" Type="nvarchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlow">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="BusinessFlowCatalogID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="ProcessXml" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Released" Type="bit" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="CreateTime" Type="datetime" Nullable="false" />
+          <Property Name="ReleaseTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowActivity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="BusinessFlowID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="QualifiedID" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="ActivityOrder" Type="int" Nullable="false" />
+          <Property Name="IfElseOrder" Type="int" Nullable="false" />
+          <Property Name="WhileOrder" Type="int" Nullable="false" />
+          <Property Name="SequenceOrder" Type="int" Nullable="false" />
+          <Property Name="Subject" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Operation" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowActivityOutput">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="BusinessFlowID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="QualifiedID" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="VariableID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="EntityProperty" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="EntityID" Type="nvarchar" Nullable="false" MaxLength="36" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowCatalog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowCondition">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="BusinessFlowID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Condition" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowEntity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="BusinessFlowID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="EntityID" Type="nvarchar" Nullable="false" MaxLength="36" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowVariable">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="BusinessFlowID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="InitData" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Type" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_Demo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" />
+          <Property Name="des" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="T_F_DeskInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="UserNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="HiddenInfo" Type="nvarchar" MaxLength="256" />
+          <Property Name="ExtendInfo" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="T_F_HistoryData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="UIInstanceID" Type="nvarchar" MaxLength="36" />
+          <Property Name="Version" Type="int" Nullable="false" />
+          <Property Name="EntityID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="ColID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Value" Type="nvarchar(max)" />
+          <Property Name="ModifyTime" Type="datetime" Nullable="false" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="36" />
+          <Property Name="UIID" Type="nvarchar" MaxLength="36" />
+        </EntityType>
+        <EntityType Name="T_F_Images">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="ImgName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ImgInfo" Type="varbinary" Nullable="false" />
+          <Property Name="AltInfo" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="T_F_ItemTemplate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="displayName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="image" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="description" Type="nvarchar" MaxLength="200" />
+          <Property Name="template" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="T_F_Log">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="UserID" Type="nvarchar" MaxLength="36" />
+          <Property Name="IP" Type="nvarchar" MaxLength="32" />
+          <Property Name="HostName" Type="nvarchar" MaxLength="64" />
+          <Property Name="OperationName" Type="nvarchar" MaxLength="64" />
+          <Property Name="OperationType" Type="int" />
+          <Property Name="OperationContent" Type="nvarchar(max)" />
+          <Property Name="OperationTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="T_F_Menu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Num" Type="nvarchar" MaxLength="64" />
+          <Property Name="OrderIndex" Type="int" />
+          <Property Name="OpenMode" Type="int" />
+          <Property Name="Privilege" Type="nvarchar" MaxLength="64" />
+          <Property Name="RequestObject" Type="nvarchar" MaxLength="256" />
+          <Property Name="ImagePath" Type="nvarchar" MaxLength="128" />
+          <Property Name="Enabled" Type="bit" />
+          <Property Name="Visible" Type="bit" />
+          <Property Name="Platform" Type="nvarchar" MaxLength="64" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+          <Property Name="IsFixed" Type="bit" />
+          <Property Name="IsAutoOpen" Type="bit" />
+          <Property Name="ParentID" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="T_F_Message">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="SenderID" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="ReceiverID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="SendTime" Type="datetime" Nullable="false" />
+          <Property Name="ReadTime" Type="datetime" />
+          <Property Name="Type" Type="int" Nullable="false" />
+          <Property Name="MainRecordID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Importance" Type="int" Nullable="false" />
+          <Property Name="IsRead" Type="bit" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="EndTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="T_F_MetaData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="ProjectID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="DisplayName" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+          <Property Name="MetaData" Type="nvarchar(max)" />
+          <Property Name="State" Type="nvarchar" MaxLength="1" />
+          <Property Name="ModifyTime" Type="datetime" />
+          <Property Name="XmlMetaData" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="T_F_MetaData_DataEntity">
+          <Key>
+            <PropertyRef Name="EntityID" />
+          </Key>
+          <Property Name="EntityID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="TableName" Type="nvarchar" MaxLength="256" />
+          <Property Name="ClassName" Type="nvarchar" MaxLength="256" />
+          <Property Name="EntityTypeID" Type="int" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+          <Property Name="IsAbstract" Type="bit" Nullable="false" />
+          <Property Name="BaseEntityID" Type="nvarchar" MaxLength="36" />
+          <Property Name="ParentID" Type="nvarchar" MaxLength="36" />
+          <Property Name="LevelNum" Type="int" Nullable="false" />
+          <Property Name="IsDetail" Type="bit" Nullable="false" />
+          <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+          <Property Name="SchemaXML" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="T_F_MetaData_DataEntityCol">
+          <Key>
+            <PropertyRef Name="ColID" />
+          </Key>
+          <Property Name="ColID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="EntityID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="FieldName" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="FieldType" Type="int" Nullable="false" />
+          <Property Name="BaseDataTypeID" Type="int" Nullable="false" />
+          <Property Name="DataTypeID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Length" Type="int" Nullable="false" />
+          <Property Name="Precision" Type="int" Nullable="false" />
+          <Property Name="Uniqueness" Type="bit" Nullable="false" />
+          <Property Name="Required" Type="bit" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="BaseColID" Type="nvarchar" MaxLength="36" />
+          <Property Name="BuiltInFieldTypeID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_MetaData_DataTypeNative">
+          <Key>
+            <PropertyRef Name="DataTypeID" />
+          </Key>
+          <Property Name="DataTypeID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="ActualType" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="SystemType" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="NHibernateType" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="NeedLength" Type="bit" Nullable="false" />
+          <Property Name="NeedPrecision" Type="bit" Nullable="false" />
+          <Property Name="NeedUnique" Type="bit" Nullable="false" />
+          <Property Name="NeedRequired" Type="bit" Nullable="false" />
+          <Property Name="NeedVisible" Type="bit" Nullable="false" />
+          <Property Name="CanSetPrimaryKey" Type="bit" Nullable="false" />
+          <Property Name="CanSetValue" Type="bit" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="RecordNum" Type="int" Nullable="false" />
+          <Property Name="NeedSupportMultiLanguage" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_MetaData_UIInstance">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="UIID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="MainEntityInstanceID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Version" Type="int" Nullable="false" />
+          <Property Name="AccessoriesID" Type="nvarchar" MaxLength="36" />
+          <Property Name="IsDelete" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_Offices">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Logic" Type="bit" Nullable="false" />
+          <Property Name="OfficeContent" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="T_F_OperationLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="SystemID" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="SystemName" Type="nvarchar" MaxLength="200" />
+          <Property Name="ModuleID" Type="nvarchar" MaxLength="50" />
+          <Property Name="ModuleName" Type="nvarchar" MaxLength="200" />
+          <Property Name="LogDescribe" Type="nvarchar" />
+          <Property Name="LogType" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="IPAddress" Type="nvarchar" MaxLength="20" />
+          <Property Name="SourceTable" Type="nvarchar" MaxLength="36" />
+          <Property Name="SourceGUID" Type="nvarchar" MaxLength="36" />
+          <Property Name="CreateTime" Type="datetime" />
+          <Property Name="CreatePersonAccount" Type="nvarchar" MaxLength="100" />
+          <Property Name="CreatePersonName" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="T_F_Parameter">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="Value" Type="nvarchar" MaxLength="1024" />
+          <Property Name="Description" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="T_F_PrintConfig">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="printEdition" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="printXml" Type="nvarchar" MaxLength="255" />
+          <Property Name="printName" Type="nvarchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="T_F_ProcedureGroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="GroupName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" />
+          <Property Name="FID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="LevelNum" Type="int" Nullable="false" />
+          <Property Name="IndexNum" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_ProcedureInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="ProcedureName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Status" Type="int" Nullable="false" />
+          <Property Name="PScript" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="T_F_ProcedureParamInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="ProcedureID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsOut" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_ProcedureReference">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="GroupID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="ProcedureID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" />
+          <Property Name="IndexNum" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_Project">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="SolutionID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="T_F_ProjectType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="displayName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="image" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="description" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="T_F_ReportQuerySchema">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="SchemaName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ReportID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Query" Type="nvarchar" Nullable="false" MaxLength="1000" />
+          <Property Name="UserID" Type="nvarchar" Nullable="false" MaxLength="36" />
+        </EntityType>
+        <EntityType Name="T_F_Solution">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="T_F_TypeTemplate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Version" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TemplateXml" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="IsPublish" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="TempID" Type="nvarchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="T_F_TypeTemplateGroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="FID" Type="nvarchar" Nullable="false" MaxLength="36" />
+          <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="Remark" Type="nvarchar" MaxLength="1000" />
+          <Property Name="CreateDate" Type="datetime" Nullable="false" />
+          <Property Name="IsDel" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="LevelNum" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FKBA8E5F7776F262F">
+          <End Role="T_F_TypeTemplateGroup" Type="EF5TestModel.Store.T_F_TypeTemplateGroup" Multiplicity="1" />
+          <End Role="T_F_TypeTemplate" Type="EF5TestModel.Store.T_F_TypeTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="T_F_TypeTemplateGroup">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="T_F_TypeTemplate">
+              <PropertyRef Name="TempID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKEBFF586191A0AFB2">
+          <End Role="T_F_Menu" Type="EF5TestModel.Store.T_F_Menu" Multiplicity="0..1" />
+          <End Role="T_F_Menu1" Type="EF5TestModel.Store.T_F_Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="T_F_Menu">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="T_F_Menu1">
+              <PropertyRef Name="ParentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--Errors Found During Generation:
+      warning 6013: The table/view 'Ben_Oasis.dbo.oasis' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="oasis">
+        <Property Name="AccessDate" Type="datetime" />
+        <Property Name="AccessTime" Type="datetime" />
+        <Property Name="UserName" Type="nvarchar" MaxLength="255" />
+        <Property Name="Moudle" Type="nvarchar" MaxLength="255" />
+        <Property Name="Country" Type="nvarchar" MaxLength="255" />
+        <Property Name="Region" Type="nvarchar" MaxLength="255" />
+        <Property Name="City" Type="nvarchar" MaxLength="255" />
+        <Property Name="Org" Type="nvarchar" MaxLength="255" />
+        <Property Name="Ip" Type="nvarchar" MaxLength="255" />
+        <Property Name="UserId" Type="nvarchar" MaxLength="255" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Ben_Oasis.dbo.oasis_backup_20151117' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="oasis_backup_20151117">
+        <Property Name="AccessDate" Type="datetime" />
+        <Property Name="AccessTime" Type="datetime" />
+        <Property Name="UserName" Type="nvarchar" MaxLength="255" />
+        <Property Name="Moudle" Type="nvarchar" MaxLength="255" />
+        <Property Name="Country" Type="nvarchar" MaxLength="255" />
+        <Property Name="Region" Type="nvarchar" MaxLength="255" />
+        <Property Name="City" Type="nvarchar" MaxLength="255" />
+        <Property Name="Org" Type="nvarchar" MaxLength="255" />
+        <Property Name="Ip" Type="nvarchar" MaxLength="255" />
+        <Property Name="UserId" Type="nvarchar" MaxLength="255" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Ben_Oasis.dbo.OasisActiveUsers' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="OasisActiveUsers">
+        <Property Name="Name" Type="nvarchar" MaxLength="255" />
+        <Property Name="Id" Type="nvarchar" MaxLength="255" />
+        <Property Name="Email" Type="nvarchar" MaxLength="255" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Ben_Oasis.dbo.oasisUsers' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="oasisUsers">
+        <Property Name="UserName" Type="nvarchar" MaxLength="255" />
+        <Property Name="Lanid" Type="nvarchar" MaxLength="255" />
+      </EntityType>-->
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EF5TestModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="EFLocalTest" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="FLEXOrgs" EntityType="EF5TestModel.FLEXOrg" />
+          <EntitySet Name="OrderTypeTranslations" EntityType="EF5TestModel.OrderTypeTranslation" />
+          <EntitySet Name="T_F_Access" EntityType="EF5TestModel.T_F_Access" />
+          <EntitySet Name="T_F_Accessories" EntityType="EF5TestModel.T_F_Accessories" />
+          <EntitySet Name="T_F_AccessoriesContent" EntityType="EF5TestModel.T_F_AccessoriesContent" />
+          <EntitySet Name="T_F_AccessoriesEntry" EntityType="EF5TestModel.T_F_AccessoriesEntry" />
+          <EntitySet Name="T_F_BusinessFlow" EntityType="EF5TestModel.T_F_BusinessFlow" />
+          <EntitySet Name="T_F_BusinessFlowActivity" EntityType="EF5TestModel.T_F_BusinessFlowActivity" />
+          <EntitySet Name="T_F_BusinessFlowActivityOutput" EntityType="EF5TestModel.T_F_BusinessFlowActivityOutput" />
+          <EntitySet Name="T_F_BusinessFlowCatalog" EntityType="EF5TestModel.T_F_BusinessFlowCatalog" />
+          <EntitySet Name="T_F_BusinessFlowCondition" EntityType="EF5TestModel.T_F_BusinessFlowCondition" />
+          <EntitySet Name="T_F_BusinessFlowEntity" EntityType="EF5TestModel.T_F_BusinessFlowEntity" />
+          <EntitySet Name="T_F_BusinessFlowVariable" EntityType="EF5TestModel.T_F_BusinessFlowVariable" />
+          <EntitySet Name="T_F_Demo" EntityType="EF5TestModel.T_F_Demo" />
+          <EntitySet Name="T_F_DeskInfo" EntityType="EF5TestModel.T_F_DeskInfo" />
+          <EntitySet Name="T_F_HistoryData" EntityType="EF5TestModel.T_F_HistoryData" />
+          <EntitySet Name="T_F_Images" EntityType="EF5TestModel.T_F_Images" />
+          <EntitySet Name="T_F_ItemTemplate" EntityType="EF5TestModel.T_F_ItemTemplate" />
+          <EntitySet Name="T_F_Log" EntityType="EF5TestModel.T_F_Log" />
+          <EntitySet Name="T_F_Menu" EntityType="EF5TestModel.T_F_Menu" />
+          <EntitySet Name="T_F_Message" EntityType="EF5TestModel.T_F_Message" />
+          <EntitySet Name="T_F_MetaData" EntityType="EF5TestModel.T_F_MetaData" />
+          <EntitySet Name="T_F_MetaData_DataEntity" EntityType="EF5TestModel.T_F_MetaData_DataEntity" />
+          <EntitySet Name="T_F_MetaData_DataEntityCol" EntityType="EF5TestModel.T_F_MetaData_DataEntityCol" />
+          <EntitySet Name="T_F_MetaData_DataTypeNative" EntityType="EF5TestModel.T_F_MetaData_DataTypeNative" />
+          <EntitySet Name="T_F_MetaData_UIInstance" EntityType="EF5TestModel.T_F_MetaData_UIInstance" />
+          <EntitySet Name="T_F_Offices" EntityType="EF5TestModel.T_F_Offices" />
+          <EntitySet Name="T_F_OperationLog" EntityType="EF5TestModel.T_F_OperationLog" />
+          <EntitySet Name="T_F_Parameter" EntityType="EF5TestModel.T_F_Parameter" />
+          <EntitySet Name="T_F_PrintConfig" EntityType="EF5TestModel.T_F_PrintConfig" />
+          <EntitySet Name="T_F_ProcedureGroup" EntityType="EF5TestModel.T_F_ProcedureGroup" />
+          <EntitySet Name="T_F_ProcedureInfo" EntityType="EF5TestModel.T_F_ProcedureInfo" />
+          <EntitySet Name="T_F_ProcedureParamInfo" EntityType="EF5TestModel.T_F_ProcedureParamInfo" />
+          <EntitySet Name="T_F_ProcedureReference" EntityType="EF5TestModel.T_F_ProcedureReference" />
+          <EntitySet Name="T_F_Project" EntityType="EF5TestModel.T_F_Project" />
+          <EntitySet Name="T_F_ProjectType" EntityType="EF5TestModel.T_F_ProjectType" />
+          <EntitySet Name="T_F_ReportQuerySchema" EntityType="EF5TestModel.T_F_ReportQuerySchema" />
+          <EntitySet Name="T_F_Solution" EntityType="EF5TestModel.T_F_Solution" />
+          <EntitySet Name="T_F_TypeTemplate" EntityType="EF5TestModel.T_F_TypeTemplate" />
+          <EntitySet Name="T_F_TypeTemplateGroup" EntityType="EF5TestModel.T_F_TypeTemplateGroup" />
+          <AssociationSet Name="FKEBFF586191A0AFB2" Association="EF5TestModel.FKEBFF586191A0AFB2">
+            <End Role="T_F_Menu" EntitySet="T_F_Menu" />
+            <End Role="T_F_Menu1" EntitySet="T_F_Menu" />
+          </AssociationSet>
+          <AssociationSet Name="FKBA8E5F7776F262F" Association="EF5TestModel.FKBA8E5F7776F262F">
+            <End Role="T_F_TypeTemplateGroup" EntitySet="T_F_TypeTemplateGroup" />
+            <End Role="T_F_TypeTemplate" EntitySet="T_F_TypeTemplate" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="FLEXOrg">
+          <Key>
+            <PropertyRef Name="ORGANIZATION_CODE" />
+          </Key>
+          <Property Name="ORGANIZATION_CODE" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="OrderTypeTranslation">
+          <Key>
+            <PropertyRef Name="Organization_ID" />
+            <PropertyRef Name="Transaction_Type_Id" />
+          </Key>
+          <Property Name="Organization_ID" Type="Int32" Nullable="false" />
+          <Property Name="Transaction_Type_Id" Type="Int32" Nullable="false" />
+          <Property Name="LBPValue" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_Access">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="Num" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="Mask" Type="Int32" Nullable="false" />
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ParentID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="LevelNum" Type="Int32" Nullable="false" />
+          <Property Name="IsDetail" Type="Boolean" Nullable="false" />
+          <Property Name="IsGroup" Type="Boolean" Nullable="false" />
+          <Property Name="Message" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Forbidden" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_Accessories">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Logic" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_AccessoriesContent">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="AccessoriesEntryID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="BinaryData" Type="Binary" MaxLength="8000" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_AccessoriesEntry">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="AccessoriesID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="RecordNum" Type="Int32" Nullable="false" />
+          <Property Name="Exp" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="FileName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="FileSize" Type="Int32" Nullable="false" />
+          <Property Name="SysUserID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="UpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OriginalPath" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="FileType" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="SysUserName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlow">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="BusinessFlowCatalogID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="ProcessXml" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Released" Type="Boolean" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ReleaseTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowActivity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="BusinessFlowID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="QualifiedID" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="ActivityOrder" Type="Int32" Nullable="false" />
+          <Property Name="IfElseOrder" Type="Int32" Nullable="false" />
+          <Property Name="WhileOrder" Type="Int32" Nullable="false" />
+          <Property Name="SequenceOrder" Type="Int32" Nullable="false" />
+          <Property Name="Subject" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="Operation" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowActivityOutput">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="BusinessFlowID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="QualifiedID" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="VariableID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="EntityProperty" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="EntityID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowCatalog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowCondition">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="BusinessFlowID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="Condition" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowEntity">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="BusinessFlowID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="EntityID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_BusinessFlowVariable">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="BusinessFlowID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="InitData" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_Demo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="des" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_DeskInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="UserNo" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="HiddenInfo" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ExtendInfo" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_HistoryData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="UIInstanceID" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Version" Type="Int32" Nullable="false" />
+          <Property Name="EntityID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="ColID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Value" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ModifyTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UserID" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="UIID" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_Images">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ImgName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ImgInfo" Type="Binary" Nullable="false" MaxLength="8000" FixedLength="false" />
+          <Property Name="AltInfo" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_ItemTemplate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="displayName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="image" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="template" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_Log">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="UserID" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="IP" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="HostName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="OperationName" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="OperationType" Type="Int32" />
+          <Property Name="OperationContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="OperationTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="T_F_Menu">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Num" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="OrderIndex" Type="Int32" />
+          <Property Name="OpenMode" Type="Int32" />
+          <Property Name="Privilege" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="RequestObject" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ImagePath" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="Enabled" Type="Boolean" />
+          <Property Name="Visible" Type="Boolean" />
+          <Property Name="Platform" Type="String" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="IsFixed" Type="Boolean" />
+          <Property Name="IsAutoOpen" Type="Boolean" />
+          <Property Name="ParentID" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="T_F_Menu1" Relationship="EF5TestModel.FKEBFF586191A0AFB2" FromRole="T_F_Menu" ToRole="T_F_Menu1" />
+          <NavigationProperty Name="T_F_Menu2" Relationship="EF5TestModel.FKEBFF586191A0AFB2" FromRole="T_F_Menu1" ToRole="T_F_Menu" />
+        </EntityType>
+        <EntityType Name="T_F_Message">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Title" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="SenderID" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="ReceiverID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="SendTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ReadTime" Type="DateTime" Precision="3" />
+          <Property Name="Type" Type="Int32" Nullable="false" />
+          <Property Name="MainRecordID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Importance" Type="Int32" Nullable="false" />
+          <Property Name="IsRead" Type="Boolean" />
+          <Property Name="StartTime" Type="DateTime" Precision="3" />
+          <Property Name="EndTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="T_F_MetaData">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ProjectID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DisplayName" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="MetaData" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="ModifyTime" Type="DateTime" Precision="3" />
+          <Property Name="XmlMetaData" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_MetaData_DataEntity">
+          <Key>
+            <PropertyRef Name="EntityID" />
+          </Key>
+          <Property Name="EntityID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="TableName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="ClassName" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="EntityTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="IsAbstract" Type="Boolean" Nullable="false" />
+          <Property Name="BaseEntityID" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="ParentID" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="LevelNum" Type="Int32" Nullable="false" />
+          <Property Name="IsDetail" Type="Boolean" Nullable="false" />
+          <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SchemaXML" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_MetaData_DataEntityCol">
+          <Key>
+            <PropertyRef Name="ColID" />
+          </Key>
+          <Property Name="ColID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="EntityID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="FieldName" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="FieldType" Type="Int32" Nullable="false" />
+          <Property Name="BaseDataTypeID" Type="Int32" Nullable="false" />
+          <Property Name="DataTypeID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Length" Type="Int32" Nullable="false" />
+          <Property Name="Precision" Type="Int32" Nullable="false" />
+          <Property Name="Uniqueness" Type="Boolean" Nullable="false" />
+          <Property Name="Required" Type="Boolean" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="BaseColID" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="BuiltInFieldTypeID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_MetaData_DataTypeNative">
+          <Key>
+            <PropertyRef Name="DataTypeID" />
+          </Key>
+          <Property Name="DataTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="ActualType" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="SystemType" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="NHibernateType" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="NeedLength" Type="Boolean" Nullable="false" />
+          <Property Name="NeedPrecision" Type="Boolean" Nullable="false" />
+          <Property Name="NeedUnique" Type="Boolean" Nullable="false" />
+          <Property Name="NeedRequired" Type="Boolean" Nullable="false" />
+          <Property Name="NeedVisible" Type="Boolean" Nullable="false" />
+          <Property Name="CanSetPrimaryKey" Type="Boolean" Nullable="false" />
+          <Property Name="CanSetValue" Type="Boolean" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="RecordNum" Type="Int32" Nullable="false" />
+          <Property Name="NeedSupportMultiLanguage" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_MetaData_UIInstance">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="UIID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="MainEntityInstanceID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Version" Type="Int32" Nullable="false" />
+          <Property Name="AccessoriesID" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_Offices">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Logic" Type="Boolean" Nullable="false" />
+          <Property Name="OfficeContent" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_OperationLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="SystemID" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SystemName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="ModuleID" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ModuleName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="LogDescribe" Type="String" MaxLength="4000" Unicode="true" FixedLength="false" />
+          <Property Name="LogType" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="IPAddress" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="SourceTable" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="SourceGUID" Type="String" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="CreatePersonAccount" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="CreatePersonName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_Parameter">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="Value" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_PrintConfig">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="printEdition" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="printXml" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="printName" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_ProcedureGroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="GroupName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="FID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="LevelNum" Type="Int32" Nullable="false" />
+          <Property Name="IndexNum" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_ProcedureInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ProcedureName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Status" Type="Int32" Nullable="false" />
+          <Property Name="PScript" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_ProcedureParamInfo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="ProcedureID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="IsOut" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_ProcedureReference">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="GroupID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="ProcedureID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="IndexNum" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="T_F_Project">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="SolutionID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_ProjectType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="displayName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="image" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="description" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_ReportQuerySchema">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="SchemaName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ReportID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Query" Type="String" Nullable="false" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_Solution">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="T_F_TypeTemplate">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Version" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TemplateXml" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="IsPublish" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="TempID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="T_F_TypeTemplateGroup" Relationship="EF5TestModel.FKBA8E5F7776F262F" FromRole="T_F_TypeTemplate" ToRole="T_F_TypeTemplateGroup" />
+        </EntityType>
+        <EntityType Name="T_F_TypeTemplateGroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="FID" Type="String" Nullable="false" MaxLength="36" Unicode="true" FixedLength="false" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IsDel" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="LevelNum" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="T_F_TypeTemplate" Relationship="EF5TestModel.FKBA8E5F7776F262F" FromRole="T_F_TypeTemplateGroup" ToRole="T_F_TypeTemplate" />
+        </EntityType>
+        <Association Name="FKEBFF586191A0AFB2">
+          <End Role="T_F_Menu" Type="EF5TestModel.T_F_Menu" Multiplicity="0..1" />
+          <End Role="T_F_Menu1" Type="EF5TestModel.T_F_Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="T_F_Menu">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="T_F_Menu1">
+              <PropertyRef Name="ParentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKBA8E5F7776F262F">
+          <End Role="T_F_TypeTemplateGroup" Type="EF5TestModel.T_F_TypeTemplateGroup" Multiplicity="1" />
+          <End Role="T_F_TypeTemplate" Type="EF5TestModel.T_F_TypeTemplate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="T_F_TypeTemplateGroup">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="T_F_TypeTemplate">
+              <PropertyRef Name="TempID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EF5TestModelStoreContainer" CdmEntityContainer="EFLocalTest">
+          <EntitySetMapping Name="FLEXOrgs">
+            <EntityTypeMapping TypeName="EF5TestModel.FLEXOrg">
+              <MappingFragment StoreEntitySet="FLEXOrgs">
+                <ScalarProperty Name="ORGANIZATION_CODE" ColumnName="ORGANIZATION_CODE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderTypeTranslations">
+            <EntityTypeMapping TypeName="EF5TestModel.OrderTypeTranslation">
+              <MappingFragment StoreEntitySet="OrderTypeTranslations">
+                <ScalarProperty Name="Organization_ID" ColumnName="Organization_ID" />
+                <ScalarProperty Name="Transaction_Type_Id" ColumnName="Transaction_Type_Id" />
+                <ScalarProperty Name="LBPValue" ColumnName="LBPValue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Access">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Access">
+              <MappingFragment StoreEntitySet="T_F_Access">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Num" ColumnName="Num" />
+                <ScalarProperty Name="Mask" ColumnName="Mask" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="LevelNum" ColumnName="LevelNum" />
+                <ScalarProperty Name="IsDetail" ColumnName="IsDetail" />
+                <ScalarProperty Name="IsGroup" ColumnName="IsGroup" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Forbidden" ColumnName="Forbidden" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Accessories">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Accessories">
+              <MappingFragment StoreEntitySet="T_F_Accessories">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Logic" ColumnName="Logic" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_AccessoriesContent">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_AccessoriesContent">
+              <MappingFragment StoreEntitySet="T_F_AccessoriesContent">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AccessoriesEntryID" ColumnName="AccessoriesEntryID" />
+                <ScalarProperty Name="BinaryData" ColumnName="BinaryData" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_AccessoriesEntry">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_AccessoriesEntry">
+              <MappingFragment StoreEntitySet="T_F_AccessoriesEntry">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AccessoriesID" ColumnName="AccessoriesID" />
+                <ScalarProperty Name="RecordNum" ColumnName="RecordNum" />
+                <ScalarProperty Name="Exp" ColumnName="Exp" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+                <ScalarProperty Name="SysUserID" ColumnName="SysUserID" />
+                <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+                <ScalarProperty Name="OriginalPath" ColumnName="OriginalPath" />
+                <ScalarProperty Name="FileType" ColumnName="FileType" />
+                <ScalarProperty Name="SysUserName" ColumnName="SysUserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_BusinessFlow">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlow">
+              <MappingFragment StoreEntitySet="T_F_BusinessFlow">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="BusinessFlowCatalogID" ColumnName="BusinessFlowCatalogID" />
+                <ScalarProperty Name="ProcessXml" ColumnName="ProcessXml" />
+                <ScalarProperty Name="Released" ColumnName="Released" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="ReleaseTime" ColumnName="ReleaseTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_BusinessFlowActivity">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowActivity">
+              <MappingFragment StoreEntitySet="T_F_BusinessFlowActivity">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BusinessFlowID" ColumnName="BusinessFlowID" />
+                <ScalarProperty Name="QualifiedID" ColumnName="QualifiedID" />
+                <ScalarProperty Name="ActivityOrder" ColumnName="ActivityOrder" />
+                <ScalarProperty Name="IfElseOrder" ColumnName="IfElseOrder" />
+                <ScalarProperty Name="WhileOrder" ColumnName="WhileOrder" />
+                <ScalarProperty Name="SequenceOrder" ColumnName="SequenceOrder" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Operation" ColumnName="Operation" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_BusinessFlowActivityOutput">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowActivityOutput">
+              <MappingFragment StoreEntitySet="T_F_BusinessFlowActivityOutput">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BusinessFlowID" ColumnName="BusinessFlowID" />
+                <ScalarProperty Name="QualifiedID" ColumnName="QualifiedID" />
+                <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+                <ScalarProperty Name="EntityProperty" ColumnName="EntityProperty" />
+                <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_BusinessFlowCatalog">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowCatalog">
+              <MappingFragment StoreEntitySet="T_F_BusinessFlowCatalog">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_BusinessFlowCondition">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowCondition">
+              <MappingFragment StoreEntitySet="T_F_BusinessFlowCondition">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BusinessFlowID" ColumnName="BusinessFlowID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Condition" ColumnName="Condition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_BusinessFlowEntity">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowEntity">
+              <MappingFragment StoreEntitySet="T_F_BusinessFlowEntity">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BusinessFlowID" ColumnName="BusinessFlowID" />
+                <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_BusinessFlowVariable">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowVariable">
+              <MappingFragment StoreEntitySet="T_F_BusinessFlowVariable">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BusinessFlowID" ColumnName="BusinessFlowID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="InitData" ColumnName="InitData" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Demo">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Demo">
+              <MappingFragment StoreEntitySet="T_F_Demo">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="des" ColumnName="des" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_DeskInfo">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_DeskInfo">
+              <MappingFragment StoreEntitySet="T_F_DeskInfo">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserNo" ColumnName="UserNo" />
+                <ScalarProperty Name="HiddenInfo" ColumnName="HiddenInfo" />
+                <ScalarProperty Name="ExtendInfo" ColumnName="ExtendInfo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_HistoryData">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_HistoryData">
+              <MappingFragment StoreEntitySet="T_F_HistoryData">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UIInstanceID" ColumnName="UIInstanceID" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+                <ScalarProperty Name="ColID" ColumnName="ColID" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="ModifyTime" ColumnName="ModifyTime" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UIID" ColumnName="UIID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Images">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Images">
+              <MappingFragment StoreEntitySet="T_F_Images">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ImgName" ColumnName="ImgName" />
+                <ScalarProperty Name="ImgInfo" ColumnName="ImgInfo" />
+                <ScalarProperty Name="AltInfo" ColumnName="AltInfo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_ItemTemplate">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_ItemTemplate">
+              <MappingFragment StoreEntitySet="T_F_ItemTemplate">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="displayName" ColumnName="displayName" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="template" ColumnName="template" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Log">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Log">
+              <MappingFragment StoreEntitySet="T_F_Log">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="IP" ColumnName="IP" />
+                <ScalarProperty Name="HostName" ColumnName="HostName" />
+                <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+                <ScalarProperty Name="OperationType" ColumnName="OperationType" />
+                <ScalarProperty Name="OperationContent" ColumnName="OperationContent" />
+                <ScalarProperty Name="OperationTime" ColumnName="OperationTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Menu">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Menu">
+              <MappingFragment StoreEntitySet="T_F_Menu">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Num" ColumnName="Num" />
+                <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+                <ScalarProperty Name="OpenMode" ColumnName="OpenMode" />
+                <ScalarProperty Name="Privilege" ColumnName="Privilege" />
+                <ScalarProperty Name="RequestObject" ColumnName="RequestObject" />
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+                <ScalarProperty Name="Visible" ColumnName="Visible" />
+                <ScalarProperty Name="Platform" ColumnName="Platform" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsFixed" ColumnName="IsFixed" />
+                <ScalarProperty Name="IsAutoOpen" ColumnName="IsAutoOpen" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Message">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Message">
+              <MappingFragment StoreEntitySet="T_F_Message">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="SenderID" ColumnName="SenderID" />
+                <ScalarProperty Name="ReceiverID" ColumnName="ReceiverID" />
+                <ScalarProperty Name="SendTime" ColumnName="SendTime" />
+                <ScalarProperty Name="ReadTime" ColumnName="ReadTime" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="MainRecordID" ColumnName="MainRecordID" />
+                <ScalarProperty Name="Importance" ColumnName="Importance" />
+                <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_MetaData">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_MetaData">
+              <MappingFragment StoreEntitySet="T_F_MetaData">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="MetaData" ColumnName="MetaData" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="ModifyTime" ColumnName="ModifyTime" />
+                <ScalarProperty Name="XmlMetaData" ColumnName="XmlMetaData" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_MetaData_DataEntity">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_MetaData_DataEntity">
+              <MappingFragment StoreEntitySet="T_F_MetaData_DataEntity">
+                <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="TableName" ColumnName="TableName" />
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+                <ScalarProperty Name="EntityTypeID" ColumnName="EntityTypeID" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IsAbstract" ColumnName="IsAbstract" />
+                <ScalarProperty Name="BaseEntityID" ColumnName="BaseEntityID" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="LevelNum" ColumnName="LevelNum" />
+                <ScalarProperty Name="IsDetail" ColumnName="IsDetail" />
+                <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+                <ScalarProperty Name="SchemaXML" ColumnName="SchemaXML" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_MetaData_DataEntityCol">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_MetaData_DataEntityCol">
+              <MappingFragment StoreEntitySet="T_F_MetaData_DataEntityCol">
+                <ScalarProperty Name="ColID" ColumnName="ColID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+                <ScalarProperty Name="FieldType" ColumnName="FieldType" />
+                <ScalarProperty Name="BaseDataTypeID" ColumnName="BaseDataTypeID" />
+                <ScalarProperty Name="DataTypeID" ColumnName="DataTypeID" />
+                <ScalarProperty Name="Length" ColumnName="Length" />
+                <ScalarProperty Name="Precision" ColumnName="Precision" />
+                <ScalarProperty Name="Uniqueness" ColumnName="Uniqueness" />
+                <ScalarProperty Name="Required" ColumnName="Required" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="BaseColID" ColumnName="BaseColID" />
+                <ScalarProperty Name="BuiltInFieldTypeID" ColumnName="BuiltInFieldTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_MetaData_DataTypeNative">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_MetaData_DataTypeNative">
+              <MappingFragment StoreEntitySet="T_F_MetaData_DataTypeNative">
+                <ScalarProperty Name="DataTypeID" ColumnName="DataTypeID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ActualType" ColumnName="ActualType" />
+                <ScalarProperty Name="SystemType" ColumnName="SystemType" />
+                <ScalarProperty Name="NHibernateType" ColumnName="NHibernateType" />
+                <ScalarProperty Name="NeedLength" ColumnName="NeedLength" />
+                <ScalarProperty Name="NeedPrecision" ColumnName="NeedPrecision" />
+                <ScalarProperty Name="NeedUnique" ColumnName="NeedUnique" />
+                <ScalarProperty Name="NeedRequired" ColumnName="NeedRequired" />
+                <ScalarProperty Name="NeedVisible" ColumnName="NeedVisible" />
+                <ScalarProperty Name="CanSetPrimaryKey" ColumnName="CanSetPrimaryKey" />
+                <ScalarProperty Name="CanSetValue" ColumnName="CanSetValue" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="RecordNum" ColumnName="RecordNum" />
+                <ScalarProperty Name="NeedSupportMultiLanguage" ColumnName="NeedSupportMultiLanguage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_MetaData_UIInstance">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_MetaData_UIInstance">
+              <MappingFragment StoreEntitySet="T_F_MetaData_UIInstance">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UIID" ColumnName="UIID" />
+                <ScalarProperty Name="MainEntityInstanceID" ColumnName="MainEntityInstanceID" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="AccessoriesID" ColumnName="AccessoriesID" />
+                <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Offices">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Offices">
+              <MappingFragment StoreEntitySet="T_F_Offices">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Logic" ColumnName="Logic" />
+                <ScalarProperty Name="OfficeContent" ColumnName="OfficeContent" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_OperationLog">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_OperationLog">
+              <MappingFragment StoreEntitySet="T_F_OperationLog">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+                <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+                <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+                <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+                <ScalarProperty Name="LogDescribe" ColumnName="LogDescribe" />
+                <ScalarProperty Name="LogType" ColumnName="LogType" />
+                <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+                <ScalarProperty Name="SourceTable" ColumnName="SourceTable" />
+                <ScalarProperty Name="SourceGUID" ColumnName="SourceGUID" />
+                <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+                <ScalarProperty Name="CreatePersonAccount" ColumnName="CreatePersonAccount" />
+                <ScalarProperty Name="CreatePersonName" ColumnName="CreatePersonName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Parameter">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Parameter">
+              <MappingFragment StoreEntitySet="T_F_Parameter">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_PrintConfig">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_PrintConfig">
+              <MappingFragment StoreEntitySet="T_F_PrintConfig">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="printEdition" ColumnName="printEdition" />
+                <ScalarProperty Name="printXml" ColumnName="printXml" />
+                <ScalarProperty Name="printName" ColumnName="printName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_ProcedureGroup">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_ProcedureGroup">
+              <MappingFragment StoreEntitySet="T_F_ProcedureGroup">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="FID" ColumnName="FID" />
+                <ScalarProperty Name="LevelNum" ColumnName="LevelNum" />
+                <ScalarProperty Name="IndexNum" ColumnName="IndexNum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_ProcedureInfo">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_ProcedureInfo">
+              <MappingFragment StoreEntitySet="T_F_ProcedureInfo">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ProcedureName" ColumnName="ProcedureName" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="PScript" ColumnName="PScript" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_ProcedureParamInfo">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_ProcedureParamInfo">
+              <MappingFragment StoreEntitySet="T_F_ProcedureParamInfo">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ProcedureID" ColumnName="ProcedureID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="IsOut" ColumnName="IsOut" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_ProcedureReference">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_ProcedureReference">
+              <MappingFragment StoreEntitySet="T_F_ProcedureReference">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+                <ScalarProperty Name="ProcedureID" ColumnName="ProcedureID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IndexNum" ColumnName="IndexNum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Project">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Project">
+              <MappingFragment StoreEntitySet="T_F_Project">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="SolutionID" ColumnName="SolutionID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_ProjectType">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_ProjectType">
+              <MappingFragment StoreEntitySet="T_F_ProjectType">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="displayName" ColumnName="displayName" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_ReportQuerySchema">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_ReportQuerySchema">
+              <MappingFragment StoreEntitySet="T_F_ReportQuerySchema">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="SchemaName" ColumnName="SchemaName" />
+                <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+                <ScalarProperty Name="Query" ColumnName="Query" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_Solution">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_Solution">
+              <MappingFragment StoreEntitySet="T_F_Solution">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_TypeTemplate">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_TypeTemplate">
+              <MappingFragment StoreEntitySet="T_F_TypeTemplate">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Version" ColumnName="Version" />
+                <ScalarProperty Name="TemplateXml" ColumnName="TemplateXml" />
+                <ScalarProperty Name="IsPublish" ColumnName="IsPublish" />
+                <ScalarProperty Name="TempID" ColumnName="TempID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="T_F_TypeTemplateGroup">
+            <EntityTypeMapping TypeName="EF5TestModel.T_F_TypeTemplateGroup">
+              <MappingFragment StoreEntitySet="T_F_TypeTemplateGroup">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="FID" ColumnName="FID" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Remark" ColumnName="Remark" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="IsDel" ColumnName="IsDel" />
+                <ScalarProperty Name="LevelNum" ColumnName="LevelNum" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

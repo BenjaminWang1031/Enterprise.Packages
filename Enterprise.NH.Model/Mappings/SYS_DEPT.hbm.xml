@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Enterprise.NH.Model" namespace="Enterprise.NH.Model">
+  <class name="Enterprise.NH.Model.SYS_DEPT, Enterprise.NH.Model" table="SYS_DEPT">
+    <id name="SD_ID" column="SD_ID" type="Guid" unsaved-value="null">
+    </id>
+    <property name="SD_NAME" column="SD_NAME" type="string"  />
+    <property name="SD_CODE" column="SD_CODE" type="string"  />
+    <property name="SD_PARENT_ID" column="SD_PARENT_ID" type="Guid"  />
+    <property name="SD_ORDER" column="SD_ORDER" type="decimal"  />
+    <property name="SD_LEVEL" column="SD_LEVEL" type="int"  />
+    <property name="SD_FULL_NAME" column="SD_FULL_NAME" type="string"  />
+    <property name="SD_REMARK" column="SD_REMARK" type="string"  />
+    <property name="SD_MANAGER_ID" column="SD_MANAGER_ID" type="Guid"  />
+    <property name="SD_MANAGER_NAME" column="SD_MANAGER_NAME" type="string"  />
+    <property name="CREATOR" column="CREATOR" type="Guid"  />
+    <property name="CREATEDATE" column="CREATEDATE" type="DateTime"  />
+    <property name="MODIFY" column="MODIFY" type="Guid"  />
+    <property name="MODIFYDATE" column="MODIFYDATE" type="DateTime"  />
+    <property name="CONTACTS" column="CONTACTS" type="string"  />
+    <property name="CONTACTS_BACK" column="CONTACTS_BACK" type="string"  />
+  </class>
+</hibernate-mapping>

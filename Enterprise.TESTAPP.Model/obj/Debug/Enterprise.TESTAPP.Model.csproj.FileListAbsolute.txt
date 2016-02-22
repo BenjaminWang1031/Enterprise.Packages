@@ -1,0 +1,14 @@
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TESTAPP.Model\bin\Debug\Enterprise.TESTAPP.Model.dll.config
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TESTAPP.Model\bin\Debug\Enterprise.TESTAPP.Model.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TESTAPP.Model\bin\Debug\Enterprise.TESTAPP.Model.pdb
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TESTAPP.Model\bin\Debug\EntityFramework.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TESTAPP.Model\bin\Debug\EntityFramework.xml
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TESTAPP.Model\obj\Debug\Enterprise.TESTAPP.Model.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TESTAPP.Model\obj\Debug\Enterprise.TESTAPP.Model.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TESTAPP.Model\bin\Debug\Enterprise.TESTAPP.Model.dll.config
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TESTAPP.Model\bin\Debug\Enterprise.TESTAPP.Model.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TESTAPP.Model\bin\Debug\Enterprise.TESTAPP.Model.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TESTAPP.Model\bin\Debug\EntityFramework.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TESTAPP.Model\bin\Debug\EntityFramework.xml
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TESTAPP.Model\obj\Debug\Enterprise.TESTAPP.Model.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TESTAPP.Model\obj\Debug\Enterprise.TESTAPP.Model.pdb

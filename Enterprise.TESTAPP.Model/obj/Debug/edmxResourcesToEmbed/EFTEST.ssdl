@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EF5TestModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EF5TestModelStoreContainer">
+    <EntitySet Name="FLEXOrgs" EntityType="EF5TestModel.Store.FLEXOrgs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OrderTypeTranslations" EntityType="EF5TestModel.Store.OrderTypeTranslations" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Access" EntityType="EF5TestModel.Store.T_F_Access" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Accessories" EntityType="EF5TestModel.Store.T_F_Accessories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_AccessoriesContent" EntityType="EF5TestModel.Store.T_F_AccessoriesContent" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_AccessoriesEntry" EntityType="EF5TestModel.Store.T_F_AccessoriesEntry" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_BusinessFlow" EntityType="EF5TestModel.Store.T_F_BusinessFlow" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_BusinessFlowActivity" EntityType="EF5TestModel.Store.T_F_BusinessFlowActivity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_BusinessFlowActivityOutput" EntityType="EF5TestModel.Store.T_F_BusinessFlowActivityOutput" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_BusinessFlowCatalog" EntityType="EF5TestModel.Store.T_F_BusinessFlowCatalog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_BusinessFlowCondition" EntityType="EF5TestModel.Store.T_F_BusinessFlowCondition" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_BusinessFlowEntity" EntityType="EF5TestModel.Store.T_F_BusinessFlowEntity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_BusinessFlowVariable" EntityType="EF5TestModel.Store.T_F_BusinessFlowVariable" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Demo" EntityType="EF5TestModel.Store.T_F_Demo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_DeskInfo" EntityType="EF5TestModel.Store.T_F_DeskInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_HistoryData" EntityType="EF5TestModel.Store.T_F_HistoryData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Images" EntityType="EF5TestModel.Store.T_F_Images" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_ItemTemplate" EntityType="EF5TestModel.Store.T_F_ItemTemplate" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Log" EntityType="EF5TestModel.Store.T_F_Log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Menu" EntityType="EF5TestModel.Store.T_F_Menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Message" EntityType="EF5TestModel.Store.T_F_Message" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_MetaData" EntityType="EF5TestModel.Store.T_F_MetaData" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_MetaData_DataEntity" EntityType="EF5TestModel.Store.T_F_MetaData_DataEntity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_MetaData_DataEntityCol" EntityType="EF5TestModel.Store.T_F_MetaData_DataEntityCol" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_MetaData_DataTypeNative" EntityType="EF5TestModel.Store.T_F_MetaData_DataTypeNative" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_MetaData_UIInstance" EntityType="EF5TestModel.Store.T_F_MetaData_UIInstance" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Offices" EntityType="EF5TestModel.Store.T_F_Offices" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_OperationLog" EntityType="EF5TestModel.Store.T_F_OperationLog" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Parameter" EntityType="EF5TestModel.Store.T_F_Parameter" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_PrintConfig" EntityType="EF5TestModel.Store.T_F_PrintConfig" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_ProcedureGroup" EntityType="EF5TestModel.Store.T_F_ProcedureGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_ProcedureInfo" EntityType="EF5TestModel.Store.T_F_ProcedureInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_ProcedureParamInfo" EntityType="EF5TestModel.Store.T_F_ProcedureParamInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_ProcedureReference" EntityType="EF5TestModel.Store.T_F_ProcedureReference" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Project" EntityType="EF5TestModel.Store.T_F_Project" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_ProjectType" EntityType="EF5TestModel.Store.T_F_ProjectType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_ReportQuerySchema" EntityType="EF5TestModel.Store.T_F_ReportQuerySchema" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_Solution" EntityType="EF5TestModel.Store.T_F_Solution" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_TypeTemplate" EntityType="EF5TestModel.Store.T_F_TypeTemplate" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="T_F_TypeTemplateGroup" EntityType="EF5TestModel.Store.T_F_TypeTemplateGroup" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FKBA8E5F7776F262F" Association="EF5TestModel.Store.FKBA8E5F7776F262F">
+      <End Role="T_F_TypeTemplateGroup" EntitySet="T_F_TypeTemplateGroup" />
+      <End Role="T_F_TypeTemplate" EntitySet="T_F_TypeTemplate" />
+    </AssociationSet>
+    <AssociationSet Name="FKEBFF586191A0AFB2" Association="EF5TestModel.Store.FKEBFF586191A0AFB2">
+      <End Role="T_F_Menu" EntitySet="T_F_Menu" />
+      <End Role="T_F_Menu1" EntitySet="T_F_Menu" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="FLEXOrgs">
+    <Key>
+      <PropertyRef Name="ORGANIZATION_CODE" />
+    </Key>
+    <Property Name="ORGANIZATION_CODE" Type="varchar" Nullable="false" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="OrderTypeTranslations">
+    <Key>
+      <PropertyRef Name="Organization_ID" />
+      <PropertyRef Name="Transaction_Type_Id" />
+    </Key>
+    <Property Name="Organization_ID" Type="int" Nullable="false" />
+    <Property Name="Transaction_Type_Id" Type="int" Nullable="false" />
+    <Property Name="LBPValue" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="T_F_Access">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="Num" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="Mask" Type="int" Nullable="false" />
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ParentID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="LevelNum" Type="int" Nullable="false" />
+    <Property Name="IsDetail" Type="bit" Nullable="false" />
+    <Property Name="IsGroup" Type="bit" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Forbidden" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_F_Accessories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Logic" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_F_AccessoriesContent">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="AccessoriesEntryID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="BinaryData" Type="varbinary" />
+  </EntityType>
+  <EntityType Name="T_F_AccessoriesEntry">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="AccessoriesID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="RecordNum" Type="int" Nullable="false" />
+    <Property Name="Exp" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="FileName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="FileSize" Type="int" Nullable="false" />
+    <Property Name="SysUserID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="UpdateTime" Type="datetime" Nullable="false" />
+    <Property Name="OriginalPath" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="FileType" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="SysUserName" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_F_BusinessFlow">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="BusinessFlowCatalogID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="ProcessXml" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Released" Type="bit" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="ReleaseTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_F_BusinessFlowActivity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="BusinessFlowID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="QualifiedID" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="ActivityOrder" Type="int" Nullable="false" />
+    <Property Name="IfElseOrder" Type="int" Nullable="false" />
+    <Property Name="WhileOrder" Type="int" Nullable="false" />
+    <Property Name="SequenceOrder" Type="int" Nullable="false" />
+    <Property Name="Subject" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="Operation" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_F_BusinessFlowActivityOutput">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="BusinessFlowID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="QualifiedID" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="VariableID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="EntityProperty" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="EntityID" Type="nvarchar" Nullable="false" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="T_F_BusinessFlowCatalog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="T_F_BusinessFlowCondition">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="BusinessFlowID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Condition" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_F_BusinessFlowEntity">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="BusinessFlowID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="EntityID" Type="nvarchar" Nullable="false" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="T_F_BusinessFlowVariable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="BusinessFlowID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="InitData" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Type" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_F_Demo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="des" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="T_F_DeskInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="UserNo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="HiddenInfo" Type="nvarchar" MaxLength="256" />
+    <Property Name="ExtendInfo" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="T_F_HistoryData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="UIInstanceID" Type="nvarchar" MaxLength="36" />
+    <Property Name="Version" Type="int" Nullable="false" />
+    <Property Name="EntityID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="ColID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Value" Type="nvarchar(max)" />
+    <Property Name="ModifyTime" Type="datetime" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="36" />
+    <Property Name="UIID" Type="nvarchar" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="T_F_Images">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ImgName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ImgInfo" Type="varbinary" Nullable="false" />
+    <Property Name="AltInfo" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_F_ItemTemplate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="displayName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="image" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="type" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="nvarchar" MaxLength="200" />
+    <Property Name="template" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="T_F_Log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="36" />
+    <Property Name="IP" Type="nvarchar" MaxLength="32" />
+    <Property Name="HostName" Type="nvarchar" MaxLength="64" />
+    <Property Name="OperationName" Type="nvarchar" MaxLength="64" />
+    <Property Name="OperationType" Type="int" />
+    <Property Name="OperationContent" Type="nvarchar(max)" />
+    <Property Name="OperationTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_F_Menu">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Num" Type="nvarchar" MaxLength="64" />
+    <Property Name="OrderIndex" Type="int" />
+    <Property Name="OpenMode" Type="int" />
+    <Property Name="Privilege" Type="nvarchar" MaxLength="64" />
+    <Property Name="RequestObject" Type="nvarchar" MaxLength="256" />
+    <Property Name="ImagePath" Type="nvarchar" MaxLength="128" />
+    <Property Name="Enabled" Type="bit" />
+    <Property Name="Visible" Type="bit" />
+    <Property Name="Platform" Type="nvarchar" MaxLength="64" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+    <Property Name="IsFixed" Type="bit" />
+    <Property Name="IsAutoOpen" Type="bit" />
+    <Property Name="ParentID" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_F_Message">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+    <Property Name="SenderID" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="ReceiverID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="SendTime" Type="datetime" Nullable="false" />
+    <Property Name="ReadTime" Type="datetime" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="MainRecordID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Importance" Type="int" Nullable="false" />
+    <Property Name="IsRead" Type="bit" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="EndTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="T_F_MetaData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ProjectID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DisplayName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+    <Property Name="MetaData" Type="nvarchar(max)" />
+    <Property Name="State" Type="nvarchar" MaxLength="1" />
+    <Property Name="ModifyTime" Type="datetime" />
+    <Property Name="XmlMetaData" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="T_F_MetaData_DataEntity">
+    <Key>
+      <PropertyRef Name="EntityID" />
+    </Key>
+    <Property Name="EntityID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="TableName" Type="nvarchar" MaxLength="256" />
+    <Property Name="ClassName" Type="nvarchar" MaxLength="256" />
+    <Property Name="EntityTypeID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+    <Property Name="IsAbstract" Type="bit" Nullable="false" />
+    <Property Name="BaseEntityID" Type="nvarchar" MaxLength="36" />
+    <Property Name="ParentID" Type="nvarchar" MaxLength="36" />
+    <Property Name="LevelNum" Type="int" Nullable="false" />
+    <Property Name="IsDetail" Type="bit" Nullable="false" />
+    <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+    <Property Name="SchemaXML" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_F_MetaData_DataEntityCol">
+    <Key>
+      <PropertyRef Name="ColID" />
+    </Key>
+    <Property Name="ColID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="EntityID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="FieldName" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="FieldType" Type="int" Nullable="false" />
+    <Property Name="BaseDataTypeID" Type="int" Nullable="false" />
+    <Property Name="DataTypeID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Length" Type="int" Nullable="false" />
+    <Property Name="Precision" Type="int" Nullable="false" />
+    <Property Name="Uniqueness" Type="bit" Nullable="false" />
+    <Property Name="Required" Type="bit" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="BaseColID" Type="nvarchar" MaxLength="36" />
+    <Property Name="BuiltInFieldTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_F_MetaData_DataTypeNative">
+    <Key>
+      <PropertyRef Name="DataTypeID" />
+    </Key>
+    <Property Name="DataTypeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="ActualType" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="SystemType" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="NHibernateType" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="NeedLength" Type="bit" Nullable="false" />
+    <Property Name="NeedPrecision" Type="bit" Nullable="false" />
+    <Property Name="NeedUnique" Type="bit" Nullable="false" />
+    <Property Name="NeedRequired" Type="bit" Nullable="false" />
+    <Property Name="NeedVisible" Type="bit" Nullable="false" />
+    <Property Name="CanSetPrimaryKey" Type="bit" Nullable="false" />
+    <Property Name="CanSetValue" Type="bit" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="RecordNum" Type="int" Nullable="false" />
+    <Property Name="NeedSupportMultiLanguage" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_F_MetaData_UIInstance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="UIID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="MainEntityInstanceID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Version" Type="int" Nullable="false" />
+    <Property Name="AccessoriesID" Type="nvarchar" MaxLength="36" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_F_Offices">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Logic" Type="bit" Nullable="false" />
+    <Property Name="OfficeContent" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="T_F_OperationLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="SystemID" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SystemName" Type="nvarchar" MaxLength="200" />
+    <Property Name="ModuleID" Type="nvarchar" MaxLength="50" />
+    <Property Name="ModuleName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LogDescribe" Type="nvarchar" />
+    <Property Name="LogType" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="IPAddress" Type="nvarchar" MaxLength="20" />
+    <Property Name="SourceTable" Type="nvarchar" MaxLength="36" />
+    <Property Name="SourceGUID" Type="nvarchar" MaxLength="36" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="CreatePersonAccount" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatePersonName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="T_F_Parameter">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="64" />
+    <Property Name="Value" Type="nvarchar" MaxLength="1024" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="T_F_PrintConfig">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="printEdition" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="printXml" Type="nvarchar" MaxLength="255" />
+    <Property Name="printName" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_F_ProcedureGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="GroupName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="FID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="LevelNum" Type="int" Nullable="false" />
+    <Property Name="IndexNum" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_F_ProcedureInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ProcedureName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Status" Type="int" Nullable="false" />
+    <Property Name="PScript" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_F_ProcedureParamInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="ProcedureID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsOut" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_F_ProcedureReference">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="GroupID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="ProcedureID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="IndexNum" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="T_F_Project">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="SolutionID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="T_F_ProjectType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="displayName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="image" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="description" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="T_F_ReportQuerySchema">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="SchemaName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ReportID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Query" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="UserID" Type="nvarchar" Nullable="false" MaxLength="36" />
+  </EntityType>
+  <EntityType Name="T_F_Solution">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="T_F_TypeTemplate">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Version" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TemplateXml" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="IsPublish" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="TempID" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="T_F_TypeTemplateGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="FID" Type="nvarchar" Nullable="false" MaxLength="36" />
+    <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="Remark" Type="nvarchar" MaxLength="1000" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="IsDel" Type="nvarchar" Nullable="false" MaxLength="1" />
+    <Property Name="LevelNum" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FKBA8E5F7776F262F">
+    <End Role="T_F_TypeTemplateGroup" Type="EF5TestModel.Store.T_F_TypeTemplateGroup" Multiplicity="1" />
+    <End Role="T_F_TypeTemplate" Type="EF5TestModel.Store.T_F_TypeTemplate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_F_TypeTemplateGroup">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_F_TypeTemplate">
+        <PropertyRef Name="TempID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKEBFF586191A0AFB2">
+    <End Role="T_F_Menu" Type="EF5TestModel.Store.T_F_Menu" Multiplicity="0..1" />
+    <End Role="T_F_Menu1" Type="EF5TestModel.Store.T_F_Menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="T_F_Menu">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="T_F_Menu1">
+        <PropertyRef Name="ParentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'Ben_Oasis.dbo.oasis' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="oasis">
+        <Property Name="AccessDate" Type="datetime" />
+        <Property Name="AccessTime" Type="datetime" />
+        <Property Name="UserName" Type="nvarchar" MaxLength="255" />
+        <Property Name="Moudle" Type="nvarchar" MaxLength="255" />
+        <Property Name="Country" Type="nvarchar" MaxLength="255" />
+        <Property Name="Region" Type="nvarchar" MaxLength="255" />
+        <Property Name="City" Type="nvarchar" MaxLength="255" />
+        <Property Name="Org" Type="nvarchar" MaxLength="255" />
+        <Property Name="Ip" Type="nvarchar" MaxLength="255" />
+        <Property Name="UserId" Type="nvarchar" MaxLength="255" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Ben_Oasis.dbo.oasis_backup_20151117' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="oasis_backup_20151117">
+        <Property Name="AccessDate" Type="datetime" />
+        <Property Name="AccessTime" Type="datetime" />
+        <Property Name="UserName" Type="nvarchar" MaxLength="255" />
+        <Property Name="Moudle" Type="nvarchar" MaxLength="255" />
+        <Property Name="Country" Type="nvarchar" MaxLength="255" />
+        <Property Name="Region" Type="nvarchar" MaxLength="255" />
+        <Property Name="City" Type="nvarchar" MaxLength="255" />
+        <Property Name="Org" Type="nvarchar" MaxLength="255" />
+        <Property Name="Ip" Type="nvarchar" MaxLength="255" />
+        <Property Name="UserId" Type="nvarchar" MaxLength="255" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Ben_Oasis.dbo.OasisActiveUsers' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="OasisActiveUsers">
+        <Property Name="Name" Type="nvarchar" MaxLength="255" />
+        <Property Name="Id" Type="nvarchar" MaxLength="255" />
+        <Property Name="Email" Type="nvarchar" MaxLength="255" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Ben_Oasis.dbo.oasisUsers' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="oasisUsers">
+        <Property Name="UserName" Type="nvarchar" MaxLength="255" />
+        <Property Name="Lanid" Type="nvarchar" MaxLength="255" />
+      </EntityType>-->
+</Schema>

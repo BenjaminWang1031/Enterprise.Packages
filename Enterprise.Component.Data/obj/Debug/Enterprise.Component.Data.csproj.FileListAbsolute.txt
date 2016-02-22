@@ -1,0 +1,9 @@
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Data\bin\Debug\Enterprise.Component.Data.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Data\bin\Debug\Enterprise.Component.Data.pdb
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Data\obj\Debug\Enterprise.Component.Data.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Data\obj\Debug\Enterprise.Component.Data.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Data\bin\Debug\Enterprise.Component.Data.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Data\bin\Debug\Enterprise.Component.Data.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Data\obj\Debug\Enterprise.Component.Data.csprojResolveAssemblyReference.cache
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Data\obj\Debug\Enterprise.Component.Data.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Data\obj\Debug\Enterprise.Component.Data.pdb

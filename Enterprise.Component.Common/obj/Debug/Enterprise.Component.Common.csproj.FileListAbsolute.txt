@@ -1,0 +1,16 @@
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\Enterprise.Component.Common.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\Enterprise.Component.Common.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Common\obj\Debug\Enterprise.Component.Common.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Common\obj\Debug\Enterprise.Component.Common.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\Newtonsoft.Json.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\Enterprise.Component.Common.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\Enterprise.Component.Common.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\Enterprise.Core.Interface.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\Ionic.Zip.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\Newtonsoft.Json.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Common\bin\Debug\Enterprise.Core.Interface.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Common\obj\Debug\Enterprise.Component.Common.csprojResolveAssemblyReference.cache
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Common\obj\Debug\Enterprise.Component.Common.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Common\obj\Debug\Enterprise.Component.Common.pdb

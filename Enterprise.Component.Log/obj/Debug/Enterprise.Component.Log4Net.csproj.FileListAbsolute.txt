@@ -1,0 +1,16 @@
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Log\obj\Debug\Enterprise.Component.Log4Net.csprojResolveAssemblyReference.cache
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Log\bin\Debug\Enterprise.Component.Log4Net.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Log\bin\Debug\Enterprise.Component.Log4Net.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Log\bin\Debug\Enterprise.Core.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Log\bin\Debug\log4net.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Log\bin\Debug\Enterprise.Core.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Log\obj\Debug\Enterprise.Component.Log4Net.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.Log\obj\Debug\Enterprise.Component.Log4Net.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Log\bin\Debug\Enterprise.Component.Log4Net.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Log\bin\Debug\Enterprise.Component.Log4Net.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Log\bin\Debug\Enterprise.Core.Interface.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Log\bin\Debug\log4net.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Log\bin\Debug\Enterprise.Core.Interface.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Log\obj\Debug\Enterprise.Component.Log4Net.csprojResolveAssemblyReference.cache
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Log\obj\Debug\Enterprise.Component.Log4Net.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Log\obj\Debug\Enterprise.Component.Log4Net.pdb

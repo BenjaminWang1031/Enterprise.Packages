@@ -1,0 +1,8 @@
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Log\bin\Debug\Develop.Component.Log.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Log\bin\Debug\Develop.Component.Log.pdb
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Log\bin\Debug\Develop.Core.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Log\bin\Debug\log4net.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Log\bin\Debug\Develop.Core.pdb
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Log\obj\Debug\Develop.Component.Log.csprojResolveAssemblyReference.cache
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Log\obj\Debug\Develop.Component.Log.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Log\obj\Debug\Develop.Component.Log.pdb

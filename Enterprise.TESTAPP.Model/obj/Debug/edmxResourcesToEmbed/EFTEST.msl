@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EF5TestModelStoreContainer" CdmEntityContainer="EFLocalTest">
+    <EntitySetMapping Name="FLEXOrgs">
+      <EntityTypeMapping TypeName="EF5TestModel.FLEXOrg">
+        <MappingFragment StoreEntitySet="FLEXOrgs">
+          <ScalarProperty Name="ORGANIZATION_CODE" ColumnName="ORGANIZATION_CODE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderTypeTranslations">
+      <EntityTypeMapping TypeName="EF5TestModel.OrderTypeTranslation">
+        <MappingFragment StoreEntitySet="OrderTypeTranslations">
+          <ScalarProperty Name="Organization_ID" ColumnName="Organization_ID" />
+          <ScalarProperty Name="Transaction_Type_Id" ColumnName="Transaction_Type_Id" />
+          <ScalarProperty Name="LBPValue" ColumnName="LBPValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Access">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Access">
+        <MappingFragment StoreEntitySet="T_F_Access">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="Mask" ColumnName="Mask" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="LevelNum" ColumnName="LevelNum" />
+          <ScalarProperty Name="IsDetail" ColumnName="IsDetail" />
+          <ScalarProperty Name="IsGroup" ColumnName="IsGroup" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Forbidden" ColumnName="Forbidden" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Accessories">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Accessories">
+        <MappingFragment StoreEntitySet="T_F_Accessories">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Logic" ColumnName="Logic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_AccessoriesContent">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_AccessoriesContent">
+        <MappingFragment StoreEntitySet="T_F_AccessoriesContent">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AccessoriesEntryID" ColumnName="AccessoriesEntryID" />
+          <ScalarProperty Name="BinaryData" ColumnName="BinaryData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_AccessoriesEntry">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_AccessoriesEntry">
+        <MappingFragment StoreEntitySet="T_F_AccessoriesEntry">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AccessoriesID" ColumnName="AccessoriesID" />
+          <ScalarProperty Name="RecordNum" ColumnName="RecordNum" />
+          <ScalarProperty Name="Exp" ColumnName="Exp" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="SysUserID" ColumnName="SysUserID" />
+          <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="OriginalPath" ColumnName="OriginalPath" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="SysUserName" ColumnName="SysUserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_BusinessFlow">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlow">
+        <MappingFragment StoreEntitySet="T_F_BusinessFlow">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BusinessFlowCatalogID" ColumnName="BusinessFlowCatalogID" />
+          <ScalarProperty Name="ProcessXml" ColumnName="ProcessXml" />
+          <ScalarProperty Name="Released" ColumnName="Released" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="ReleaseTime" ColumnName="ReleaseTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_BusinessFlowActivity">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowActivity">
+        <MappingFragment StoreEntitySet="T_F_BusinessFlowActivity">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BusinessFlowID" ColumnName="BusinessFlowID" />
+          <ScalarProperty Name="QualifiedID" ColumnName="QualifiedID" />
+          <ScalarProperty Name="ActivityOrder" ColumnName="ActivityOrder" />
+          <ScalarProperty Name="IfElseOrder" ColumnName="IfElseOrder" />
+          <ScalarProperty Name="WhileOrder" ColumnName="WhileOrder" />
+          <ScalarProperty Name="SequenceOrder" ColumnName="SequenceOrder" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_BusinessFlowActivityOutput">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowActivityOutput">
+        <MappingFragment StoreEntitySet="T_F_BusinessFlowActivityOutput">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BusinessFlowID" ColumnName="BusinessFlowID" />
+          <ScalarProperty Name="QualifiedID" ColumnName="QualifiedID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="EntityProperty" ColumnName="EntityProperty" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_BusinessFlowCatalog">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowCatalog">
+        <MappingFragment StoreEntitySet="T_F_BusinessFlowCatalog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_BusinessFlowCondition">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowCondition">
+        <MappingFragment StoreEntitySet="T_F_BusinessFlowCondition">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BusinessFlowID" ColumnName="BusinessFlowID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_BusinessFlowEntity">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowEntity">
+        <MappingFragment StoreEntitySet="T_F_BusinessFlowEntity">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BusinessFlowID" ColumnName="BusinessFlowID" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_BusinessFlowVariable">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_BusinessFlowVariable">
+        <MappingFragment StoreEntitySet="T_F_BusinessFlowVariable">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BusinessFlowID" ColumnName="BusinessFlowID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="InitData" ColumnName="InitData" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Demo">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Demo">
+        <MappingFragment StoreEntitySet="T_F_Demo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="des" ColumnName="des" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_DeskInfo">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_DeskInfo">
+        <MappingFragment StoreEntitySet="T_F_DeskInfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserNo" ColumnName="UserNo" />
+          <ScalarProperty Name="HiddenInfo" ColumnName="HiddenInfo" />
+          <ScalarProperty Name="ExtendInfo" ColumnName="ExtendInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_HistoryData">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_HistoryData">
+        <MappingFragment StoreEntitySet="T_F_HistoryData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UIInstanceID" ColumnName="UIInstanceID" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="ColID" ColumnName="ColID" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ModifyTime" ColumnName="ModifyTime" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UIID" ColumnName="UIID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Images">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Images">
+        <MappingFragment StoreEntitySet="T_F_Images">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ImgName" ColumnName="ImgName" />
+          <ScalarProperty Name="ImgInfo" ColumnName="ImgInfo" />
+          <ScalarProperty Name="AltInfo" ColumnName="AltInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_ItemTemplate">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_ItemTemplate">
+        <MappingFragment StoreEntitySet="T_F_ItemTemplate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="displayName" ColumnName="displayName" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="template" ColumnName="template" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Log">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Log">
+        <MappingFragment StoreEntitySet="T_F_Log">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="HostName" ColumnName="HostName" />
+          <ScalarProperty Name="OperationName" ColumnName="OperationName" />
+          <ScalarProperty Name="OperationType" ColumnName="OperationType" />
+          <ScalarProperty Name="OperationContent" ColumnName="OperationContent" />
+          <ScalarProperty Name="OperationTime" ColumnName="OperationTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Menu">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Menu">
+        <MappingFragment StoreEntitySet="T_F_Menu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Num" ColumnName="Num" />
+          <ScalarProperty Name="OrderIndex" ColumnName="OrderIndex" />
+          <ScalarProperty Name="OpenMode" ColumnName="OpenMode" />
+          <ScalarProperty Name="Privilege" ColumnName="Privilege" />
+          <ScalarProperty Name="RequestObject" ColumnName="RequestObject" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsFixed" ColumnName="IsFixed" />
+          <ScalarProperty Name="IsAutoOpen" ColumnName="IsAutoOpen" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Message">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Message">
+        <MappingFragment StoreEntitySet="T_F_Message">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SenderID" ColumnName="SenderID" />
+          <ScalarProperty Name="ReceiverID" ColumnName="ReceiverID" />
+          <ScalarProperty Name="SendTime" ColumnName="SendTime" />
+          <ScalarProperty Name="ReadTime" ColumnName="ReadTime" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="MainRecordID" ColumnName="MainRecordID" />
+          <ScalarProperty Name="Importance" ColumnName="Importance" />
+          <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_MetaData">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_MetaData">
+        <MappingFragment StoreEntitySet="T_F_MetaData">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="MetaData" ColumnName="MetaData" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ModifyTime" ColumnName="ModifyTime" />
+          <ScalarProperty Name="XmlMetaData" ColumnName="XmlMetaData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_MetaData_DataEntity">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_MetaData_DataEntity">
+        <MappingFragment StoreEntitySet="T_F_MetaData_DataEntity">
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+          <ScalarProperty Name="EntityTypeID" ColumnName="EntityTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsAbstract" ColumnName="IsAbstract" />
+          <ScalarProperty Name="BaseEntityID" ColumnName="BaseEntityID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="LevelNum" ColumnName="LevelNum" />
+          <ScalarProperty Name="IsDetail" ColumnName="IsDetail" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="SchemaXML" ColumnName="SchemaXML" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_MetaData_DataEntityCol">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_MetaData_DataEntityCol">
+        <MappingFragment StoreEntitySet="T_F_MetaData_DataEntityCol">
+          <ScalarProperty Name="ColID" ColumnName="ColID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EntityID" ColumnName="EntityID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="FieldType" ColumnName="FieldType" />
+          <ScalarProperty Name="BaseDataTypeID" ColumnName="BaseDataTypeID" />
+          <ScalarProperty Name="DataTypeID" ColumnName="DataTypeID" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Precision" ColumnName="Precision" />
+          <ScalarProperty Name="Uniqueness" ColumnName="Uniqueness" />
+          <ScalarProperty Name="Required" ColumnName="Required" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="BaseColID" ColumnName="BaseColID" />
+          <ScalarProperty Name="BuiltInFieldTypeID" ColumnName="BuiltInFieldTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_MetaData_DataTypeNative">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_MetaData_DataTypeNative">
+        <MappingFragment StoreEntitySet="T_F_MetaData_DataTypeNative">
+          <ScalarProperty Name="DataTypeID" ColumnName="DataTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ActualType" ColumnName="ActualType" />
+          <ScalarProperty Name="SystemType" ColumnName="SystemType" />
+          <ScalarProperty Name="NHibernateType" ColumnName="NHibernateType" />
+          <ScalarProperty Name="NeedLength" ColumnName="NeedLength" />
+          <ScalarProperty Name="NeedPrecision" ColumnName="NeedPrecision" />
+          <ScalarProperty Name="NeedUnique" ColumnName="NeedUnique" />
+          <ScalarProperty Name="NeedRequired" ColumnName="NeedRequired" />
+          <ScalarProperty Name="NeedVisible" ColumnName="NeedVisible" />
+          <ScalarProperty Name="CanSetPrimaryKey" ColumnName="CanSetPrimaryKey" />
+          <ScalarProperty Name="CanSetValue" ColumnName="CanSetValue" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="RecordNum" ColumnName="RecordNum" />
+          <ScalarProperty Name="NeedSupportMultiLanguage" ColumnName="NeedSupportMultiLanguage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_MetaData_UIInstance">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_MetaData_UIInstance">
+        <MappingFragment StoreEntitySet="T_F_MetaData_UIInstance">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UIID" ColumnName="UIID" />
+          <ScalarProperty Name="MainEntityInstanceID" ColumnName="MainEntityInstanceID" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="AccessoriesID" ColumnName="AccessoriesID" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Offices">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Offices">
+        <MappingFragment StoreEntitySet="T_F_Offices">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Logic" ColumnName="Logic" />
+          <ScalarProperty Name="OfficeContent" ColumnName="OfficeContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_OperationLog">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_OperationLog">
+        <MappingFragment StoreEntitySet="T_F_OperationLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SystemID" ColumnName="SystemID" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="LogDescribe" ColumnName="LogDescribe" />
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+          <ScalarProperty Name="SourceTable" ColumnName="SourceTable" />
+          <ScalarProperty Name="SourceGUID" ColumnName="SourceGUID" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatePersonAccount" ColumnName="CreatePersonAccount" />
+          <ScalarProperty Name="CreatePersonName" ColumnName="CreatePersonName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Parameter">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Parameter">
+        <MappingFragment StoreEntitySet="T_F_Parameter">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_PrintConfig">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_PrintConfig">
+        <MappingFragment StoreEntitySet="T_F_PrintConfig">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="printEdition" ColumnName="printEdition" />
+          <ScalarProperty Name="printXml" ColumnName="printXml" />
+          <ScalarProperty Name="printName" ColumnName="printName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_ProcedureGroup">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_ProcedureGroup">
+        <MappingFragment StoreEntitySet="T_F_ProcedureGroup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="FID" ColumnName="FID" />
+          <ScalarProperty Name="LevelNum" ColumnName="LevelNum" />
+          <ScalarProperty Name="IndexNum" ColumnName="IndexNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_ProcedureInfo">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_ProcedureInfo">
+        <MappingFragment StoreEntitySet="T_F_ProcedureInfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProcedureName" ColumnName="ProcedureName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PScript" ColumnName="PScript" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_ProcedureParamInfo">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_ProcedureParamInfo">
+        <MappingFragment StoreEntitySet="T_F_ProcedureParamInfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProcedureID" ColumnName="ProcedureID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="IsOut" ColumnName="IsOut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_ProcedureReference">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_ProcedureReference">
+        <MappingFragment StoreEntitySet="T_F_ProcedureReference">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="ProcedureID" ColumnName="ProcedureID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IndexNum" ColumnName="IndexNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Project">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Project">
+        <MappingFragment StoreEntitySet="T_F_Project">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SolutionID" ColumnName="SolutionID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_ProjectType">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_ProjectType">
+        <MappingFragment StoreEntitySet="T_F_ProjectType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="displayName" ColumnName="displayName" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_ReportQuerySchema">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_ReportQuerySchema">
+        <MappingFragment StoreEntitySet="T_F_ReportQuerySchema">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SchemaName" ColumnName="SchemaName" />
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="Query" ColumnName="Query" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_Solution">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_Solution">
+        <MappingFragment StoreEntitySet="T_F_Solution">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_TypeTemplate">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_TypeTemplate">
+        <MappingFragment StoreEntitySet="T_F_TypeTemplate">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="TemplateXml" ColumnName="TemplateXml" />
+          <ScalarProperty Name="IsPublish" ColumnName="IsPublish" />
+          <ScalarProperty Name="TempID" ColumnName="TempID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_F_TypeTemplateGroup">
+      <EntityTypeMapping TypeName="EF5TestModel.T_F_TypeTemplateGroup">
+        <MappingFragment StoreEntitySet="T_F_TypeTemplateGroup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FID" ColumnName="FID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsDel" ColumnName="IsDel" />
+          <ScalarProperty Name="LevelNum" ColumnName="LevelNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{269459A3-5BE0-40FC-BDA0-2B1BBC2AC241}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Enterprise.EF.Model</RootNamespace>
+    <AssemblyName>Enterprise.EF.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EFTEST.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EFTEST.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EFTEST.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EFTEST.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EFTEST.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FLEXOrg.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderTypeTranslation.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T_F_Access.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Accessories.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_AccessoriesContent.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_AccessoriesEntry.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlow.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowActivity.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowActivityOutput.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowCatalog.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowCondition.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowEntity.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowVariable.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Demo.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_DeskInfo.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_HistoryData.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Images.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ItemTemplate.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Log.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Menu.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Message.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_MetaData.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_MetaData_DataEntity.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_MetaData_DataEntityCol.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_MetaData_DataTypeNative.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_MetaData_UIInstance.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Offices.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_OperationLog.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Parameter.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_PrintConfig.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ProcedureGroup.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ProcedureInfo.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ProcedureParamInfo.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ProcedureReference.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Project.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ProjectType.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ReportQuerySchema.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Solution.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_TypeTemplate.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_TypeTemplateGroup.cs">
+      <DependentUpon>EFTEST.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="EFTEST.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EFTEST.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EFTEST.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EFTEST.edmx</DependentUpon>
+      <LastGenOutput>EFTEST.Context.cs</LastGenOutput>
+    </None>
+    <None Include="EFTEST.edmx.diagram">
+      <DependentUpon>EFTEST.edmx</DependentUpon>
+    </None>
+    <None Include="EFTEST.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EFTEST.edmx</DependentUpon>
+      <LastGenOutput>EFTEST.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

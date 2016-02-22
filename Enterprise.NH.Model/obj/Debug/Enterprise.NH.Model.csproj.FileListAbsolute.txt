@@ -1,0 +1,14 @@
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.NH.Model\obj\Debug\Enterprise.NH.Model.csprojResolveAssemblyReference.cache
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.NH.Model\bin\Debug\Enterprise.NH.Model.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.NH.Model\bin\Debug\Enterprise.NH.Model.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.NH.Model\bin\Debug\Enterprise.Core.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.NH.Model\bin\Debug\Enterprise.Core.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.NH.Model\obj\Debug\Enterprise.NH.Model.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.NH.Model\obj\Debug\Enterprise.NH.Model.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.NH.Model\bin\Debug\Enterprise.NH.Model.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.NH.Model\bin\Debug\Enterprise.NH.Model.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.NH.Model\bin\Debug\Enterprise.Core.Interface.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.NH.Model\bin\Debug\Enterprise.Core.Interface.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.NH.Model\obj\Debug\Enterprise.NH.Model.csprojResolveAssemblyReference.cache
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.NH.Model\obj\Debug\Enterprise.NH.Model.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.NH.Model\obj\Debug\Enterprise.NH.Model.pdb

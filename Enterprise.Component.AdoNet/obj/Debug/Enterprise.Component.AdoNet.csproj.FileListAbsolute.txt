@@ -1,0 +1,14 @@
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Component.AdoNet.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Component.AdoNet.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Core.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Core.pdb
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.csprojResolveAssemblyReference.cache
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.dll
+C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Component.AdoNet.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Component.AdoNet.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Core.Interface.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Core.Interface.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.csprojResolveAssemblyReference.cache

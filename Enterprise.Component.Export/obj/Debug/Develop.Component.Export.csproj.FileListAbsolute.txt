@@ -1,0 +1,12 @@
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\bin\Debug\Develop.Component.Export.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\bin\Debug\Develop.Component.Export.pdb
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\bin\Debug\Develop.Core.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\bin\Debug\Develop.Core.pdb
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\obj\Debug\Develop.Component.Export.csprojResolveAssemblyReference.cache
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\obj\Debug\Develop.Component.Export.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\obj\Debug\Develop.Component.Export.pdb
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\bin\Debug\NPOI.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\bin\Debug\NPOI.OOXML.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Component.Export\bin\Debug\ICSharpCode.SharpZipLib.dll

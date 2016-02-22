@@ -1,0 +1,4 @@
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Core\bin\Debug\Develop.Core.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Core\bin\Debug\Develop.Core.pdb
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Core\obj\Debug\Develop.Core.dll
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.Core\obj\Debug\Develop.Core.pdb

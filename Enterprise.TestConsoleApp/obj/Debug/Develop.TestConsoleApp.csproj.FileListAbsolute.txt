@@ -1,0 +1,5 @@
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TestConsoleApp\bin\Debug\Develop.TestConsoleApp.exe.config
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TestConsoleApp\bin\Debug\Develop.TestConsoleApp.exe
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TestConsoleApp\bin\Debug\Develop.TestConsoleApp.pdb
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TestConsoleApp\obj\Debug\Develop.TestConsoleApp.exe
+C:\Benjamin\DoNet\Benjamin\Develop.Tools\Develop.TestConsoleApp\obj\Debug\Develop.TestConsoleApp.pdb
