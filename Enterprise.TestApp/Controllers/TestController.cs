@@ -47,11 +47,13 @@ namespace Enterprise.TestApp.Controllers
             //var helper = new AdoNetHelper(this);
             //helper.TestQuery();
             //helper.TestProcedure();
-            var mZipHelper = new ZipHelper();
-            var mDesFolder = System.Web.HttpContext.Current.Server.MapPath("~/Log");
-            ViewBag.logsPath= MyFactory.GetExceptionLogHelper().PackLogs(mZipHelper, mDesFolder);
-
-            //MyFactory.GetExceptionLogHelper().LogException("", "", new Exception("TES--111T"), null);
+            //var mZipHelper = new ZipHelper();
+            //var mDesFolder = System.Web.HttpContext.Current.Server.MapPath("~/Log");
+            //ViewBag.logsPath= MyFactory.GetExceptionLogHelper().PackLogs(mZipHelper, mDesFolder);
+            MyFactory.GetExceptionLogHelper().LogException("", "", new Exception("TES--111T"), null);
+            var user = new UserInfo();
+            user.UserName = "Benjamin";
+            MyFactory.GetLogVisitorHelper().LogUser("", user);
             return View();
         }
     }

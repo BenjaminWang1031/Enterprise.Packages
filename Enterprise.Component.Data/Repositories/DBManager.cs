@@ -19,27 +19,30 @@ using Enterprise.Component.Nhiberate.Base;
 
 namespace Enterprise.Component.Nhiberate
 {
-    public class DBManager : DisposableObject,IDBManager
+    /// <summary>
+    /// @Desc: NHiberate implementation of the database objects manager
+    /// @Author: Benjamin Wang
+    /// @Date: 02/2016
+    /// </summary>
+    public class DBManager : DisposableObject, IDBManager
     {
         #region Private Fields
-
         [ThreadStatic]
-        private bool committed = true;
+        private bool mCommitted = true;
         [ThreadStatic]
-        private readonly SessionFactory databaseSessionFactory;
+        private readonly SessionFactory mDatabaseSessionFactory;
         [ThreadStatic]
-        private readonly ISession session = null;
+        private readonly ISession mSession = null;
         [ThreadStatic]
-        private readonly List<object> newObjects = new List<object>();
+        private readonly List<object> mNewObjects = new List<object>();
         [ThreadStatic]
-        private readonly List<object> modifiedObjects = new List<object>();
+        private readonly List<object> mUpdatedObjects = new List<object>();
         [ThreadStatic]
-        private readonly Dictionary<string, string> modifiedObjectsOldValue = new Dictionary<string, string>();
-        [ThreadStatic]
-        private readonly List<object> deletedObjects = new List<object>();
+        private readonly List<object> mDeletedObjects = new List<object>();
         [ThreadStatic]
         private string mErrorMsg;
-
+        [ThreadStatic]
+        private int mTimeout = 600;
         #endregion
 
         #region override
@@ -47,30 +50,28 @@ namespace Enterprise.Component.Nhiberate
         {
             if (disposing)
             {
-                ISession dbSession = session;
-                if (dbSession != null && dbSession.IsOpen)
+                if (mSession != null && mSession.IsOpen)
                 {
-                    dbSession.Close();
+                    mSession.Close();
                 }
-                dbSession.Dispose();
+                mSession.Dispose();
             }
         }
         #endregion
-        
+
         #region Ctor
         public DBManager()
             : this("") { }
 
-        public DBManager(string configFileName)
+        public DBManager(string ConfigFileName)
         {
-            databaseSessionFactory = new SessionFactory(configFileName);
-            session = databaseSessionFactory.Session;
-            
+            mDatabaseSessionFactory = new SessionFactory(ConfigFileName);
+            mSession = mDatabaseSessionFactory.Session;
         }
         #endregion
 
         #region Add
-        
+
         /// <summary>
         /// Add single entity
         /// </summary>
@@ -78,8 +79,8 @@ namespace Enterprise.Component.Nhiberate
         public void Add(IEntityRoot EntityObj)
         {
             if (EntityObj != null)
-                newObjects.Add(EntityObj);
-            committed = false;
+                mNewObjects.Add(EntityObj);
+            mCommitted = false;
         }
 
         /// <summary>
@@ -89,11 +90,7 @@ namespace Enterprise.Component.Nhiberate
         public void Add(List<IEntityRoot> EntityList)
         {
             foreach (var EntityObj in EntityList)
-            {
-                if (EntityObj != null)
-                    newObjects.Add(EntityObj);
-            }
-            committed = false;
+                Add(EntityObj);
         }
 
         #endregion
@@ -107,18 +104,17 @@ namespace Enterprise.Component.Nhiberate
         public void Update(IEntityRoot EntityObj)
         {
             if (EntityObj != null)
-                modifiedObjects.Add(EntityObj);
-            committed = false;
+                mUpdatedObjects.Add(EntityObj);
+            mCommitted = false;
         }
 
         public void Update(List<IEntityRoot> EntityList)
         {
             if (EntityList != null && EntityList.Count > 0)
-            { 
+            {
                 foreach (var entity in EntityList)
-                    modifiedObjects.Add(entity);
-            }                
-            committed = false;
+                    Update(entity);
+            }
         }
 
         #endregion
@@ -132,8 +128,8 @@ namespace Enterprise.Component.Nhiberate
         public void Delete(IEntityRoot EntityObj)
         {
             if (EntityObj != null)
-                deletedObjects.Add(EntityObj);
-            committed = false;
+                mDeletedObjects.Add(EntityObj);
+            mCommitted = false;
         }
 
         /// <summary>
@@ -141,11 +137,11 @@ namespace Enterprise.Component.Nhiberate
         /// </summary>
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <param name="key"></param>
-        public void Delete<TEntityRoot>(object key) where TEntityRoot : class,new()
+        public void Delete<TEntityRoot>(object Key) where TEntityRoot : class,new()
         {
-            if (key != null)
+            if (Key != null)
             {
-                var obj = session.Get<TEntityRoot>(key);
+                var obj = this.GetEntity<TEntityRoot>(Key);
                 if (obj != null)
                 {
                     Delete((IEntityRoot)(Object)obj);
@@ -157,14 +153,12 @@ namespace Enterprise.Component.Nhiberate
         /// Delete entity list
         /// </summary>
         /// <param name="list"></param>
-        public void Delete(List<IEntityRoot> list)
+        public void Delete(List<IEntityRoot> EntityList)
         {
-            if (list != null && list.Count > 0)
+            if (EntityList != null && EntityList.Count > 0)
             {
-                foreach (var entity in list)
-                {
+                foreach (var entity in EntityList)
                     this.Delete((IEntityRoot)entity);
-                }
             }
         }
 
@@ -178,12 +172,11 @@ namespace Enterprise.Component.Nhiberate
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <param name="key"></param>
         /// <returns></returns>
-        public TEntityRoot Get<TEntityRoot>(object key) where TEntityRoot : class,new()
+        public TEntityRoot GetEntity<TEntityRoot>(object Key) where TEntityRoot : class,new()
         {
-            if (key == null)
+            if (Key == null)
                 return null;
-            var obj = session.Get<TEntityRoot>(key);
-            return obj;
+            return mSession.Get<TEntityRoot>(Key);
         }
 
         /// <summary>
@@ -192,43 +185,39 @@ namespace Enterprise.Component.Nhiberate
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <param name="specification"></param>
         /// <returns></returns>
-        public TEntityRoot Get<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
+        public TEntityRoot GetEntity<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
         {
-            var list = session.Query<TEntityRoot>().Where(specification.SatisfiedBy()).ToList();
-            if (list != null && list.Count > 0)
-            {
-                return list[0];
-            }
-            return null;
+            var list = mSession.Query<TEntityRoot>().Where(specification.SatisfiedBy()).ToList();
+            return (list != null && list.Count > 0) ? list[0] : null;
         }
 
         #endregion
 
         #region Query entity list
-        
+
         /// <summary>
         /// Get all entities in a list
         /// </summary>
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <returns></returns>
-        public List<TEntityRoot> GetAll<TEntityRoot>() where TEntityRoot : class,new()
+        public List<TEntityRoot> GetEntityList<TEntityRoot>() where TEntityRoot : class,new()
         {
-            return GetAll(new TrueSpecification<TEntityRoot>(), null, DBSortOrder.Unspecified).ToList();
+            return GetEntityList(new TrueSpecification<TEntityRoot>(), null, DBSortOrder.Unspecified).ToList();
         }
 
-        public List<TEntityRoot> GetAll<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
+        public List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
         {
-            return GetAll(specification, null, DBSortOrder.Unspecified);
+            return GetEntityList(specification, null, DBSortOrder.Unspecified);
         }
 
-        public List<TEntityRoot> GetAll<TEntityRoot>(Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
+        public List<TEntityRoot> GetEntityList<TEntityRoot>(Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
         {
-            return GetAll(new TrueSpecification<TEntityRoot>(), SortPredicate, SortOrder);
+            return GetEntityList(new TrueSpecification<TEntityRoot>(), SortPredicate, SortOrder);
         }
 
-        public List<TEntityRoot> GetAll<TEntityRoot>(ISpecification<TEntityRoot> Specification, Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
+        public List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> Specification, Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
         {
-            var query = this.session.Query<TEntityRoot>()
+            var query = this.mSession.Query<TEntityRoot>()
                 .Where(Specification.SatisfiedBy());
             switch (SortOrder)
             {
@@ -251,10 +240,16 @@ namespace Enterprise.Component.Nhiberate
 
         #region Query with original sql string
 
+        /// <summary>
+        /// Execute SP to return a datatable
+        /// </summary>
+        /// <param name="ProcedureName"></param>
+        /// <param name="Param"></param>
+        /// <returns></returns>
         public DataTable GetDataTable(string ProcedureName, object[] Param)
         {
-            var cmd = session.Connection.CreateCommand();
-            cmd.CommandTimeout = 120000;
+            var cmd = mSession.Connection.CreateCommand();
+            cmd.CommandTimeout = this.mTimeout;
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = ProcedureName;
             foreach (var o in Param)
@@ -285,9 +280,10 @@ namespace Enterprise.Component.Nhiberate
                     return table;
                 }
             }
-            catch (Exception exception)
+            catch (Exception ex)
             {
-                throw exception;
+                this.mErrorMsg = ex.Message;
+                throw ex;
             }
             finally
             {
@@ -305,7 +301,8 @@ namespace Enterprise.Component.Nhiberate
         {
             try
             {
-                var cmd = session.Connection.CreateCommand();
+                var cmd = mSession.Connection.CreateCommand();
+                cmd.CommandTimeout = this.mTimeout;
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = SqlString;
                 var reader = cmd.ExecuteReader();
@@ -315,6 +312,7 @@ namespace Enterprise.Component.Nhiberate
             }
             catch (Exception ex)
             {
+                this.mErrorMsg = ex.Message;
                 throw ex;
             }
         }
@@ -329,11 +327,11 @@ namespace Enterprise.Component.Nhiberate
         {
             try
             {
-                using (var conn = session.Connection as SqlConnection)
+                using (var conn = mSession.Connection as SqlConnection)
                 {
                     conn.Open();
                     var cmd = conn.CreateCommand();
-                    cmd.CommandTimeout = 120000;
+                    cmd.CommandTimeout = this.mTimeout;
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = ProcedureName;
                     foreach (var o in Param)
@@ -348,6 +346,7 @@ namespace Enterprise.Component.Nhiberate
             }
             catch (Exception exception)
             {
+                this.mErrorMsg = exception.Message;
                 throw exception;
             }
         }
@@ -362,10 +361,11 @@ namespace Enterprise.Component.Nhiberate
         {
             try
             {
-                using (var conn = session.Connection as SqlConnection)
+                using (var conn = mSession.Connection as SqlConnection)
                 {
                     conn.Open();
                     var adapter = new SqlDataAdapter(SqlString, conn);
+                    adapter.SelectCommand.CommandTimeout = this.mTimeout;
                     var dataSet = new System.Data.DataSet();
                     adapter.Fill(dataSet);
                     return dataSet;
@@ -373,6 +373,7 @@ namespace Enterprise.Component.Nhiberate
             }
             catch (Exception ex)
             {
+                this.mErrorMsg = ex.Message;
                 throw ex;
             }
         }
@@ -385,13 +386,15 @@ namespace Enterprise.Component.Nhiberate
         {
             try
             {
-                var cmd = session.Connection.CreateCommand();
+                var cmd = mSession.Connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = SqlString;
+                cmd.CommandTimeout = this.mTimeout;
                 return cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
+                this.mErrorMsg = ex.Message;
                 throw ex;
             }
         }
@@ -407,10 +410,10 @@ namespace Enterprise.Component.Nhiberate
         /// <param name="pageIndex">started from 1</param>
         /// <param name="pageCount"></param>
         /// <returns></returns>
-        public IEnumerable<TAggregateRoot> GetPaged<TAggregateRoot>(int PageIndex, int PageSize)
+        public IEnumerable<TAggregateRoot> GetPagedList<TAggregateRoot>(int PageIndex, int PageSize)
             where TAggregateRoot : class,new()
         {
-            return this.GetPaged(PageIndex, PageSize, new TrueSpecification<TAggregateRoot>(), null, DBSortOrder.Unspecified);
+            return this.GetPagedList(PageIndex, PageSize, new TrueSpecification<TAggregateRoot>(), null, DBSortOrder.Unspecified);
         }
 
         /// <summary>
@@ -421,10 +424,10 @@ namespace Enterprise.Component.Nhiberate
         /// <param name="pageCount"></param>
         /// <param name="specification"></param>
         /// <returns></returns>
-        public IEnumerable<TAggregateRoot> GetPaged<TAggregateRoot>(int PageIndex, int PageSize, ISpecification<TAggregateRoot> Specification)
+        public IEnumerable<TAggregateRoot> GetPagedList<TAggregateRoot>(int PageIndex, int PageSize, ISpecification<TAggregateRoot> Specification)
             where TAggregateRoot : class,new()
         {
-            return this.GetPaged(PageIndex, PageSize, Specification, null, DBSortOrder.Unspecified);
+            return this.GetPagedList(PageIndex, PageSize, Specification, null, DBSortOrder.Unspecified);
         }
 
         /// <summary>
@@ -436,10 +439,10 @@ namespace Enterprise.Component.Nhiberate
         /// <param name="sortPredicate"></param>
         /// <param name="sortOrder"></param>
         /// <returns></returns>
-        public IEnumerable<TAggregateRoot> GetPaged<TAggregateRoot>(int PageIndex, int PageSize, Expression<Func<TAggregateRoot, dynamic>> SortPredicate, DBSortOrder SortOrder)
+        public IEnumerable<TAggregateRoot> GetPagedList<TAggregateRoot>(int PageIndex, int PageSize, Expression<Func<TAggregateRoot, dynamic>> SortPredicate, DBSortOrder SortOrder)
             where TAggregateRoot : class,new()
         {
-            return this.GetPaged(PageIndex, PageSize, new TrueSpecification<TAggregateRoot>(), SortPredicate, SortOrder);
+            return this.GetPagedList(PageIndex, PageSize, new TrueSpecification<TAggregateRoot>(), SortPredicate, SortOrder);
         }
 
         /// <summary>
@@ -452,11 +455,11 @@ namespace Enterprise.Component.Nhiberate
         /// <param name="sortPredicate"></param>
         /// <param name="sortOrder"></param>
         /// <returns></returns>
-        public IEnumerable<TAggregateRoot> GetPaged<TAggregateRoot>(int PageIndex, int PageSize, ISpecification<TAggregateRoot> Specification, Expression<Func<TAggregateRoot, dynamic>> SortPredicate, DBSortOrder SortOrder)
+        public IEnumerable<TAggregateRoot> GetPagedList<TAggregateRoot>(int PageIndex, int PageSize, ISpecification<TAggregateRoot> Specification, Expression<Func<TAggregateRoot, dynamic>> SortPredicate, DBSortOrder SortOrder)
             where TAggregateRoot : class,new()
         {
 
-            var query = session.Query<TAggregateRoot>();
+            var query = mSession.Query<TAggregateRoot>();
 
             if (Specification != null)
             {
@@ -488,37 +491,40 @@ namespace Enterprise.Component.Nhiberate
         /// <returns></returns>
         public bool Commit()
         {
-            ITransaction trans = session.BeginTransaction();
-
-            try
+            if (mCommitted)
             {
-                foreach (object obj in newObjects)
-                    session.Save(obj);
-                foreach (object obj in modifiedObjects)
-                    session.Merge(obj);
-                foreach (object obj in deletedObjects)
-                    session.Delete(obj);
-                trans.Commit();
-
-                newObjects.Clear();
-                deletedObjects.Clear();
-                modifiedObjects.Clear();
-
-                committed = true;
-                return true;
+                this.mErrorMsg = "Current changes were already committed!";
+                return false;
             }
-            catch (Exception ex)
+            using (var trans = mSession.BeginTransaction())
             {
-                if (trans.IsActive)
-                    trans.Rollback();
-                this.session.Clear();
-                throw new Exception(ex.InnerException == null ? ex.Message : (ex.InnerException).Message);
-            }
-            finally
-            {
-                if (trans != null)
+                try
                 {
-                    trans.Dispose();
+                    //apply changes
+                    foreach (object obj in mNewObjects)
+                        mSession.Save(obj);
+                    foreach (object obj in mUpdatedObjects)
+                        mSession.Update(obj); //mSession.Merge(obj); // use 'merge' can do a 'save'/'update' action. 
+                    foreach (object obj in mDeletedObjects)
+                        mSession.Delete(obj);
+                    //commit to database
+                    trans.Commit();
+                    //clear lists
+                    mNewObjects.Clear();
+                    mUpdatedObjects.Clear();
+                    mDeletedObjects.Clear();
+                    //set flag
+                    mCommitted = true;
+
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    if (trans.IsActive)
+                        trans.Rollback();
+                    this.mSession.Clear();
+                    this.mErrorMsg = ex.Message;
+                    throw new Exception(ex.InnerException == null ? ex.Message : (ex.InnerException).Message);
                 }
             }
         }
@@ -526,8 +532,8 @@ namespace Enterprise.Component.Nhiberate
         #endregion
 
         #region Public field
-
-        public ISession Session { get { return session; } }
+        //could be used to include sql strings inside one transaction
+        //public ISession Session { get { return mSession; } }
 
         /// <summary>
         /// Error message if any error occured
@@ -543,6 +549,22 @@ namespace Enterprise.Component.Nhiberate
                 this.mErrorMsg = value;
             }
         }
+
+        /// <summary>
+        /// set the timeout
+        /// </summary>
+        public int Timeout
+        {
+            get
+            {
+                return this.mTimeout;
+            }
+            set
+            {
+                this.mTimeout = value;
+            }
+        }
+
         #endregion
     }
 }

@@ -11,16 +11,34 @@ using Enterprise.Core.Interface.Data;
 
 namespace Enterprise.Component.AdoNet
 {
-    public class DBManager : DisposableObject,IDBBase
+    public class DBManager : DisposableObject, IDBBase
     {
+        #region Private Members
+
         private string mConnectString;
         private string mErrorMsg;
+        /// <summary>
+        /// Default to 600 seconds
+        /// </summary>
+        private int mTimeout = 600;
+
+        #endregion
+
+        #region Ctr
 
         public DBManager(string ConnectString = "")
         {
             this.mConnectString = string.IsNullOrEmpty(ConnectString) ? GetConnectstring() : ConnectString;
         }
 
+        #endregion
+
+        /// <summary>
+        /// Execute stored proc to get a datatable
+        /// </summary>
+        /// <param name="ProcedureName"></param>
+        /// <param name="Param"></param>
+        /// <returns></returns>
         public DataTable GetDataTable(string ProcedureName, object[] Param)
         {
             try
@@ -29,7 +47,7 @@ namespace Enterprise.Component.AdoNet
                 {
                     conn.Open();
                     var cmd = conn.CreateCommand();
-                    cmd.CommandTimeout = 120000;
+                    cmd.CommandTimeout = this.mTimeout;
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = ProcedureName;
                     foreach (var o in Param)
@@ -165,16 +183,15 @@ namespace Enterprise.Component.AdoNet
             //}
         }
 
+        public int Timeout
+        {
+            get { return this.mTimeout; }
+            set { this.mTimeout = value; }
+        }
         public string ErrorMsg
         {
-            get
-            {
-                return this.mErrorMsg;
-            }
-            set
-            {
-                this.mErrorMsg = value;
-            }
+            get { return this.mErrorMsg; }
+            set { this.mErrorMsg = value; }
         }
 
         private string GetConnectstring()

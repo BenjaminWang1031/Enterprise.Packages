@@ -9,12 +9,6 @@ namespace Enterprise.Component.Nhiberate
 {
     internal sealed class SessionFactory
     {
-        #region Private Static Fields
-        ///// <summary>
-        ///// The singleton instance of the database session factory.
-        ///// </summary>
-        //private static readonly DatabaseSessionFactory databaseSessionFactory = new DatabaseSessionFactory();
-        #endregion
 
         #region Private Fields
         /// <summary>
@@ -35,7 +29,9 @@ namespace Enterprise.Component.Nhiberate
             {
                 try
                 {
-                    Configuration nhibernateConfig = new Configuration();
+                    var nhibernateConfig = new Configuration();
+                    //Load from a specified section if provided
+                    //nhibernateConfig.Properties["connection.connection_string"] = System.Configuration.ConfigurationManager.AppSettings["connection_string"];
                     if (string.IsNullOrEmpty(configFileName))
                         nhibernateConfig.Configure();
                     else
@@ -60,15 +56,9 @@ namespace Enterprise.Component.Nhiberate
         {
             get
             {
-                try
-                {
-                    ISession result = session;
-                    if (result != null && result.IsOpen)
-                        return result;
-                    return OpenSession();
-                }
-                catch
-                { throw; }
+                if (session != null && session.IsOpen)
+                    return session;
+                return OpenSession();
             }
         }
         #endregion

@@ -9,13 +9,32 @@ using Enterprise.Core.Interface.Common;
 
 namespace Enterprise.Component.Log4Net
 {
+    /// <summary>
+    /// Exception handler
+    /// @Author:Benjamin Wang
+    /// </summary>
     public class LogExceptionHelper : ILogExceptionHelper
     {
+        /// <summary>
+        /// Log exception
+        /// @Author:Benjamin Wang
+        /// </summary>
+        /// <param name="MethodInfo"></param>
+        /// <param name="Exception"></param>
+        /// <param name="CurrentUserInfo"></param>
         public void LogException(MethodBase MethodInfo, Exception Exception, UserInfo CurrentUserInfo)
         {
             LogException(MethodInfo.ReflectedType.FullName, MethodInfo.Name, Exception, CurrentUserInfo);
         }
 
+        /// <summary>
+        /// Log exception
+        /// @Author:Benjamin Wang
+        /// </summary>
+        /// <param name="FullClassName"></param>
+        /// <param name="MethodName"></param>
+        /// <param name="Exception"></param>
+        /// <param name="CurrentUserInfo"></param>
         public void LogException(string FullClassName, string MethodName, Exception Exception, UserInfo CurrentUserInfo)
         {
             var log = new LogHelper(this.GetType());
@@ -26,9 +45,16 @@ namespace Enterprise.Component.Log4Net
             sb.AppendLine(String.Format("MethodName:{0}", MethodName));
             sb.AppendLine(String.Format("LineNumber:{0}", GetCurrentLineNumber(Exception)));
             sb.AppendLine(String.Format("ErrorMessage:{0}", Exception.Message));
-            log.LogWarn(sb.ToString());
+            //To use the error level logger of log4net
+            log.LogError(sb.ToString());
         }
 
+        /// <summary>
+        /// Get exception line number
+        /// @Author:Benjamin Wang
+        /// </summary>
+        /// <param name="Exception"></param>
+        /// <returns></returns>
         public string GetCurrentLineNumber(Exception Exception)
         {
             if (Exception.StackTrace == null)
@@ -42,7 +68,8 @@ namespace Enterprise.Component.Log4Net
                 {
                     var lineNumberText = Exception.StackTrace.Substring(index + lineSearch.Length);
                     if (Int32.TryParse(lineNumberText, out lineNumber)) { }
-                    else return lineNumberText;
+                    else 
+                        return lineNumberText.Contains("\r\n") ? lineNumberText.Substring(0, lineNumberText.IndexOf("\r\n")) : lineNumberText;
                 }
                 return lineNumber.ToString();
             }
@@ -52,10 +79,13 @@ namespace Enterprise.Component.Log4Net
             }
         }
 
-        public void Init() {
-            LogHelper.Init();
-        }
-
+        /// <summary>
+        /// Pack logs
+        /// @Author:Benjamin Wang
+        /// </summary>
+        /// <param name="ZipHelper"></param>
+        /// <param name="LogFolder"></param>
+        /// <returns></returns>
         public string PackLogs(IZipHelper ZipHelper, string LogFolder)
         {
             return LogHelper.PackLogs(ZipHelper, LogFolder);

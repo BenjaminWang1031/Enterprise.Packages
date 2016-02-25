@@ -1,5 +1,5 @@
 ﻿@Dll Name: Enterprise.Component.Log4DNET
-@Version: 0.0.0.1
+@Version: 1.0.0.1
 @Author: Infosys
 @Dec: This is a common log component which was built based on log4Net.
 @Has been used in following projects: OASIS/Mounting Kits/...
@@ -15,50 +15,12 @@
 **************************************************************************************************************
 2. Add following section to web.config/configuration section, you can only add the appender which you need.
 **************************************************************************************************************
-
-<log4net debug="false">
+ <!--Log4Net SECTION-->
+ <log4net debug="false">
     <!--Exception-->
-    <appender name="ExceptionLog" type="log4net.Appender.RollingFileAppender" LEVEL="WARN">
+    <appender name="ExceptionLog" type="log4net.Appender.RollingFileAppender" LEVEL="ERROR">
       <encoding value="utf-8" />
-      <param name="File" value="Log\Exception.txt" />
-      <param name="datePattern" value="MM-dd HH:mm" />
-      <param name="AppendToFile" value="true" />
-      <param name="MaxSizeRollBackups" value="1000000" />
-      <param name="MaximumFileSize" value="4MB" />
-      <param name="RollingStyle" value="Size" />
-      <param name="StaticLogFileName" value="true" />
-      <filter type="log4net.Filter.LevelRangeFilter">
-        <param name="levelMin" value="WARN" />
-        <param name="levelMax" value="WARN" />
-      </filter>
-      <layout type="log4net.Layout.PatternLayout">
-        <param name="ConversionPattern" value="%m%n" />
-        <!--[%t] [%class.%method]-->
-      </layout>
-    </appender>
-    <!--Big Queries-->
-    <appender name="QueryLog" type="log4net.Appender.RollingFileAppender" LEVEL="FATAL">
-      <encoding value="utf-8" />
-      <param name="File" value="Log\Query.txt" />
-      <param name="datePattern" value="MM-dd HH:mm" />
-      <param name="AppendToFile" value="true" />
-      <param name="MaxSizeRollBackups" value="1000000" />
-      <param name="MaximumFileSize" value="4MB" />
-      <param name="RollingStyle" value="Size" />
-      <param name="StaticLogFileName" value="true" />
-      <filter type="log4net.Filter.LevelRangeFilter">
-        <param name="levelMin" value="FATAL" />
-        <param name="levelMax" value="FATAL" />
-      </filter>
-      <layout type="log4net.Layout.PatternLayout">
-        <param name="ConversionPattern" value="%m%n" />
-        <!--[%t] [%class.%method]-->
-      </layout>
-    </appender>
-    <!--Users-->
-    <appender name="UsersLog" type="log4net.Appender.RollingFileAppender" LEVEL="ERROR">
-      <encoding value="utf-8" />
-      <param name="File" value="Log\Users.txt" />
+      <param name="File" value="Log\Error.txt" />
       <param name="datePattern" value="MM-dd HH:mm" />
       <param name="AppendToFile" value="true" />
       <param name="MaxSizeRollBackups" value="1000000" />
@@ -71,13 +33,30 @@
       </filter>
       <layout type="log4net.Layout.PatternLayout">
         <param name="ConversionPattern" value="%m%n" />
-        <!--[%t] [%class.%method]-->
       </layout>
     </appender>
+    <!-- Users-->
+    <appender name="UsersLog" type="log4net.Appender.RollingFileAppender" LEVEL="INFO">
+      <encoding value="utf-8" />
+      <param name="File" value="Log\Users.txt" />
+      <param name="datePattern" value="MM-dd HH:mm" />
+      <param name="AppendToFile" value="true" />
+      <param name="MaxSizeRollBackups" value="1000000" />
+      <param name="MaximumFileSize" value="4MB" />
+      <param name="RollingStyle" value="Size" />
+      <param name="StaticLogFileName" value="true" />
+      <filter type="log4net.Filter.LevelRangeFilter">
+        <param name="levelMin" value="INFO" />
+        <param name="levelMax" value="INFO" />
+      </filter>
+      <layout type="log4net.Layout.PatternLayout">
+        <param name="ConversionPattern" value="%m%n" />
+      </layout>
+    </appender>
+    <!--appender-ref-->
     <root>
-      <level value="WARN" />
+      <level value="INFO" />
       <appender-ref ref="ExceptionLog" />
-      <appender-ref ref="QueryLog" />
       <appender-ref ref="UsersLog" />
     </root>
   </log4net>

@@ -9,7 +9,7 @@ using System.Reflection;
 namespace Enterprise.Core.Interface.Log
 {
     /// <summary>
-    /// Log exception
+    /// Log exception helper
     /// </summary>
     public interface ILogExceptionHelper : ILogHelper
     {

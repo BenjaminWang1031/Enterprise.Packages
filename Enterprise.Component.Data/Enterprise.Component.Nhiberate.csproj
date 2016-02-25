@@ -54,7 +54,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\DBManager.cs" />
     <Compile Include="Repositories\SessionFactory.cs" />
-    <Compile Include="Repositories\OperateType.cs" />
     <Compile Include="Specification\AndSpecification.cs" />
     <Compile Include="Specification\CompositeSpecification.cs" />
     <Compile Include="Specification\DirectSpecification.cs" />

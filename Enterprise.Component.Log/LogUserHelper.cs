@@ -8,8 +8,18 @@ using Enterprise.Core.Interface.Common;
 
 namespace Enterprise.Component.Log4Net
 {
+    /// <summary>
+    /// Log user activities
+    /// @Author:Benjamin Wang
+    /// </summary>
     public class LogUserHelper: ILogUserHelper
     {
+        /// <summary>
+        /// Log user
+        /// @Author:Benjamin Wang
+        /// </summary>
+        /// <param name="MoudleInfo"></param>
+        /// <param name="CurrentUserInfo"></param>
         public void LogUser(string MoudleInfo, UserInfo CurrentUserInfo)
         {
             var log = new LogHelper(this.GetType());
@@ -24,18 +34,28 @@ namespace Enterprise.Component.Log4Net
             sb.Append(String.Format("{0},", ReplaceDot(CurrentUserInfo.Org)));
             sb.Append(String.Format("{0},", ReplaceDot(CurrentUserInfo.Ip)));
             sb.Append(String.Format("{0}", CurrentUserInfo.UserId));
-            log.LogError(sb.ToString());
+            //To use the info level logger of log4net
+            log.LogInfo(sb.ToString());
         }
 
+        /// <summary>
+        /// @Author:Benjamin Wang
+        /// @Dec: To replace ',' to '.'
+        /// </summary>
+        /// <param name="Info"></param>
+        /// <returns></returns>
         private string ReplaceDot(string Info)
         { 
             return string.IsNullOrEmpty(Info)?"":Info.Replace(",", ".");
         }
 
-        public void Init() {
-            LogHelper.Init();
-        }
-
+        /// <summary>
+        /// Pack logs
+        /// @Author:Benjamin Wang
+        /// </summary>
+        /// <param name="ZipHelper"></param>
+        /// <param name="LogFolder"></param>
+        /// <returns></returns>
         public string PackLogs(IZipHelper ZipHelper, string LogFolder)
         {
             return LogHelper.PackLogs(ZipHelper, LogFolder );

@@ -10,61 +10,172 @@ using Enterprise.Core.Interface.Data;
 
 namespace Enterprise.Core.Interface.Data
 {
+    /// <summary>
+    /// @Dec: Base OR Mapping interface
+    /// @Author:Benjamin Wang
+    /// @Date:02/2016
+    /// </summary>
     public interface IDBManager : IDBBase
     {
+        #region Add
+        
         /// <summary>
-        /// Add function
+        /// Add a single new entity
         /// </summary>
         /// <param name="EntityObj"></param>
         void Add(IEntityRoot EntityObj);
-        void Add(List<IEntityRoot> EntityList);
 
         /// <summary>
-        /// Update function
+        /// Add a list of new entities
+        /// </summary>
+        /// <param name="EntityList"></param>
+        void Add(List<IEntityRoot> EntityList);
+
+        #endregion
+
+        #region Update
+           
+        /// <summary>
+        /// Update a single entity
         /// </summary>
         /// <param name="EntityObj"></param>
         void Update(IEntityRoot EntityObj);
-        void Update(List<IEntityRoot> EntityList);
 
         /// <summary>
-        /// Delete function
+        /// Update a list of entities
+        /// </summary>
+        /// <param name="EntityList"></param>
+        void Update(List<IEntityRoot> EntityList);
+
+        #endregion
+
+        #region Delete
+             
+        /// <summary>
+        /// Delete a single entity by entity
         /// </summary>
         /// <param name="EntityObj"></param>
         void Delete(IEntityRoot EntityObj);
-        void Delete(List<IEntityRoot> list);
-        void Delete<TEntityRoot>(object key) where TEntityRoot : class,new();        
 
         /// <summary>
-        /// Query function
+        /// Delete a single entity by its key value
+        /// TODO: Delete by Key function...Composite Primary Key
+        /// </summary>
+        /// <typeparam name="TEntityRoot"></typeparam>
+        /// <param name="key"></param>
+        void Delete<TEntityRoot>(object key) where TEntityRoot : class,new();   
+
+        /// <summary>
+        /// Delete a list of entities
+        /// </summary>
+        /// <param name="list"></param>
+        void Delete(List<IEntityRoot> list);
+
+        #endregion
+
+        #region Query
+       
+        /// <summary>
+        /// Query a single entity by its key
         /// </summary>
         /// <typeparam name="EntityRoot"></typeparam>
         /// <param name="specification"></param>
         /// <returns></returns>
-        IEntityRoot Get<IEntityRoot>(object key) where IEntityRoot : class,new();
-        List<TEntityRoot> GetAll<TEntityRoot>() where TEntityRoot : class,new();
-        TEntityRoot Get<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class,new();
-        List<TEntityRoot> GetAll<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class,new();
-        List<TEntityRoot> GetAll<TEntityRoot>(Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class,new();
-        List<TEntityRoot> GetAll<TEntityRoot>(ISpecification<TEntityRoot> specification, Expression<Func<TEntityRoot, object>> sortPredicate, DBSortOrder sortOrder) where TEntityRoot : class,new();
+        IEntityRoot GetEntity<IEntityRoot>(object key) where IEntityRoot : class,new();
 
         /// <summary>
-        /// Paged query
+        /// Query all the entities by entity type
+        /// </summary>
+        /// <typeparam name="TEntityRoot"></typeparam>
+        /// <returns></returns>
+        List<TEntityRoot> GetEntityList<TEntityRoot>() where TEntityRoot : class,new();
+
+        /// <summary>
+        /// Query a single entity by specific criteria
+        /// </summary>
+        /// <typeparam name="TEntityRoot"></typeparam>
+        /// <param name="specification"></param>
+        /// <returns></returns>
+        TEntityRoot GetEntity<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class,new();
+
+        /// <summary>
+        /// Query a list of entities by specific criteria
+        /// </summary>
+        /// <typeparam name="TEntityRoot"></typeparam>
+        /// <param name="specification"></param>
+        /// <returns></returns>
+        List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class,new();
+
+        /// <summary>
+        ///  Query a list of entities with order by clause
+        /// </summary>
+        /// <typeparam name="TEntityRoot"></typeparam>
+        /// <param name="SortPredicate"></param>
+        /// <param name="SortOrder"></param>
+        /// <returns></returns>
+        List<TEntityRoot> GetEntityList<TEntityRoot>(Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class,new();
+
+        /// <summary>
+        /// Query a list of entities by specific criteria with order by clause
+        /// </summary>
+        /// <typeparam name="TEntityRoot"></typeparam>
+        /// <param name="specification"></param>
+        /// <param name="sortPredicate"></param>
+        /// <param name="sortOrder"></param>
+        /// <returns></returns>
+        List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification, Expression<Func<TEntityRoot, object>> sortPredicate, DBSortOrder sortOrder) where TEntityRoot : class,new();
+
+        /// <summary>
+        /// Query data with returning paged data
         /// </summary>
         /// <typeparam name="TAggregateRoot"></typeparam>
         /// <param name="pageIndex"></param>
         /// <param name="pageCount"></param>
         /// <returns></returns>
-        IEnumerable<TAggregateRoot> GetPaged<TAggregateRoot>(int PageIndex, int PageSize)
-            where TAggregateRoot : class,new();
-        IEnumerable<TAggregateRoot> GetPaged<TAggregateRoot>(int PageIndex, int PageSize, ISpecification<TAggregateRoot> Specification)
-            where TAggregateRoot : class,new();
-        IEnumerable<TAggregateRoot> GetPaged<TAggregateRoot>(int PageIndex, int PageSize, Expression<Func<TAggregateRoot, dynamic>> SortPredicate, DBSortOrder SortOrder)
-            where TAggregateRoot : class,new();
-        IEnumerable<TAggregateRoot> GetPaged<TAggregateRoot>(int PageIndex, int PageSize, ISpecification<TAggregateRoot> Specification, Expression<Func<TAggregateRoot, dynamic>> SortPredicate, DBSortOrder SortOrder)
+        IEnumerable<TAggregateRoot> GetPagedList<TAggregateRoot>(int PageIndex, int PageSize)
             where TAggregateRoot : class,new();
 
         /// <summary>
-        /// Commit
+        /// Query data with returning paged data
+        /// </summary>
+        /// <typeparam name="TAggregateRoot"></typeparam>
+        /// <param name="PageIndex"></param>
+        /// <param name="PageSize"></param>
+        /// <param name="Specification"></param>
+        /// <returns></returns>
+        IEnumerable<TAggregateRoot> GetPagedList<TAggregateRoot>(int PageIndex, int PageSize, ISpecification<TAggregateRoot> Specification)
+            where TAggregateRoot : class,new();
+
+        /// <summary>
+        /// Query data with returning paged data
+        /// </summary>
+        /// <typeparam name="TAggregateRoot"></typeparam>
+        /// <param name="PageIndex"></param>
+        /// <param name="PageSize"></param>
+        /// <param name="SortPredicate"></param>
+        /// <param name="SortOrder"></param>
+        /// <returns></returns>
+        IEnumerable<TAggregateRoot> GetPagedList<TAggregateRoot>(int PageIndex, int PageSize, Expression<Func<TAggregateRoot, dynamic>> SortPredicate, DBSortOrder SortOrder)
+            where TAggregateRoot : class,new();
+
+        /// <summary>
+        /// Query data with returning paged data
+        /// </summary>
+        /// <typeparam name="TAggregateRoot"></typeparam>
+        /// <param name="PageIndex"></param>
+        /// <param name="PageSize"></param>
+        /// <param name="Specification"></param>
+        /// <param name="SortPredicate"></param>
+        /// <param name="SortOrder"></param>
+        /// <returns></returns>
+        IEnumerable<TAggregateRoot> GetPagedList<TAggregateRoot>(int PageIndex, int PageSize, ISpecification<TAggregateRoot> Specification, Expression<Func<TAggregateRoot, dynamic>> SortPredicate, DBSortOrder SortOrder)
+            where TAggregateRoot : class,new();
+
+        #endregion
+
+        /// <summary>
+        /// Commit the changes of the entities
+        /// Note: this doesn't contain the sql string part
         /// </summary>
         /// <returns></returns>
         bool Commit();
