@@ -122,7 +122,6 @@ C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TestApp\bin\Enterprise
 C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TestApp\bin\Enterprise.Component.Common.dll
 C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TestApp\bin\Enterprise.Component.AdoNet.pdb
 C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TestApp\bin\Enterprise.Component.Common.pdb
-C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\obj\Debug\Enterprise.TestApp.csprojResolveAssemblyReference.cache
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\bin\Enterprise.TestApp.dll
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\bin\Enterprise.TestApp.pdb
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\bin\Antlr3.Runtime.dll
@@ -188,5 +187,6 @@ C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\bin\DotNetOpenAuth.OAu
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\bin\DotNetOpenAuth.OAuth.xml
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\bin\DotNetOpenAuth.OpenId.xml
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\obj\Debug\Enterprise.TestApp.csprojResolveAssemblyReference.cache
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\obj\Debug\Enterprise.TestApp.dll
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestApp\obj\Debug\Enterprise.TestApp.pdb

@@ -54,9 +54,15 @@ namespace Enterprise.Core.Interface.Data
         int ExecuteNonQuery(string SqlString);
 
         /// <summary>
-        /// Set the time in seconds to wait for the command to execute. The default is 600 seconds.
+        /// Set the time in seconds for a connection. The default is 60 seconds.(1 min)
         /// </summary>
-        int Timeout { get; set; }
+        int ConnectionTimeout { get; set; }
+
+        /// <summary>
+        /// Set the time in seconds for a command to be executed. The default is 1800 seconds(30 mins).
+        /// To set it =0 if no timeout is required
+        /// </summary>
+        int CommandTimeout { get; set; }
 
         /// <summary>
         /// Error Message

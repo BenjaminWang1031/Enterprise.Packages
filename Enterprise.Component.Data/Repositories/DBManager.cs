@@ -42,7 +42,9 @@ namespace Enterprise.Component.Nhiberate
         [ThreadStatic]
         private string mErrorMsg;
         [ThreadStatic]
-        private int mTimeout = 600;
+        private int mConnectionTimeout = 60;
+        [ThreadStatic]
+        private int mCommandTimeout = 1800;
         #endregion
 
         #region override
@@ -218,7 +220,7 @@ namespace Enterprise.Component.Nhiberate
         public List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> Specification, Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
         {
             var query = this.mSession.Query<TEntityRoot>()
-                .Where(Specification.SatisfiedBy());
+                .Where(Specification.SatisfiedBy()).Timeout(this.mCommandTimeout);
             switch (SortOrder)
             {
                 case DBSortOrder.Ascending:
@@ -249,7 +251,7 @@ namespace Enterprise.Component.Nhiberate
         public DataTable GetDataTable(string ProcedureName, object[] Param)
         {
             var cmd = mSession.Connection.CreateCommand();
-            cmd.CommandTimeout = this.mTimeout;
+            cmd.CommandTimeout = this.mCommandTimeout;
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = ProcedureName;
             foreach (var o in Param)
@@ -302,7 +304,7 @@ namespace Enterprise.Component.Nhiberate
             try
             {
                 var cmd = mSession.Connection.CreateCommand();
-                cmd.CommandTimeout = this.mTimeout;
+                cmd.CommandTimeout = this.mCommandTimeout;
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = SqlString;
                 var reader = cmd.ExecuteReader();
@@ -331,7 +333,7 @@ namespace Enterprise.Component.Nhiberate
                 {
                     conn.Open();
                     var cmd = conn.CreateCommand();
-                    cmd.CommandTimeout = this.mTimeout;
+                    cmd.CommandTimeout = this.mCommandTimeout;
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = ProcedureName;
                     foreach (var o in Param)
@@ -365,7 +367,7 @@ namespace Enterprise.Component.Nhiberate
                 {
                     conn.Open();
                     var adapter = new SqlDataAdapter(SqlString, conn);
-                    adapter.SelectCommand.CommandTimeout = this.mTimeout;
+                    adapter.SelectCommand.CommandTimeout = this.mCommandTimeout;
                     var dataSet = new System.Data.DataSet();
                     adapter.Fill(dataSet);
                     return dataSet;
@@ -389,7 +391,7 @@ namespace Enterprise.Component.Nhiberate
                 var cmd = mSession.Connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = SqlString;
-                cmd.CommandTimeout = this.mTimeout;
+                cmd.CommandTimeout = this.mCommandTimeout;
                 return cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
@@ -459,7 +461,7 @@ namespace Enterprise.Component.Nhiberate
             where TAggregateRoot : class,new()
         {
 
-            var query = mSession.Query<TAggregateRoot>();
+            var query = mSession.Query<TAggregateRoot>().Timeout(this.mCommandTimeout);
 
             if (Specification != null)
             {
@@ -551,17 +553,32 @@ namespace Enterprise.Component.Nhiberate
         }
 
         /// <summary>
-        /// set the timeout
+        /// set the ConnectionTimeout
         /// </summary>
-        public int Timeout
+        public int ConnectionTimeout
         {
             get
             {
-                return this.mTimeout;
+                return this.mConnectionTimeout;
             }
             set
             {
-                this.mTimeout = value;
+                this.mConnectionTimeout = value;
+            }
+        }
+
+        /// <summary>
+        /// set the CommandTimeout
+        /// </summary>
+        public int CommandTimeout
+        {
+            get
+            {
+                return this.mCommandTimeout;
+            }
+            set
+            {
+                this.mCommandTimeout = value;
             }
         }
 

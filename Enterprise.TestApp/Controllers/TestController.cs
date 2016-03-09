@@ -35,13 +35,15 @@ namespace Enterprise.TestApp.Controllers
             //TestAddData();
             //TestQueryData();
 
-            //var helper = new NHTestHelper(this);
+            var helper = new NHTestHelper(this);
+
             //helper.TestAdd();
             //helper.TestUpdate();
             //helper.TestQuery();
             //helper.TestPaged();
             //helper.TestSQL();
-            //helper.TestQueryAll();
+            for (var i = 0; i < 100000;i++ )
+                helper.TestQueryAll();
             //helper.TestProcedure();
 
             //var helper = new AdoNetHelper(this);
@@ -117,7 +119,7 @@ namespace Enterprise.TestApp.Controllers
         {
             using (var mDBManager = new DBManager())
             {
-                var entity = mDBManager.Get<SYS_DEPT>(Guid.Parse("04CB793C-6866-4706-AAD2-0455BE430560"));
+                var entity = mDBManager.GetEntity<SYS_DEPT>(Guid.Parse("04CB793C-6866-4706-AAD2-0455BE430560"));
                 if (entity != null)
                 {
                     entity.SD_NAME = "Ben" + Guid.NewGuid().ToString();
@@ -132,7 +134,7 @@ namespace Enterprise.TestApp.Controllers
             using (var mDBManager = new DBManager())
             {
                 //get by key
-                var entity = mDBManager.Get<SYS_DEPT>(Guid.Parse("04CB793C-6866-4706-AAD2-0455BE430560"));
+                var entity = mDBManager.GetEntity<SYS_DEPT>(Guid.Parse("04CB793C-6866-4706-AAD2-0455BE430560"));
 
                 //get by spec
                 var spec = Specification<SYS_DEPT>.Create(p => p.SD_NAME == "TEST1");
@@ -155,7 +157,7 @@ namespace Enterprise.TestApp.Controllers
                 var pageSize = 20;
                 var totalCount = 0;
 
-                var list = mDBManager.GetPaged<SYS_DEPT>(pageIndex, pageSize, e => e.SD_ORDER, DBSortOrder.Ascending);
+                var list = mDBManager.GetPagedList<SYS_DEPT>(pageIndex, pageSize, e => e.SD_ORDER, DBSortOrder.Ascending);
                 var sb = new StringBuilder();
                 foreach (var entity in list)
                 {
@@ -195,7 +197,7 @@ namespace Enterprise.TestApp.Controllers
         {
             using (var mDBManager = new DBManager())
             {
-                mCurrentController.ViewBag.QueryTable = mDBManager.GetAll<SYS_DEPT>();
+                mCurrentController.ViewBag.QueryTable = mDBManager.GetEntityList<SYS_DEPT>();
             }
         }
     }

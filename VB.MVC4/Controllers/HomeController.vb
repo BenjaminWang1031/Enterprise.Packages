@@ -1,5 +1,4 @@
-﻿Imports Enterprise.Core.Interface.Log
-Imports Enterprise.Component.Log4Net
+﻿
 
 Public Class HomeController
     Inherits System.Web.Mvc.Controller

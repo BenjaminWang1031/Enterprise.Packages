@@ -18,9 +18,14 @@ namespace Enterprise.Component.AdoNet
         private string mConnectString;
         private string mErrorMsg;
         /// <summary>
-        /// Default to 600 seconds
+        /// Default to 60 seconds
         /// </summary>
-        private int mTimeout = 600;
+        private int mConnectionTimeout = 60;
+
+        /// <summary>
+        ///Default to 1800 seconds, 30 mins
+        /// </summary>
+        private int mCommandTimeout = 1800;
 
         #endregion
 
@@ -47,7 +52,7 @@ namespace Enterprise.Component.AdoNet
                 {
                     conn.Open();
                     var cmd = conn.CreateCommand();
-                    cmd.CommandTimeout = this.mTimeout;
+                    cmd.CommandTimeout = this.mConnectionTimeout;
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = ProcedureName;
                     foreach (var o in Param)
@@ -92,7 +97,7 @@ namespace Enterprise.Component.AdoNet
                 {
                     conn.Open();
                     var cmd = conn.CreateCommand();
-                    cmd.CommandTimeout = 120000;
+                    cmd.CommandTimeout = this.mConnectionTimeout;
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.CommandText = ProcedureName;
                     foreach (var o in Param)
@@ -120,6 +125,7 @@ namespace Enterprise.Component.AdoNet
                 {
                     conn.Open();
                     var cmd = conn.CreateCommand();
+                    cmd.CommandTimeout = this.mConnectionTimeout;
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = SqlString;
                     var reader = cmd.ExecuteReader();
@@ -144,6 +150,7 @@ namespace Enterprise.Component.AdoNet
                     conn.Open();
                     var adapter = new SqlDataAdapter(SqlString, conn);
                     var dataSet = new DataSet();
+                    adapter.SelectCommand.CommandTimeout = this.mConnectionTimeout;
                     adapter.Fill(dataSet);
                     return dataSet;
                 }
@@ -177,17 +184,42 @@ namespace Enterprise.Component.AdoNet
 
         protected override void Dispose(bool disposing)
         {
-            //if (disposing)
-            //{
-            //    base.Dispose();
-            //}
+            if (disposing)
+            {
+                base.Dispose();
+            }
         }
 
-        public int Timeout
+        /// <summary>
+        /// set the ConnectionTimeout
+        /// </summary>
+        public int ConnectionTimeout
         {
-            get { return this.mTimeout; }
-            set { this.mTimeout = value; }
+            get
+            {
+                return this.mConnectionTimeout;
+            }
+            set
+            {
+                this.mConnectionTimeout = value;
+            }
         }
+
+        /// <summary>
+        /// set the CommandTimeout
+        /// </summary>
+        public int CommandTimeout
+        {
+            get
+            {
+                return this.mCommandTimeout;
+            }
+            set
+            {
+                this.mCommandTimeout = value;
+            }
+        }
+
         public string ErrorMsg
         {
             get { return this.mErrorMsg; }
