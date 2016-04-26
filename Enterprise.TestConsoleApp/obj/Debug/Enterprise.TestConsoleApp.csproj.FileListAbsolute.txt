@@ -4,3 +4,9 @@ C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TestConsoleApp\bin\Deb
 C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TestConsoleApp\obj\Debug\Enterprise.TestConsoleApp.csprojResolveAssemblyReference.cache
 C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TestConsoleApp\obj\Debug\Enterprise.TestConsoleApp.exe
 C:\Benjamin\DoNet\Benjamin\Enterprise.Packages\Enterprise.TestConsoleApp\obj\Debug\Enterprise.TestConsoleApp.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestConsoleApp\bin\Debug\Enterprise.TestConsoleApp.exe.config
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestConsoleApp\bin\Debug\Enterprise.TestConsoleApp.exe
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestConsoleApp\bin\Debug\Enterprise.TestConsoleApp.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestConsoleApp\obj\Debug\Enterprise.TestConsoleApp.csprojResolveAssemblyReference.cache
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestConsoleApp\obj\Debug\Enterprise.TestConsoleApp.exe
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TestConsoleApp\obj\Debug\Enterprise.TestConsoleApp.pdb

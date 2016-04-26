@@ -65,9 +65,9 @@ namespace Enterprise.Component.Nhiberate
         public DBManager()
             : this("") { }
 
-        public DBManager(string ConfigFileName)
+        public DBManager(string ConnectionString)
         {
-            mDatabaseSessionFactory = new SessionFactory(ConfigFileName);
+            mDatabaseSessionFactory = new SessionFactory(ConnectionString);
             mSession = mDatabaseSessionFactory.Session;
         }
         #endregion
@@ -174,11 +174,11 @@ namespace Enterprise.Component.Nhiberate
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <param name="key"></param>
         /// <returns></returns>
-        public TEntityRoot GetEntity<TEntityRoot>(object Key) where TEntityRoot : class,new()
+        public IEntityRoot GetEntity<TEntityRoot>(object Key) where TEntityRoot : class,new()
         {
             if (Key == null)
                 return null;
-            return mSession.Get<TEntityRoot>(Key);
+            return (IEntityRoot)mSession.Get<TEntityRoot>(Key);
         }
 
         /// <summary>
@@ -187,10 +187,10 @@ namespace Enterprise.Component.Nhiberate
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <param name="specification"></param>
         /// <returns></returns>
-        public TEntityRoot GetEntity<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
+        public IEntityRoot GetEntity<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
         {
             var list = mSession.Query<TEntityRoot>().Where(specification.SatisfiedBy()).ToList();
-            return (list != null && list.Count > 0) ? list[0] : null;
+            return (list != null && list.Count > 0) ? (IEntityRoot)list[0] : null;
         }
 
         #endregion
@@ -202,22 +202,22 @@ namespace Enterprise.Component.Nhiberate
         /// </summary>
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <returns></returns>
-        public List<TEntityRoot> GetEntityList<TEntityRoot>() where TEntityRoot : class,new()
+        public List<IEntityRoot> GetEntityList<TEntityRoot>() where TEntityRoot : class,new()
         {
             return GetEntityList(new TrueSpecification<TEntityRoot>(), null, DBSortOrder.Unspecified).ToList();
         }
 
-        public List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
+        public List<IEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
         {
             return GetEntityList(specification, null, DBSortOrder.Unspecified);
         }
 
-        public List<TEntityRoot> GetEntityList<TEntityRoot>(Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
+        public List<IEntityRoot> GetEntityList<TEntityRoot>(Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
         {
             return GetEntityList(new TrueSpecification<TEntityRoot>(), SortPredicate, SortOrder);
         }
 
-        public List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> Specification, Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
+        public List<IEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> Specification, Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
         {
             var query = this.mSession.Query<TEntityRoot>()
                 .Where(Specification.SatisfiedBy()).Timeout(this.mCommandTimeout);
@@ -225,17 +225,17 @@ namespace Enterprise.Component.Nhiberate
             {
                 case DBSortOrder.Ascending:
                     if (SortPredicate != null)
-                        return query.OrderBy(SortPredicate).AsEnumerable().ToList();
+                        return query.OrderBy(SortPredicate).AsEnumerable().ToList().Cast <IEntityRoot>().ToList();
                     break;
                 case DBSortOrder.Descending:
                     if (SortPredicate != null)
-                        return query.OrderByDescending(SortPredicate).AsEnumerable().ToList();
+                        return query.OrderByDescending(SortPredicate).AsEnumerable().ToList().Cast<IEntityRoot>().ToList();;
                     break;
                 default:
                     break;
             }
 
-            return query.AsEnumerable().ToList();
+            return query.AsEnumerable().ToList().Cast<IEntityRoot>().ToList();;
         }
 
         #endregion

@@ -33,7 +33,7 @@ namespace Enterprise.Core.Interface.Data
         /// </summary>
         protected void ExplicitDispose()
         {
-            this.Dispose(true);
+            //this.Dispose(true);
             GC.SuppressFinalize(this);
         }
         #endregion

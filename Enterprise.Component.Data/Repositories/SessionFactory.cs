@@ -23,7 +23,7 @@ namespace Enterprise.Component.Nhiberate
 
         #region Constructors
 
-        internal SessionFactory(string configFileName)
+        internal SessionFactory(string ConnectionString)
         {
             if (sessionFactory == null)
             {
@@ -31,12 +31,9 @@ namespace Enterprise.Component.Nhiberate
                 {
                     var nhibernateConfig = new Configuration();
                     //Load from a specified section if provided
-                    //nhibernateConfig.Properties["connection.connection_string"] = System.Configuration.ConfigurationManager.AppSettings["connection_string"];
-                    if (string.IsNullOrEmpty(configFileName))
-                        nhibernateConfig.Configure();
-                    else
-                        nhibernateConfig.Configure(configFileName);
-
+                    if (!string.IsNullOrEmpty(ConnectionString))
+                        nhibernateConfig.Properties["connection.connection_string"] = ConnectionString;
+                    nhibernateConfig.Configure();
                     sessionFactory = nhibernateConfig.BuildSessionFactory();
                 }
                 catch (Exception ex)

@@ -96,7 +96,7 @@ namespace Enterprise.Component.Log4Net
         /// <summary>
         /// Init log configure
         /// </summary>
-        public static void Init()
+        private  static void Init()
         {
             if (mLog4NetNative != null) return;
             var mSection = ConfigurationManager.GetSection("log4net");
@@ -122,6 +122,7 @@ namespace Enterprise.Component.Log4Net
 
                 var mFileName = DateTime.Now.ToString("yyyyMMddHHmmss") + ".zip";
                 ZipHelper.ZipFolder(LogFolder, LogFolder + "//" + mFileName, false, list);
+                //TODO: Need to get the site/folder name from IIS
                 var urlAuthority = System.Web.HttpContext.Current.Request.Url.Authority;
                 return "Logs were packed:[" + String.Format("<a href='Http://{0}/{1}/{2}'>{2}</a>", urlAuthority, "Log", mFileName) + "]";
             }

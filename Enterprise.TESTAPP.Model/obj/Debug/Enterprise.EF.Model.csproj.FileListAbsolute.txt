@@ -12,3 +12,4 @@ C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TESTAPP.Model\bin\Debug\Entity
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TESTAPP.Model\bin\Debug\EntityFramework.xml
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TESTAPP.Model\obj\Debug\Enterprise.EF.Model.dll
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TESTAPP.Model\obj\Debug\Enterprise.EF.Model.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.TESTAPP.Model\obj\Debug\Enterprise.EF.Model.csprojResolveAssemblyReference.cache
