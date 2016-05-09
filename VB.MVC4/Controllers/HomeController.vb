@@ -2,7 +2,7 @@
 
 Public Class HomeController
     Inherits System.Web.Mvc.Controller
-    Public Shared MyExceptionHelper As ILogExceptionHelper = New LogExceptionHelper
+
 
     Function Index() As ActionResult
         ViewData("Message") = "Modify this template to jump-start your ASP.NET MVC application."

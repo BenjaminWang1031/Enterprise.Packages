@@ -81,8 +81,7 @@ namespace Enterprise.Core.Interface.Data
         /// <typeparam name="EntityRoot"></typeparam>
         /// <param name="specification"></param>
         /// <returns></returns>
-        IEntityRoot GetEntity<Entity>(object key) where Entity : class,new();
-
+        Entity GetEntity<Entity>(object key) where Entity : class,new();
 
         /// <summary>
         /// Query a single entity by specific criteria
@@ -90,14 +89,23 @@ namespace Enterprise.Core.Interface.Data
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <param name="specification"></param>
         /// <returns></returns>
-        IEntityRoot GetEntity<Entity>(ISpecification<Entity> specification) where Entity : class,new();
+        Entity GetEntity<Entity>(ISpecification<Entity> specification) where Entity : class,new();
+
+        /// <summary>
+        /// Query a single entity by Expression
+        /// @:Newly added by Benjamin 05/06/2016
+        /// </summary>
+        /// <typeparam name="Entity"></typeparam>
+        /// <param name="where"></param>
+        /// <returns></returns>
+        Entity GetEntity<Entity>(Expression<Func<Entity, bool>> where) where Entity : class, new();
 
         /// <summary>
         /// Query all the entities by entity type
         /// </summary>
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <returns></returns>
-        List<IEntityRoot> GetEntityList<TEntityRoot>() where TEntityRoot : class,new();
+        List<TEntityRoot> GetEntityList<TEntityRoot>() where TEntityRoot : class,new();
 
         /// <summary>
         /// Query a list of entities by specific criteria
@@ -105,7 +113,16 @@ namespace Enterprise.Core.Interface.Data
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <param name="specification"></param>
         /// <returns></returns>
-        List<IEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class,new();
+        List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class,new();
+
+        /// <summary>
+        /// Query a list of entities by Expression
+        /// @:Newly added by Benjamin 05/06/2016
+        /// </summary>
+        /// <typeparam name="TEntityRoot"></typeparam>
+        /// <param name="where"></param>
+        /// <returns></returns>
+        List<TEntityRoot> GetEntityList<TEntityRoot>(Expression<Func<TEntityRoot, bool>> where) where TEntityRoot : class,new();
 
         /// <summary>
         ///  Query a list of entities with order by clause
@@ -114,7 +131,7 @@ namespace Enterprise.Core.Interface.Data
         /// <param name="SortPredicate"></param>
         /// <param name="SortOrder"></param>
         /// <returns></returns>
-        List<IEntityRoot> GetEntityList<TEntityRoot>(Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class,new();
+        List<TEntityRoot> GetEntityList<TEntityRoot>(Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class,new();
 
         /// <summary>
         /// Query a list of entities by specific criteria with order by clause
@@ -124,7 +141,7 @@ namespace Enterprise.Core.Interface.Data
         /// <param name="sortPredicate"></param>
         /// <param name="sortOrder"></param>
         /// <returns></returns>
-        List<IEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification, Expression<Func<TEntityRoot, object>> sortPredicate, DBSortOrder sortOrder) where TEntityRoot : class,new();
+        List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification, Expression<Func<TEntityRoot, object>> sortPredicate, DBSortOrder sortOrder) where TEntityRoot : class,new();
 
         /// <summary>
         /// Query data with returning paged data

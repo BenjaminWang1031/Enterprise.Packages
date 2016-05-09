@@ -15,6 +15,7 @@ using NHibernate.Cfg;
 using NHibernate.Linq;
 using NHibernate.Transform;
 using Enterprise.Core.Interface.Data;
+using Enterprise.Core.Interface.Data.Specification;
 using Enterprise.Component.Nhiberate.Base;
 
 namespace Enterprise.Component.Nhiberate
@@ -174,11 +175,11 @@ namespace Enterprise.Component.Nhiberate
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <param name="key"></param>
         /// <returns></returns>
-        public IEntityRoot GetEntity<TEntityRoot>(object Key) where TEntityRoot : class,new()
+        public TEntityRoot GetEntity<TEntityRoot>(object Key) where TEntityRoot : class,new()
         {
             if (Key == null)
                 return null;
-            return (IEntityRoot)mSession.Get<TEntityRoot>(Key);
+            return mSession.Get<TEntityRoot>(Key);
         }
 
         /// <summary>
@@ -187,37 +188,54 @@ namespace Enterprise.Component.Nhiberate
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <param name="specification"></param>
         /// <returns></returns>
-        public IEntityRoot GetEntity<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
+        public TEntityRoot GetEntity<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
         {
             var list = mSession.Query<TEntityRoot>().Where(specification.SatisfiedBy()).ToList();
-            return (list != null && list.Count > 0) ? (IEntityRoot)list[0] : null;
+            return (list != null && list.Count > 0) ? list[0] : null;
+        }
+
+        /// <summary>
+        /// Get a single entity with Expression
+        /// </summary>
+        /// <typeparam name="TEntityRoot"></typeparam>
+        /// <param name="where"></param>
+        /// <returns></returns>
+        public TEntityRoot GetEntity<TEntityRoot>(Expression<Func<TEntityRoot, bool>> where) where TEntityRoot : class, new()
+        {
+            var list = mSession.Query<TEntityRoot>().Where(where).ToList();
+            return (list != null && list.Count > 0) ? list[0] : null;
         }
 
         #endregion
 
         #region Query entity list
 
+        public List<TEntityRoot> GetEntityList<TEntityRoot>(Expression<Func<TEntityRoot, bool>> where) where TEntityRoot : class,new()
+        {
+            return mSession.Query<TEntityRoot>().Where(where).ToList();
+        }
+
         /// <summary>
         /// Get all entities in a list
         /// </summary>
         /// <typeparam name="TEntityRoot"></typeparam>
         /// <returns></returns>
-        public List<IEntityRoot> GetEntityList<TEntityRoot>() where TEntityRoot : class,new()
+        public List<TEntityRoot> GetEntityList<TEntityRoot>() where TEntityRoot : class,new()
         {
             return GetEntityList(new TrueSpecification<TEntityRoot>(), null, DBSortOrder.Unspecified).ToList();
         }
 
-        public List<IEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
+        public List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> specification) where TEntityRoot : class, new()
         {
             return GetEntityList(specification, null, DBSortOrder.Unspecified);
         }
 
-        public List<IEntityRoot> GetEntityList<TEntityRoot>(Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
+        public List<TEntityRoot> GetEntityList<TEntityRoot>(Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
         {
             return GetEntityList(new TrueSpecification<TEntityRoot>(), SortPredicate, SortOrder);
         }
 
-        public List<IEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> Specification, Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
+        public List<TEntityRoot> GetEntityList<TEntityRoot>(ISpecification<TEntityRoot> Specification, Expression<Func<TEntityRoot, object>> SortPredicate, DBSortOrder SortOrder) where TEntityRoot : class, new()
         {
             var query = this.mSession.Query<TEntityRoot>()
                 .Where(Specification.SatisfiedBy()).Timeout(this.mCommandTimeout);
@@ -225,17 +243,17 @@ namespace Enterprise.Component.Nhiberate
             {
                 case DBSortOrder.Ascending:
                     if (SortPredicate != null)
-                        return query.OrderBy(SortPredicate).AsEnumerable().ToList().Cast <IEntityRoot>().ToList();
+                        return query.OrderBy(SortPredicate).AsEnumerable().ToList();
                     break;
                 case DBSortOrder.Descending:
                     if (SortPredicate != null)
-                        return query.OrderByDescending(SortPredicate).AsEnumerable().ToList().Cast<IEntityRoot>().ToList();;
+                        return query.OrderByDescending(SortPredicate).AsEnumerable().ToList();
                     break;
                 default:
                     break;
             }
 
-            return query.AsEnumerable().ToList().Cast<IEntityRoot>().ToList();;
+            return query.AsEnumerable().ToList();
         }
 
         #endregion

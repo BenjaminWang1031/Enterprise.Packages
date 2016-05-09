@@ -47,6 +47,15 @@
     <Compile Include="Interface\Data\IDBManager.cs" />
     <Compile Include="Interface\Data\IEntityRoot.cs" />
     <Compile Include="Interface\Data\ISpecification.cs" />
+    <Compile Include="Interface\Data\Specification\AndSpecification.cs" />
+    <Compile Include="Interface\Data\Specification\CompositeSpecification.cs" />
+    <Compile Include="Interface\Data\Specification\DirectSpecification.cs" />
+    <Compile Include="Interface\Data\Specification\ExpressionBuilder.cs" />
+    <Compile Include="Interface\Data\Specification\NotSpecification.cs" />
+    <Compile Include="Interface\Data\Specification\OrSpecification.cs" />
+    <Compile Include="Interface\Data\Specification\ParametersRebinder.cs" />
+    <Compile Include="Interface\Data\Specification\Specification.cs" />
+    <Compile Include="Interface\Data\Specification\TrueSpecification.cs" />
     <Compile Include="Interface\Export\FileType.cs" />
     <Compile Include="Interface\Export\IExportHelper.cs" />
     <Compile Include="Interface\Export\IExportToExcelHelper.cs" />
