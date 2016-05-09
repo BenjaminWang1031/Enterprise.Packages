@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F438510D-1CA0-445F-8456-1596AFC1CA5E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TESTMODEL.EF</RootNamespace>
+    <AssemblyName>TESTMODEL.EF</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DSP_Displacer_Material.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_HeadFlangeSize.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_DisplacerAlternateWeight.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_DisplacerDMR.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_DisplacerWeight.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_MINPB.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_PressreFactor.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_TorqueTubeRate.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Nace.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Pilot.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Sensor.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Sensor_Size_Info.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Sensor_Thickness_Info.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_TT_Material.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_TT_WallThickness.cs">
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TESTMODEL.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TESTMODEL.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TESTMODEL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TESTMODEL.EF6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TESTMODEL.EF6.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="TESTMODEL.EF6.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TESTMODEL.EF6.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="TESTMODEL.EF6.edmx.diagram">
+      <DependentUpon>TESTMODEL.EF6.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TESTMODEL.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TESTMODEL.EF6.edmx</DependentUpon>
+      <LastGenOutput>TESTMODEL.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="TESTMODEL.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TESTMODEL.EF6.edmx</DependentUpon>
+      <LastGenOutput>TESTMODEL.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Enterprise.Core\Enterprise.Core.Interface.csproj">
+      <Project>{180f919d-c594-47b2-8acd-060286e7ad17}</Project>
+      <Name>Enterprise.Core.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

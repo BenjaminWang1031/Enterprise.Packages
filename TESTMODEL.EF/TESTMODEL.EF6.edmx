@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TESTMODEL.EF6.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="TESTMODELEF6StoreContainer">
+          <EntitySet Name="DSP_Displacer_Material" EntityType="TESTMODEL.EF6.Store.DSP_Displacer_Material" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_HeadFlangeSize" EntityType="TESTMODEL.EF6.Store.DSP_HeadFlangeSize" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Matrix_DisplacerAlternateWeight" EntityType="TESTMODEL.EF6.Store.DSP_Matrix_DisplacerAlternateWeight" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Matrix_DisplacerDMR" EntityType="TESTMODEL.EF6.Store.DSP_Matrix_DisplacerDMR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Matrix_DisplacerWeight" EntityType="TESTMODEL.EF6.Store.DSP_Matrix_DisplacerWeight" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Matrix_MINPB" EntityType="TESTMODEL.EF6.Store.DSP_Matrix_MINPB" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Matrix_PressreFactor" EntityType="TESTMODEL.EF6.Store.DSP_Matrix_PressreFactor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Matrix_TorqueTubeRate" EntityType="TESTMODEL.EF6.Store.DSP_Matrix_TorqueTubeRate" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Nace" EntityType="TESTMODEL.EF6.Store.DSP_Nace" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Pilot" EntityType="TESTMODEL.EF6.Store.DSP_Pilot" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Sensor" EntityType="TESTMODEL.EF6.Store.DSP_Sensor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Sensor_Size_Info" EntityType="TESTMODEL.EF6.Store.DSP_Sensor_Size_Info" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_Sensor_Thickness_Info" EntityType="TESTMODEL.EF6.Store.DSP_Sensor_Thickness_Info" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_TT_Material" EntityType="TESTMODEL.EF6.Store.DSP_TT_Material" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DSP_TT_WallThickness" EntityType="TESTMODEL.EF6.Store.DSP_TT_WallThickness" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="DSP_Displacer_Material">
+          <Key>
+            <PropertyRef Name="Material_ID" />
+          </Key>
+          <Property Name="Material_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Material_Name" Type="varchar" Nullable="false" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="DSP_HeadFlangeSize">
+          <Key>
+            <PropertyRef Name="Size_ID" />
+          </Key>
+          <Property Name="Size_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Size_Name" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_DisplacerAlternateWeight">
+          <Key>
+            <PropertyRef Name="Alternate_Weight_ID" />
+          </Key>
+          <Property Name="Alternate_Weight_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="int" />
+          <Property Name="Material_ID" Type="int" />
+          <Property Name="Thickness_ID" Type="int" />
+          <Property Name="Alternate_Weight_Value" Type="decimal" Scale="14" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_DisplacerDMR">
+          <Key>
+            <PropertyRef Name="Info_ID" />
+          </Key>
+          <Property Name="Info_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="int" />
+          <Property Name="Size_ID" Type="int" />
+          <Property Name="DMR_Type" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="DMR_Value" Type="decimal" Scale="3" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_DisplacerWeight">
+          <Key>
+            <PropertyRef Name="Weight_ID" />
+          </Key>
+          <Property Name="Weight_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="int" />
+          <Property Name="Thickness_ID" Type="int" />
+          <Property Name="Weight_Value" Type="int" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_MINPB">
+          <Key>
+            <PropertyRef Name="PB_ID" />
+          </Key>
+          <Property Name="PB_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Pilot_ID" Type="int" />
+          <Property Name="PB_MIN_Value" Type="int" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_PressreFactor">
+          <Key>
+            <PropertyRef Name="Factor_ID" />
+          </Key>
+          <Property Name="Factor_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Material_ID" Type="int" Nullable="false" />
+          <Property Name="Operating_Temperature" Type="numeric" Nullable="false" />
+          <Property Name="Factor_Value" Type="decimal" Nullable="false" Scale="2" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_TorqueTubeRate">
+          <Key>
+            <PropertyRef Name="Rate_ID" />
+          </Key>
+          <Property Name="Rate_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="int" />
+          <Property Name="Material_ID" Type="int" />
+          <Property Name="Thickness_ID" Type="int" />
+          <Property Name="TR_Value" Type="decimal" Scale="3" />
+        </EntityType>
+        <EntityType Name="DSP_Nace">
+          <Key>
+            <PropertyRef Name="Nace_ID" />
+          </Key>
+          <Property Name="Nace_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nace_Name" Type="varchar" Nullable="false" MaxLength="250" />
+          <Property Name="Nace_Code" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DSP_Pilot">
+          <Key>
+            <PropertyRef Name="Pilot_ID" />
+          </Key>
+          <Property Name="Pilot_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Pilot_Name" Type="varchar" Nullable="false" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="DSP_Sensor">
+          <Key>
+            <PropertyRef Name="Sensor_ID" />
+          </Key>
+          <Property Name="Sensor_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_Name" Type="varchar" Nullable="false" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="DSP_Sensor_Size_Info">
+          <Key>
+            <PropertyRef Name="Info_ID" />
+          </Key>
+          <Property Name="Info_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="int" />
+          <Property Name="HeadFlangeSize_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="DSP_Sensor_Thickness_Info">
+          <Key>
+            <PropertyRef Name="Info_ID" />
+          </Key>
+          <Property Name="Info_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="int" Nullable="false" />
+          <Property Name="Thickness_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DSP_TT_Material">
+          <Key>
+            <PropertyRef Name="TT_Material_ID" />
+          </Key>
+          <Property Name="TT_Material_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TT_Material_Name" Type="varchar" Nullable="false" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="DSP_TT_WallThickness">
+          <Key>
+            <PropertyRef Name="Thickness_ID" />
+          </Key>
+          <Property Name="Thickness_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Thickness_Level" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TESTMODEL.EF6" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="LocalTestDBEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="DSP_Displacer_Material" EntityType="TESTMODEL.EF6.DSP_Displacer_Material" />
+          <EntitySet Name="DSP_HeadFlangeSize" EntityType="TESTMODEL.EF6.DSP_HeadFlangeSize" />
+          <EntitySet Name="DSP_Matrix_DisplacerAlternateWeight" EntityType="TESTMODEL.EF6.DSP_Matrix_DisplacerAlternateWeight" />
+          <EntitySet Name="DSP_Matrix_DisplacerDMR" EntityType="TESTMODEL.EF6.DSP_Matrix_DisplacerDMR" />
+          <EntitySet Name="DSP_Matrix_DisplacerWeight" EntityType="TESTMODEL.EF6.DSP_Matrix_DisplacerWeight" />
+          <EntitySet Name="DSP_Matrix_MINPB" EntityType="TESTMODEL.EF6.DSP_Matrix_MINPB" />
+          <EntitySet Name="DSP_Matrix_PressreFactor" EntityType="TESTMODEL.EF6.DSP_Matrix_PressreFactor" />
+          <EntitySet Name="DSP_Matrix_TorqueTubeRate" EntityType="TESTMODEL.EF6.DSP_Matrix_TorqueTubeRate" />
+          <EntitySet Name="DSP_Nace" EntityType="TESTMODEL.EF6.DSP_Nace" />
+          <EntitySet Name="DSP_Pilot" EntityType="TESTMODEL.EF6.DSP_Pilot" />
+          <EntitySet Name="DSP_Sensor" EntityType="TESTMODEL.EF6.DSP_Sensor" />
+          <EntitySet Name="DSP_Sensor_Size_Info" EntityType="TESTMODEL.EF6.DSP_Sensor_Size_Info" />
+          <EntitySet Name="DSP_Sensor_Thickness_Info" EntityType="TESTMODEL.EF6.DSP_Sensor_Thickness_Info" />
+          <EntitySet Name="DSP_TT_Material" EntityType="TESTMODEL.EF6.DSP_TT_Material" />
+          <EntitySet Name="DSP_TT_WallThickness" EntityType="TESTMODEL.EF6.DSP_TT_WallThickness" />
+        </EntityContainer>
+        <EntityType Name="DSP_Displacer_Material">
+          <Key>
+            <PropertyRef Name="Material_ID" />
+          </Key>
+          <Property Name="Material_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Material_Name" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="DSP_HeadFlangeSize">
+          <Key>
+            <PropertyRef Name="Size_ID" />
+          </Key>
+          <Property Name="Size_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Size_Name" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_DisplacerAlternateWeight">
+          <Key>
+            <PropertyRef Name="Alternate_Weight_ID" />
+          </Key>
+          <Property Name="Alternate_Weight_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="Int32" />
+          <Property Name="Material_ID" Type="Int32" />
+          <Property Name="Thickness_ID" Type="Int32" />
+          <Property Name="Alternate_Weight_Value" Type="Decimal" Precision="18" Scale="14" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_DisplacerDMR">
+          <Key>
+            <PropertyRef Name="Info_ID" />
+          </Key>
+          <Property Name="Info_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="Int32" />
+          <Property Name="Size_ID" Type="Int32" />
+          <Property Name="DMR_Type" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="DMR_Value" Type="Decimal" Precision="18" Scale="3" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_DisplacerWeight">
+          <Key>
+            <PropertyRef Name="Weight_ID" />
+          </Key>
+          <Property Name="Weight_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="Int32" />
+          <Property Name="Thickness_ID" Type="Int32" />
+          <Property Name="Weight_Value" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_MINPB">
+          <Key>
+            <PropertyRef Name="PB_ID" />
+          </Key>
+          <Property Name="PB_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Pilot_ID" Type="Int32" />
+          <Property Name="PB_MIN_Value" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_PressreFactor">
+          <Key>
+            <PropertyRef Name="Factor_ID" />
+          </Key>
+          <Property Name="Factor_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Material_ID" Type="Int32" Nullable="false" />
+          <Property Name="Operating_Temperature" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="Factor_Value" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="DSP_Matrix_TorqueTubeRate">
+          <Key>
+            <PropertyRef Name="Rate_ID" />
+          </Key>
+          <Property Name="Rate_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="Int32" />
+          <Property Name="Material_ID" Type="Int32" />
+          <Property Name="Thickness_ID" Type="Int32" />
+          <Property Name="TR_Value" Type="Decimal" Precision="18" Scale="3" />
+        </EntityType>
+        <EntityType Name="DSP_Nace">
+          <Key>
+            <PropertyRef Name="Nace_ID" />
+          </Key>
+          <Property Name="Nace_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nace_Name" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="Nace_Code" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="DSP_Pilot">
+          <Key>
+            <PropertyRef Name="Pilot_ID" />
+          </Key>
+          <Property Name="Pilot_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Pilot_Name" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="DSP_Sensor">
+          <Key>
+            <PropertyRef Name="Sensor_ID" />
+          </Key>
+          <Property Name="Sensor_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_Name" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="DSP_Sensor_Size_Info">
+          <Key>
+            <PropertyRef Name="Info_ID" />
+          </Key>
+          <Property Name="Info_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="Int32" />
+          <Property Name="HeadFlangeSize_ID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DSP_Sensor_Thickness_Info">
+          <Key>
+            <PropertyRef Name="Info_ID" />
+          </Key>
+          <Property Name="Info_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Sensor_ID" Type="Int32" Nullable="false" />
+          <Property Name="Thickness_ID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DSP_TT_Material">
+          <Key>
+            <PropertyRef Name="TT_Material_ID" />
+          </Key>
+          <Property Name="TT_Material_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="TT_Material_Name" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="DSP_TT_WallThickness">
+          <Key>
+            <PropertyRef Name="Thickness_ID" />
+          </Key>
+          <Property Name="Thickness_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Thickness_Level" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TESTMODELEF6StoreContainer" CdmEntityContainer="LocalTestDBEntities">
+          <EntitySetMapping Name="DSP_Displacer_Material">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Displacer_Material">
+              <MappingFragment StoreEntitySet="DSP_Displacer_Material">
+                <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+                <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_HeadFlangeSize">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_HeadFlangeSize">
+              <MappingFragment StoreEntitySet="DSP_HeadFlangeSize">
+                <ScalarProperty Name="Size_ID" ColumnName="Size_ID" />
+                <ScalarProperty Name="Size_Name" ColumnName="Size_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Matrix_DisplacerAlternateWeight">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_DisplacerAlternateWeight">
+              <MappingFragment StoreEntitySet="DSP_Matrix_DisplacerAlternateWeight">
+                <ScalarProperty Name="Alternate_Weight_ID" ColumnName="Alternate_Weight_ID" />
+                <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+                <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+                <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+                <ScalarProperty Name="Alternate_Weight_Value" ColumnName="Alternate_Weight_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Matrix_DisplacerDMR">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_DisplacerDMR">
+              <MappingFragment StoreEntitySet="DSP_Matrix_DisplacerDMR">
+                <ScalarProperty Name="Info_ID" ColumnName="Info_ID" />
+                <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+                <ScalarProperty Name="Size_ID" ColumnName="Size_ID" />
+                <ScalarProperty Name="DMR_Type" ColumnName="DMR_Type" />
+                <ScalarProperty Name="DMR_Value" ColumnName="DMR_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Matrix_DisplacerWeight">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_DisplacerWeight">
+              <MappingFragment StoreEntitySet="DSP_Matrix_DisplacerWeight">
+                <ScalarProperty Name="Weight_ID" ColumnName="Weight_ID" />
+                <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+                <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+                <ScalarProperty Name="Weight_Value" ColumnName="Weight_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Matrix_MINPB">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_MINPB">
+              <MappingFragment StoreEntitySet="DSP_Matrix_MINPB">
+                <ScalarProperty Name="PB_ID" ColumnName="PB_ID" />
+                <ScalarProperty Name="Pilot_ID" ColumnName="Pilot_ID" />
+                <ScalarProperty Name="PB_MIN_Value" ColumnName="PB_MIN_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Matrix_PressreFactor">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_PressreFactor">
+              <MappingFragment StoreEntitySet="DSP_Matrix_PressreFactor">
+                <ScalarProperty Name="Factor_ID" ColumnName="Factor_ID" />
+                <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+                <ScalarProperty Name="Operating_Temperature" ColumnName="Operating_Temperature" />
+                <ScalarProperty Name="Factor_Value" ColumnName="Factor_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Matrix_TorqueTubeRate">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_TorqueTubeRate">
+              <MappingFragment StoreEntitySet="DSP_Matrix_TorqueTubeRate">
+                <ScalarProperty Name="Rate_ID" ColumnName="Rate_ID" />
+                <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+                <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+                <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+                <ScalarProperty Name="TR_Value" ColumnName="TR_Value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Nace">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Nace">
+              <MappingFragment StoreEntitySet="DSP_Nace">
+                <ScalarProperty Name="Nace_ID" ColumnName="Nace_ID" />
+                <ScalarProperty Name="Nace_Name" ColumnName="Nace_Name" />
+                <ScalarProperty Name="Nace_Code" ColumnName="Nace_Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Pilot">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Pilot">
+              <MappingFragment StoreEntitySet="DSP_Pilot">
+                <ScalarProperty Name="Pilot_ID" ColumnName="Pilot_ID" />
+                <ScalarProperty Name="Pilot_Name" ColumnName="Pilot_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Sensor">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Sensor">
+              <MappingFragment StoreEntitySet="DSP_Sensor">
+                <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+                <ScalarProperty Name="Sensor_Name" ColumnName="Sensor_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Sensor_Size_Info">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Sensor_Size_Info">
+              <MappingFragment StoreEntitySet="DSP_Sensor_Size_Info">
+                <ScalarProperty Name="Info_ID" ColumnName="Info_ID" />
+                <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+                <ScalarProperty Name="HeadFlangeSize_ID" ColumnName="HeadFlangeSize_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Sensor_Thickness_Info">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Sensor_Thickness_Info">
+              <MappingFragment StoreEntitySet="DSP_Sensor_Thickness_Info">
+                <ScalarProperty Name="Info_ID" ColumnName="Info_ID" />
+                <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+                <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_TT_Material">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_TT_Material">
+              <MappingFragment StoreEntitySet="DSP_TT_Material">
+                <ScalarProperty Name="TT_Material_ID" ColumnName="TT_Material_ID" />
+                <ScalarProperty Name="TT_Material_Name" ColumnName="TT_Material_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_TT_WallThickness">
+            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_TT_WallThickness">
+              <MappingFragment StoreEntitySet="DSP_TT_WallThickness">
+                <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+                <ScalarProperty Name="Thickness_Level" ColumnName="Thickness_Level" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TESTMODELEF6StoreContainer" CdmEntityContainer="LocalTestDBEntities">
+    <EntitySetMapping Name="DSP_Displacer_Material">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Displacer_Material">
+        <MappingFragment StoreEntitySet="DSP_Displacer_Material">
+          <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_HeadFlangeSize">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_HeadFlangeSize">
+        <MappingFragment StoreEntitySet="DSP_HeadFlangeSize">
+          <ScalarProperty Name="Size_ID" ColumnName="Size_ID" />
+          <ScalarProperty Name="Size_Name" ColumnName="Size_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Matrix_DisplacerAlternateWeight">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_DisplacerAlternateWeight">
+        <MappingFragment StoreEntitySet="DSP_Matrix_DisplacerAlternateWeight">
+          <ScalarProperty Name="Alternate_Weight_ID" ColumnName="Alternate_Weight_ID" />
+          <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+          <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+          <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+          <ScalarProperty Name="Alternate_Weight_Value" ColumnName="Alternate_Weight_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Matrix_DisplacerDMR">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_DisplacerDMR">
+        <MappingFragment StoreEntitySet="DSP_Matrix_DisplacerDMR">
+          <ScalarProperty Name="Info_ID" ColumnName="Info_ID" />
+          <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+          <ScalarProperty Name="Size_ID" ColumnName="Size_ID" />
+          <ScalarProperty Name="DMR_Type" ColumnName="DMR_Type" />
+          <ScalarProperty Name="DMR_Value" ColumnName="DMR_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Matrix_DisplacerWeight">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_DisplacerWeight">
+        <MappingFragment StoreEntitySet="DSP_Matrix_DisplacerWeight">
+          <ScalarProperty Name="Weight_ID" ColumnName="Weight_ID" />
+          <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+          <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+          <ScalarProperty Name="Weight_Value" ColumnName="Weight_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Matrix_MINPB">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_MINPB">
+        <MappingFragment StoreEntitySet="DSP_Matrix_MINPB">
+          <ScalarProperty Name="PB_ID" ColumnName="PB_ID" />
+          <ScalarProperty Name="Pilot_ID" ColumnName="Pilot_ID" />
+          <ScalarProperty Name="PB_MIN_Value" ColumnName="PB_MIN_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Matrix_PressreFactor">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_PressreFactor">
+        <MappingFragment StoreEntitySet="DSP_Matrix_PressreFactor">
+          <ScalarProperty Name="Factor_ID" ColumnName="Factor_ID" />
+          <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+          <ScalarProperty Name="Operating_Temperature" ColumnName="Operating_Temperature" />
+          <ScalarProperty Name="Factor_Value" ColumnName="Factor_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Matrix_TorqueTubeRate">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Matrix_TorqueTubeRate">
+        <MappingFragment StoreEntitySet="DSP_Matrix_TorqueTubeRate">
+          <ScalarProperty Name="Rate_ID" ColumnName="Rate_ID" />
+          <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+          <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
+          <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+          <ScalarProperty Name="TR_Value" ColumnName="TR_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Nace">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Nace">
+        <MappingFragment StoreEntitySet="DSP_Nace">
+          <ScalarProperty Name="Nace_ID" ColumnName="Nace_ID" />
+          <ScalarProperty Name="Nace_Name" ColumnName="Nace_Name" />
+          <ScalarProperty Name="Nace_Code" ColumnName="Nace_Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Pilot">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Pilot">
+        <MappingFragment StoreEntitySet="DSP_Pilot">
+          <ScalarProperty Name="Pilot_ID" ColumnName="Pilot_ID" />
+          <ScalarProperty Name="Pilot_Name" ColumnName="Pilot_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Sensor">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Sensor">
+        <MappingFragment StoreEntitySet="DSP_Sensor">
+          <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+          <ScalarProperty Name="Sensor_Name" ColumnName="Sensor_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Sensor_Size_Info">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Sensor_Size_Info">
+        <MappingFragment StoreEntitySet="DSP_Sensor_Size_Info">
+          <ScalarProperty Name="Info_ID" ColumnName="Info_ID" />
+          <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+          <ScalarProperty Name="HeadFlangeSize_ID" ColumnName="HeadFlangeSize_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_Sensor_Thickness_Info">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Sensor_Thickness_Info">
+        <MappingFragment StoreEntitySet="DSP_Sensor_Thickness_Info">
+          <ScalarProperty Name="Info_ID" ColumnName="Info_ID" />
+          <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
+          <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_TT_Material">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_TT_Material">
+        <MappingFragment StoreEntitySet="DSP_TT_Material">
+          <ScalarProperty Name="TT_Material_ID" ColumnName="TT_Material_ID" />
+          <ScalarProperty Name="TT_Material_Name" ColumnName="TT_Material_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DSP_TT_WallThickness">
+      <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_TT_WallThickness">
+        <MappingFragment StoreEntitySet="DSP_TT_WallThickness">
+          <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+          <ScalarProperty Name="Thickness_Level" ColumnName="Thickness_Level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
