@@ -371,6 +371,8 @@ namespace Enterprise.Component.EntityFramework
         /// <returns></returns>
         public DataTable GetDataTable(string ProcedureName, object[] Param)
         {
+            if (mdbContext.Database.Connection.State == ConnectionState.Closed)
+                mdbContext.Database.Connection.Open(); 
             var cmd = mdbContext.Database.Connection.CreateCommand();
             cmd.CommandTimeout = this.mCommandTimeout;
             cmd.CommandType = CommandType.StoredProcedure;
@@ -424,6 +426,8 @@ namespace Enterprise.Component.EntityFramework
         {
             try
             {
+                if (mdbContext.Database.Connection.State == ConnectionState.Closed)
+                    mdbContext.Database.Connection.Open(); 
                 var cmd = mdbContext.Database.Connection.CreateCommand();
                 cmd.CommandTimeout = this.mCommandTimeout;
                 cmd.CommandType = CommandType.Text;
@@ -450,6 +454,8 @@ namespace Enterprise.Component.EntityFramework
         {
             try
             {
+                if (mdbContext.Database.Connection.State == ConnectionState.Closed)
+                    mdbContext.Database.Connection.Open(); 
                 using (var conn = mdbContext.Database.Connection as SqlConnection)
                 {
                     conn.Open();
@@ -484,6 +490,8 @@ namespace Enterprise.Component.EntityFramework
         {
             try
             {
+                if (mdbContext.Database.Connection.State == ConnectionState.Closed)
+                    mdbContext.Database.Connection.Open(); 
                 using (var conn = mdbContext.Database.Connection as SqlConnection)
                 {
                     conn.Open();
@@ -509,6 +517,8 @@ namespace Enterprise.Component.EntityFramework
         {
             try
             {
+                if (mdbContext.Database.Connection.State == ConnectionState.Closed)
+                    mdbContext.Database.Connection.Open(); 
                 var cmd = mdbContext.Database.Connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = SqlString;
