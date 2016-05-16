@@ -56,9 +56,9 @@ namespace Enterprise.Component.Log4Net
         /// <param name="ZipHelper"></param>
         /// <param name="LogFolder"></param>
         /// <returns></returns>
-        public string PackLogs(IZipHelper ZipHelper, string LogFolder)
+        public string PackLogs(IZipHelper ZipHelper, string LogFolder,string AppName="")
         {
-            return LogHelper.PackLogs(ZipHelper, LogFolder );
+            return LogHelper.PackLogs(ZipHelper, LogFolder, AppName);
         }
     }
 }

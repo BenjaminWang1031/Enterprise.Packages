@@ -113,18 +113,19 @@ namespace Enterprise.Component.Log4Net
         /// <param name="ZipHelper"></param>
         /// <param name="LogFolder"></param>
         /// <returns></returns>
-        public static string PackLogs(IZipHelper ZipHelper, string LogFolder)
+        public static string PackLogs(IZipHelper ZipHelper, string LogFolder, string AppName ="")
         {
             try
             {
                 var list = new List<string>();
                 list.Add("zip");
-
+                var actualLogFolder = System.Web.HttpContext.Current.Server.MapPath("~/" + LogFolder);
                 var mFileName = DateTime.Now.ToString("yyyyMMddHHmmss") + ".zip";
-                ZipHelper.ZipFolder(LogFolder, LogFolder + "//" + mFileName, false, list);
+                ZipHelper.ZipFolder(actualLogFolder, actualLogFolder + "//" + mFileName, false, list);
                 //TODO: Need to get the site/folder name from IIS
+                //Pass app's name as needed
                 var urlAuthority = System.Web.HttpContext.Current.Request.Url.Authority;
-                return "Logs were packed:[" + String.Format("<a href='Http://{0}/{1}/{2}'>{2}</a>", urlAuthority, "Log", mFileName) + "]";
+                return "Logs were packed:[" + String.Format("<a href='Http://{0}/{1}/{2}/{3}'>{3}</a>", urlAuthority, AppName, LogFolder, mFileName) + "]";
             }
             catch (Exception ex)
             {

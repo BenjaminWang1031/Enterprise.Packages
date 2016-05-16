@@ -21,6 +21,6 @@ namespace Enterprise.Core.Interface.Log
          /// <param name="ZipHelper">Zip Helper instance</param>
          /// <param name="LogFolder">Log's whole folder</param>
          /// <returns></returns>
-         string PackLogs(IZipHelper ZipHelper,string LogFolder);
+        string PackLogs(IZipHelper ZipHelper, string LogFolder, string AppName = "");
     }
 }
