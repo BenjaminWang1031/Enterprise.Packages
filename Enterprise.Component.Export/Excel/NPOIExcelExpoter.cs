@@ -84,10 +84,13 @@ namespace Enterprise.Component.Export.Excel
             var file = System.IO.File.Create(path);
             workbook.Write(file);
             file.Close();
-            //'Get prefix
+            //Get prefix
             var urlAuthority = HttpContext.Current.Request.Url.Authority;
-            var mPrefix = urlAuthority.ToLower().Contains("oasis") ? urlAuthority.Substring(0, urlAuthority.IndexOf("OASIS") + 6) : urlAuthority + System.Web.HttpContext.Current.Request.ApplicationPath;
-            return string.Format("Http://{0}{1}/{2}/{3}",
+            //TODO: Get the app name and put into the url of the file
+            var mPrefix = urlAuthority + HttpContext.Current.Request.ApplicationPath;
+            if (!string.IsNullOrEmpty(AppName) && urlAuthority.ToLower().Contains(AppName.ToLower()))
+                mPrefix = urlAuthority.Substring(0, urlAuthority.IndexOf(AppName) + 6) + HttpContext.Current.Request.ApplicationPath;
+            return string.Format("Http://{0}/{1}/{2}/{3}",
                                  mPrefix,
                                  ExportHelper.RootPathName,
                                  mExportHelper.CurrentDirectoryName,
@@ -141,6 +144,19 @@ namespace Enterprise.Component.Export.Excel
             set
             {
                 ExportHelper.RootPathName = value;
+            }
+        }
+
+
+        public string AppName
+        {
+            get
+            {
+                return ExportHelper.AppName;
+            }
+            set
+            {
+                ExportHelper.AppName = value;
             }
         }
     }

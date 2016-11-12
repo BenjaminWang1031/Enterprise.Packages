@@ -150,9 +150,8 @@ namespace Enterprise.Component.EntityFramework
         /// <returns></returns>
         public TEntityRoot GetEntity<TEntityRoot>(object Key) where TEntityRoot : class,new()
         {
-            //if (Key == null)
-            //    return null;
-            //return (IEntityRoot)mSession.Get<TEntityRoot>(Key);
+            if (Key == null)
+                return null;
             return null;
         }
 

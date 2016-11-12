@@ -1,0 +1,16 @@
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\Enterprise.XUnits.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\Enterprise.XUnits.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\Enterprise.Component.Common.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\Enterprise.Core.Interface.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\nunit.framework.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\Ionic.Zip.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\Newtonsoft.Json.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\Enterprise.Component.Common.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\Enterprise.Core.Interface.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\nunit.framework.xml
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\obj\Debug\Enterprise.XUnits.csprojResolveAssemblyReference.cache
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\obj\Debug\Enterprise.XUnits.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\obj\Debug\Enterprise.XUnits.pdb
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\xunit.runner.utility.desktop.dll
+C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.XUnits\bin\Debug\xunit.abstractions.dll

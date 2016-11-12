@@ -50,51 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DSP_Displacer_Material.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_HeadFlangeSize.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Matrix_DisplacerAlternateWeight.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Matrix_DisplacerDMR.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Matrix_DisplacerWeight.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Matrix_MINPB.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Matrix_PressreFactor.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Matrix_TorqueTubeRate.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Nace.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Pilot.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Sensor.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Sensor_Size_Info.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_Sensor_Thickness_Info.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_TT_Material.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DSP_TT_WallThickness.cs">
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TESTMODEL.Context.cs">
       <AutoGen>True</AutoGen>

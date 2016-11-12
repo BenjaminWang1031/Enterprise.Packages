@@ -61,6 +61,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EFTEST.edmx</DependentUpon>
     </Compile>
+    <Compile Include="EFTEST.Views.cs" />
     <Compile Include="FLEXOrg.cs">
       <DependentUpon>EFTEST.tt</DependentUpon>
     </Compile>

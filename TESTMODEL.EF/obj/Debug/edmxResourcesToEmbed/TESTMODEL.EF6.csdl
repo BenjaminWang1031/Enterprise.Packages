@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="TESTMODEL.EF6" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityContainer Name="LocalTestDBEntities" p1:LazyLoadingEnabled="true">
-    <EntitySet Name="DSP_Displacer_Material" EntityType="TESTMODEL.EF6.DSP_Displacer_Material" />
     <EntitySet Name="DSP_HeadFlangeSize" EntityType="TESTMODEL.EF6.DSP_HeadFlangeSize" />
     <EntitySet Name="DSP_Matrix_DisplacerAlternateWeight" EntityType="TESTMODEL.EF6.DSP_Matrix_DisplacerAlternateWeight" />
     <EntitySet Name="DSP_Matrix_DisplacerDMR" EntityType="TESTMODEL.EF6.DSP_Matrix_DisplacerDMR" />
@@ -16,11 +15,9 @@
     <EntitySet Name="DSP_Sensor_Thickness_Info" EntityType="TESTMODEL.EF6.DSP_Sensor_Thickness_Info" />
     <EntitySet Name="DSP_TT_Material" EntityType="TESTMODEL.EF6.DSP_TT_Material" />
     <EntitySet Name="DSP_TT_WallThickness" EntityType="TESTMODEL.EF6.DSP_TT_WallThickness" />
+    <EntitySet Name="DSP_Displacer_Material" EntityType="TESTMODEL.EF6.DSP_Displacer_Material" />
   </EntityContainer>
   <EntityType Name="DSP_Displacer_Material">
-    <Key>
-      <PropertyRef Name="Material_ID" />
-    </Key>
     <Property Name="Material_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
     <Property Name="Material_Name" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
   </EntityType>

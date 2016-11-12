@@ -34,5 +34,17 @@ namespace Enterprise.Component.Export.Excel
                 throw new NotImplementedException();
             }
         }
+
+        public string AppName
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

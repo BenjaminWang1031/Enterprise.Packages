@@ -17,16 +17,27 @@ namespace CS.ASPNET
             if (!IsPostBack)
             {
                 var helper = new DBManager("LocalTestDBEntities");
-                var entity = helper.GetEntity<DSP_Sensor>(item => item.Sensor_ID == 3);
-                Response.Write(entity.Sensor_Name);
-                Response.Write("<br/>");
+                //var entity = new DSP_Pilot();
+                //entity.Pilot_Name = "benjamin";
+                //helper.Add(entity);
+                //helper.Commit();
 
-                var list1 = helper.GetEntityList<DSP_Sensor>();
-                Response.Write(list1[2].Sensor_Name);
-                Response.Write("<br/>");
+                var list = helper.GetEntityList<DSP_Pilot>();
+                foreach (var dsp in list)
+                {
+                    Response.Write(dsp.Pilot_Name);
+                    Response.Write("<br/>");
+                }
+                //var entity = helper.GetEntity<DSP_Sensor>(item => item.Sensor_ID == 3);
+                //Response.Write(entity.Sensor_Name);
+                //Response.Write("<br/>");
 
-                var list2 = helper.GetEntityList<DSP_Sensor>(item => item.Sensor_ID > 0);
-                Response.Write(list2[2].Sensor_Name);
+                //var list1 = helper.GetEntityList<DSP_Sensor>();
+                //Response.Write(list1[2].Sensor_Name);
+                //Response.Write("<br/>");
+
+                //var list2 = helper.GetEntityList<DSP_Sensor>(item => item.Sensor_ID > 0);
+                //Response.Write(list2[2].Sensor_Name);
             }
         }
     }

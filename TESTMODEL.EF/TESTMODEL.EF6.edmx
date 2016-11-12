@@ -150,7 +150,6 @@
     <edmx:ConceptualModels>
       <Schema Namespace="TESTMODEL.EF6" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="LocalTestDBEntities" p1:LazyLoadingEnabled="true">
-          <EntitySet Name="DSP_Displacer_Material" EntityType="TESTMODEL.EF6.DSP_Displacer_Material" />
           <EntitySet Name="DSP_HeadFlangeSize" EntityType="TESTMODEL.EF6.DSP_HeadFlangeSize" />
           <EntitySet Name="DSP_Matrix_DisplacerAlternateWeight" EntityType="TESTMODEL.EF6.DSP_Matrix_DisplacerAlternateWeight" />
           <EntitySet Name="DSP_Matrix_DisplacerDMR" EntityType="TESTMODEL.EF6.DSP_Matrix_DisplacerDMR" />
@@ -165,11 +164,9 @@
           <EntitySet Name="DSP_Sensor_Thickness_Info" EntityType="TESTMODEL.EF6.DSP_Sensor_Thickness_Info" />
           <EntitySet Name="DSP_TT_Material" EntityType="TESTMODEL.EF6.DSP_TT_Material" />
           <EntitySet Name="DSP_TT_WallThickness" EntityType="TESTMODEL.EF6.DSP_TT_WallThickness" />
+          <EntitySet Name="DSP_Displacer_Material" EntityType="TESTMODEL.EF6.DSP_Displacer_Material" />
         </EntityContainer>
         <EntityType Name="DSP_Displacer_Material">
-          <Key>
-            <PropertyRef Name="Material_ID" />
-          </Key>
           <Property Name="Material_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
           <Property Name="Material_Name" Type="String" Nullable="false" MaxLength="150" Unicode="false" FixedLength="false" />
         </EntityType>
@@ -294,14 +291,6 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="TESTMODELEF6StoreContainer" CdmEntityContainer="LocalTestDBEntities">
-          <EntitySetMapping Name="DSP_Displacer_Material">
-            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Displacer_Material">
-              <MappingFragment StoreEntitySet="DSP_Displacer_Material">
-                <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
-                <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="DSP_HeadFlangeSize">
             <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_HeadFlangeSize">
               <MappingFragment StoreEntitySet="DSP_HeadFlangeSize">
@@ -407,11 +396,11 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DSP_Sensor_Thickness_Info">
-            <EntityTypeMapping TypeName="TESTMODEL.EF6.DSP_Sensor_Thickness_Info">
+            <EntityTypeMapping TypeName="IsTypeOf(TESTMODEL.EF6.DSP_Sensor_Thickness_Info)">
               <MappingFragment StoreEntitySet="DSP_Sensor_Thickness_Info">
                 <ScalarProperty Name="Info_ID" ColumnName="Info_ID" />
-                <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
                 <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
+                <ScalarProperty Name="Sensor_ID" ColumnName="Sensor_ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -428,6 +417,14 @@
               <MappingFragment StoreEntitySet="DSP_TT_WallThickness">
                 <ScalarProperty Name="Thickness_ID" ColumnName="Thickness_ID" />
                 <ScalarProperty Name="Thickness_Level" ColumnName="Thickness_Level" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DSP_Displacer_Material">
+            <EntityTypeMapping TypeName="IsTypeOf(TESTMODEL.EF6.DSP_Displacer_Material)" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+              <MappingFragment StoreEntitySet="DSP_Displacer_Material">
+                <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+                <ScalarProperty Name="Material_ID" ColumnName="Material_ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

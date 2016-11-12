@@ -2,4 +2,3 @@ C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Core\bin\Debug\Enterprise.Core
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Core\bin\Debug\Enterprise.Core.Interface.pdb
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Core\obj\Debug\Enterprise.Core.Interface.dll
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Core\obj\Debug\Enterprise.Core.Interface.pdb
-C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Core\obj\Debug\Enterprise.Core.Interface.csprojResolveAssemblyReference.cache

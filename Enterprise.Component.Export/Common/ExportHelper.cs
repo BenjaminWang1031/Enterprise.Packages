@@ -12,7 +12,8 @@ namespace Enterprise.Component.Export.Common
     public class ExportHelper
     {
         public string CurrentDirectoryName;
-        public static string RootPathName; //= "ExcelExport"
+        public static string RootPathName;
+        public static string AppName;
         public string DestFolder;
 
         public ExportHelper()

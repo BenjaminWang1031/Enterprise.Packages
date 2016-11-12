@@ -15,5 +15,7 @@ namespace Enterprise.Core.Interface.Export
     public interface IExportHelper
     {
         string RootPathName { get;set;}
+
+        string AppName { get; set; }
     }
 }

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D0327E6-C9CA-4EB6-9C72-1208BE6F7D8E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Enterprise.Model.EF._1012</RootNamespace>
+    <AssemblyName>Enterprise.Model.EF.1012</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DSP_Displacer_Material.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_HeadFlangeSize.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_DisplacerAlternateWeight.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_DisplacerDMR.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_DisplacerWeight.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_MINPB.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_PressreFactor.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Matrix_TorqueTubeRate.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Nace.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Pilot.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Products.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Sensor.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Sensor_Size_Info.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_Sensor_Thickness_Info.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_TT_Material.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DSP_TT_WallThickness.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FLEXOrg.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LocalTestDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalTestDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LocalTestDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LocalTestDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalTestDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MT_ActuatorModel_Base.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MT_ActuatorModel_Multiple.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MT_ActuatorType.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderChangedMethodType.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderTypeTranslation.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SYS_DEPT.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Access.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Accessories.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_AccessoriesContent.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_AccessoriesEntry.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlow.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowActivity.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowActivityOutput.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowCatalog.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowCondition.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowEntity.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_BusinessFlowVariable.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Demo.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_DeskInfo.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_HistoryData.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Images.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ItemTemplate.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Log.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Menu.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Message.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_MetaData.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_MetaData_DataEntity.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_MetaData_DataEntityCol.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_MetaData_DataTypeNative.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_MetaData_UIInstance.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Offices.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_OperationLog.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Parameter.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_PrintConfig.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ProcedureGroup.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ProcedureInfo.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ProcedureParamInfo.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ProcedureReference.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Project.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ProjectType.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_ReportQuerySchema.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_Solution.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_TypeTemplate.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="T_F_TypeTemplateGroup.cs">
+      <DependentUpon>LocalTestDB.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="LocalTestDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LocalTestDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="LocalTestDB.edmx.diagram">
+      <DependentUpon>LocalTestDB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LocalTestDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LocalTestDB.edmx</DependentUpon>
+      <LastGenOutput>LocalTestDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LocalTestDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LocalTestDB.edmx</DependentUpon>
+      <LastGenOutput>LocalTestDB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
