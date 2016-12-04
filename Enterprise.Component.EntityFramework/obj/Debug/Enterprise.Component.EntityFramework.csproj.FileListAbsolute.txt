@@ -11,3 +11,16 @@ C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\obj\Debug\Enterprise.Component.EntityFramework.csprojResolveAssemblyReference.cache
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\obj\Debug\Enterprise.Component.EntityFramework.dll
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\obj\Debug\Enterprise.Component.EntityFramework.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\Debug\Enterprise.Component.EntityFramework.dll.config
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\Debug\Enterprise.Component.EntityFramework.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\Debug\Enterprise.Component.EntityFramework.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\Debug\Enterprise.Core.Interface.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\Debug\EntityFramework.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\Debug\EntityFramework.Extensions.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\Debug\Enterprise.Core.Interface.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\Debug\EntityFramework.xml
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\obj\Debug\Enterprise.Component.EntityFramework.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\obj\Debug\Enterprise.Component.EntityFramework.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.EntityFramework\obj\Debug\Enterprise.Component.EntityFramework.pdb

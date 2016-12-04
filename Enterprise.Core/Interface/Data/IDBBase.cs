@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
-using System.Data.Common;
+using Enterprise.Core.Interface.Log;
 
 namespace Enterprise.Core.Interface.Data
 {
@@ -68,5 +63,11 @@ namespace Enterprise.Core.Interface.Data
         /// Error Message
         /// </summary>
         string ErrorMsg { get; set; }
+
+        /// <summary>
+        /// Log helper
+        /// For exception/performance
+        /// </summary>
+        ILogHelper DBLogHelper { get; set; }
     }
 }

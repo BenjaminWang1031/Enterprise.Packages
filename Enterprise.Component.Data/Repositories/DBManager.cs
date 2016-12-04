@@ -11,12 +11,10 @@ using System.Data.Common;
 using System.Data.SqlClient;
 
 using NHibernate;
-using NHibernate.Cfg;
 using NHibernate.Linq;
-using NHibernate.Transform;
 using Enterprise.Core.Interface.Data;
 using Enterprise.Core.Interface.Data.Specification;
-using Enterprise.Component.Nhiberate.Base;
+using Enterprise.Core.Interface.Log;
 
 namespace Enterprise.Component.Nhiberate
 {
@@ -597,6 +595,19 @@ namespace Enterprise.Component.Nhiberate
             set
             {
                 this.mCommandTimeout = value;
+            }
+        }
+
+        public ILogHelper DBLogHelper
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
             }
         }
 

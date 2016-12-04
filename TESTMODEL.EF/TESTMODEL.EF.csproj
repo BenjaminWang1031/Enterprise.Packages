@@ -50,49 +50,215 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB_Audit.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Bonus.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Certificate_Other.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Device_IT.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Device_Large_Image.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Device_Medical_Assistance.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_EDUCATION_EXP.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Handover_Equipment.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Handover_EVENT.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Handover_Patient.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Holiday.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Honor.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_NEWS.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Operation_State.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ParttimeJob_AcademicJournals.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ParttimeJob_CommitteeService.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_ParttimeJob_GraduateStudentTutor.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Position_State.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Radiation.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Radiation_BasicInfo.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Radiation_EmergencyOrAccident.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Radiation_HealthExamination.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Radiation_PersonalDose.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Radiation_TrainCheck.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Record_Punishments.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Record_Rewards.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_RESEARCH_ARTICLE.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_RESEARCH_ARTICLE_MEETING.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_RESEARCH_ARTICLE_WORK.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_RESEARCH_CHECK.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_RESEARCH_ISSUE.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_RESEARCH_TEACH.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_RESEARCH_WINNERS.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SCHEDULE_GROUP.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SCHEDULE_GROUP_POSITION.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SCHEDULE_GROUP_TYPE.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SCHEDULING.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_SCHEDULING_DETAIL.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_TRAIN_CONTINUE.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_TRAIN_FOREIGN.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_TRAIN_INLAND.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_User_Holiday.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_USER_INFO.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_WORK_EXP_BASE.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_WORK_EXP_SELF.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalOA.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalOA.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalOA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HospitalOA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HospitalOA.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="import.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TESTMODEL.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TESTMODEL.Context.tt</DependentUpon>
+    <Compile Include="SYS_DEPT.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
     </Compile>
-    <Compile Include="TESTMODEL.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TESTMODEL.tt</DependentUpon>
+    <Compile Include="SYS_DISTINCT.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
     </Compile>
-    <Compile Include="TESTMODEL.EF6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TESTMODEL.EF6.edmx</DependentUpon>
+    <Compile Include="SYS_FILES.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_Location.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_MENU.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_MENU2.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_USERS.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_USER_GROUP.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_USER_GROUP_MENU.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_USER_GROUP_USERS.cs">
+      <DependentUpon>HospitalOA.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="TESTMODEL.EF6.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TESTMODEL.EF6.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="packages.config" />
-    <None Include="TESTMODEL.EF6.edmx.diagram">
-      <DependentUpon>TESTMODEL.EF6.edmx</DependentUpon>
+    <EntityDeploy Include="HospitalOA.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HospitalOA.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="HospitalOA.edmx.diagram">
+      <DependentUpon>HospitalOA.edmx</DependentUpon>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TESTMODEL.Context.tt">
+    <Content Include="HospitalOA.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TESTMODEL.EF6.edmx</DependentUpon>
-      <LastGenOutput>TESTMODEL.Context.cs</LastGenOutput>
+      <DependentUpon>HospitalOA.edmx</DependentUpon>
+      <LastGenOutput>HospitalOA.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="TESTMODEL.tt">
+    <Content Include="HospitalOA.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TESTMODEL.EF6.edmx</DependentUpon>
-      <LastGenOutput>TESTMODEL.cs</LastGenOutput>
+      <DependentUpon>HospitalOA.edmx</DependentUpon>
+      <LastGenOutput>HospitalOA.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

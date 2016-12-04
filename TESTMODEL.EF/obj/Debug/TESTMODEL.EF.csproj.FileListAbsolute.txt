@@ -10,3 +10,15 @@ C:\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\bin\Debug\EntityFramework.Sq
 C:\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\obj\Debug\TESTMODEL.EF.csprojResolveAssemblyReference.cache
 C:\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\obj\Debug\TESTMODEL.EF.dll
 C:\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\obj\Debug\TESTMODEL.EF.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\bin\Debug\TESTMODEL.EF.dll.config
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\bin\Debug\TESTMODEL.EF.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\bin\Debug\TESTMODEL.EF.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\bin\Debug\Enterprise.Core.Interface.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\bin\Debug\EntityFramework.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\bin\Debug\EntityFramework.SqlServer.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\bin\Debug\Enterprise.Core.Interface.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\bin\Debug\EntityFramework.xml
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\bin\Debug\EntityFramework.SqlServer.xml
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\obj\Debug\TESTMODEL.EF.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\obj\Debug\TESTMODEL.EF.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\TESTMODEL.EF\obj\Debug\TESTMODEL.EF.pdb

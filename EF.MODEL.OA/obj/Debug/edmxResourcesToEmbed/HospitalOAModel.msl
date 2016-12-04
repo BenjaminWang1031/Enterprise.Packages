@@ -1,0 +1,1190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HospitalOAModelStoreContainer" CdmEntityContainer="HospitalOAEntities">
+    <EntitySetMapping Name="DB_Audit">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Audit">
+        <MappingFragment StoreEntitySet="DB_Audit">
+          <ScalarProperty Name="DA_ID" ColumnName="DA_ID" />
+          <ScalarProperty Name="DA_DUI_ID" ColumnName="DA_DUI_ID" />
+          <ScalarProperty Name="DA_Finish_Date" ColumnName="DA_Finish_Date" />
+          <ScalarProperty Name="DA_Desc" ColumnName="DA_Desc" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DA_Count_Unfinish" ColumnName="DA_Count_Unfinish" />
+          <ScalarProperty Name="DA_Count_Finish" ColumnName="DA_Count_Finish" />
+          <ScalarProperty Name="DA_IKNOW" ColumnName="DA_IKNOW" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Bonus">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Bonus">
+        <MappingFragment StoreEntitySet="DB_Bonus">
+          <ScalarProperty Name="DB_ID" ColumnName="DB_ID" />
+          <ScalarProperty Name="DB_DUI_ID" ColumnName="DB_DUI_ID" />
+          <ScalarProperty Name="DB_JOBNUM" ColumnName="DB_JOBNUM" />
+          <ScalarProperty Name="DB_USERNAME" ColumnName="DB_USERNAME" />
+          <ScalarProperty Name="DB_YEAR" ColumnName="DB_YEAR" />
+          <ScalarProperty Name="DB_MONTH" ColumnName="DB_MONTH" />
+          <ScalarProperty Name="DB_XS" ColumnName="DB_XS" />
+          <ScalarProperty Name="DB_JJ" ColumnName="DB_JJ" />
+          <ScalarProperty Name="DB_YY" ColumnName="DB_YY" />
+          <ScalarProperty Name="DB_TJ" ColumnName="DB_TJ" />
+          <ScalarProperty Name="DB_YB" ColumnName="DB_YB" />
+          <ScalarProperty Name="DB_JB" ColumnName="DB_JB" />
+          <ScalarProperty Name="DB_CB" ColumnName="DB_CB" />
+          <ScalarProperty Name="DB_JIEB" ColumnName="DB_JIEB" />
+          <ScalarProperty Name="DB_JIB" ColumnName="DB_JIB" />
+          <ScalarProperty Name="DB_BU" ColumnName="DB_BU" />
+          <ScalarProperty Name="DB_ZJ" ColumnName="DB_ZJ" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Certificate_Other">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Certificate_Other">
+        <MappingFragment StoreEntitySet="DB_Certificate_Other">
+          <ScalarProperty Name="DC_ID" ColumnName="DC_ID" />
+          <ScalarProperty Name="DC_DUI_ID" ColumnName="DC_DUI_ID" />
+          <ScalarProperty Name="DC_Name" ColumnName="DC_Name" />
+          <ScalarProperty Name="DC_Number" ColumnName="DC_Number" />
+          <ScalarProperty Name="DC_Dept" ColumnName="DC_Dept" />
+          <ScalarProperty Name="DC_Date" ColumnName="DC_Date" />
+          <ScalarProperty Name="DC_Expiry" ColumnName="DC_Expiry" />
+          <ScalarProperty Name="DC_Remark" ColumnName="DC_Remark" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DC_Status" ColumnName="DC_Status" />
+          <ScalarProperty Name="DC_FILE" ColumnName="DC_FILE" />
+          <ScalarProperty Name="DC_TYPE" ColumnName="DC_TYPE" />
+          <ScalarProperty Name="ZY1" ColumnName="ZY1" />
+          <ScalarProperty Name="LB1" ColumnName="LB1" />
+          <ScalarProperty Name="YSZG2" ColumnName="YSZG2" />
+          <ScalarProperty Name="ZXLB2" ColumnName="ZXLB2" />
+          <ScalarProperty Name="ZXFW2" ColumnName="ZXFW2" />
+          <ScalarProperty Name="YYSB3" ColumnName="YYSB3" />
+          <ScalarProperty Name="YXQ3" ColumnName="YXQ3" />
+          <ScalarProperty Name="ZYMC4" ColumnName="ZYMC4" />
+          <ScalarProperty Name="ZGJB4" ColumnName="ZGJB4" />
+          <ScalarProperty Name="LB4" ColumnName="LB4" />
+          <ScalarProperty Name="PZRQ4" ColumnName="PZRQ4" />
+          <ScalarProperty Name="DAH5" ColumnName="DAH5" />
+          <ScalarProperty Name="YZXH5" ColumnName="YZXH5" />
+          <ScalarProperty Name="YZ6" ColumnName="YZ6" />
+          <ScalarProperty Name="YXQ6" ColumnName="YXQ6" />
+          <ScalarProperty Name="XY7" ColumnName="XY7" />
+          <ScalarProperty Name="YX7" ColumnName="YX7" />
+          <ScalarProperty Name="KSSJ7" ColumnName="KSSJ7" />
+          <ScalarProperty Name="CJ7" ColumnName="CJ7" />
+          <ScalarProperty Name="XY8" ColumnName="XY8" />
+          <ScalarProperty Name="YX8" ColumnName="YX8" />
+          <ScalarProperty Name="KSSJ8" ColumnName="KSSJ8" />
+          <ScalarProperty Name="CJ8" ColumnName="CJ8" />
+          <ScalarProperty Name="DC_ORDER" ColumnName="DC_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Device_IT">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Device_IT">
+        <MappingFragment StoreEntitySet="DB_Device_IT">
+          <ScalarProperty Name="DDI_ID" ColumnName="DDI_ID" />
+          <ScalarProperty Name="DDI_Number" ColumnName="DDI_Number" />
+          <ScalarProperty Name="DDI_Type_ID" ColumnName="DDI_Type_ID" />
+          <ScalarProperty Name="DDI_Model" ColumnName="DDI_Model" />
+          <ScalarProperty Name="DDI_Location_ID" ColumnName="DDI_Location_ID" />
+          <ScalarProperty Name="DDI_Run_State_ID" ColumnName="DDI_Run_State_ID" />
+          <ScalarProperty Name="DDI_Two_Dimension_Code" ColumnName="DDI_Two_Dimension_Code" />
+          <ScalarProperty Name="DDI_IP" ColumnName="DDI_IP" />
+          <ScalarProperty Name="DDI_Price" ColumnName="DDI_Price" />
+          <ScalarProperty Name="DDI_Buy_Date" ColumnName="DDI_Buy_Date" />
+          <ScalarProperty Name="DDI_Guarantee_Time_Begin" ColumnName="DDI_Guarantee_Time_Begin" />
+          <ScalarProperty Name="DDI_Guarantee_Time_End" ColumnName="DDI_Guarantee_Time_End" />
+          <ScalarProperty Name="DDI_Expect_Scrap_Date" ColumnName="DDI_Expect_Scrap_Date" />
+          <ScalarProperty Name="DDI_Scrap_Date" ColumnName="DDI_Scrap_Date" />
+          <ScalarProperty Name="DDI_Order" ColumnName="DDI_Order" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Device_Large_Image">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Device_Large_Image">
+        <MappingFragment StoreEntitySet="DB_Device_Large_Image">
+          <ScalarProperty Name="DDLI_ID" ColumnName="DDLI_ID" />
+          <ScalarProperty Name="DDLI_Number" ColumnName="DDLI_Number" />
+          <ScalarProperty Name="DDLI_Type_ID" ColumnName="DDLI_Type_ID" />
+          <ScalarProperty Name="DDLI_Model" ColumnName="DDLI_Model" />
+          <ScalarProperty Name="DDLI_License_Key" ColumnName="DDLI_License_Key" />
+          <ScalarProperty Name="DDLI_Room_Number_ID" ColumnName="DDLI_Room_Number_ID" />
+          <ScalarProperty Name="DDLI_Run_State_ID" ColumnName="DDLI_Run_State_ID" />
+          <ScalarProperty Name="DDLI_Prce" ColumnName="DDLI_Prce" />
+          <ScalarProperty Name="DDLI_Buy_Date" ColumnName="DDLI_Buy_Date" />
+          <ScalarProperty Name="DDLI_First_Time_Open_Date" ColumnName="DDLI_First_Time_Open_Date" />
+          <ScalarProperty Name="DDLI_Guarantee_Time_Begin" ColumnName="DDLI_Guarantee_Time_Begin" />
+          <ScalarProperty Name="DDLI_Guarantee_Time_End" ColumnName="DDLI_Guarantee_Time_End" />
+          <ScalarProperty Name="DDLI_Expect_Scrap_Date" ColumnName="DDLI_Expect_Scrap_Date" />
+          <ScalarProperty Name="DDLI_Scrap_Date" ColumnName="DDLI_Scrap_Date" />
+          <ScalarProperty Name="DDLI_Order" ColumnName="DDLI_Order" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Device_Medical_Assistance">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Device_Medical_Assistance">
+        <MappingFragment StoreEntitySet="DB_Device_Medical_Assistance">
+          <ScalarProperty Name="DDMA_ID" ColumnName="DDMA_ID" />
+          <ScalarProperty Name="DDMA_Number" ColumnName="DDMA_Number" />
+          <ScalarProperty Name="DDMA_Type_ID" ColumnName="DDMA_Type_ID" />
+          <ScalarProperty Name="DDMA_Model" ColumnName="DDMA_Model" />
+          <ScalarProperty Name="DDMA_Location_ID" ColumnName="DDMA_Location_ID" />
+          <ScalarProperty Name="DDMA_Run_State_ID" ColumnName="DDMA_Run_State_ID" />
+          <ScalarProperty Name="DDMA_Price" ColumnName="DDMA_Price" />
+          <ScalarProperty Name="DDMA_Buy_Date" ColumnName="DDMA_Buy_Date" />
+          <ScalarProperty Name="DDMA_Guarantee_Time_Begin" ColumnName="DDMA_Guarantee_Time_Begin" />
+          <ScalarProperty Name="DDMA_Guarantee_Time_End" ColumnName="DDMA_Guarantee_Time_End" />
+          <ScalarProperty Name="DDMA_Expect_Scrap_Date" ColumnName="DDMA_Expect_Scrap_Date" />
+          <ScalarProperty Name="DDMA_Scrap_Date" ColumnName="DDMA_Scrap_Date" />
+          <ScalarProperty Name="DDMA_Order" ColumnName="DDMA_Order" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_EDUCATION_EXP">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_EDUCATION_EXP">
+        <MappingFragment StoreEntitySet="DB_EDUCATION_EXP">
+          <ScalarProperty Name="DEE_ID" ColumnName="DEE_ID" />
+          <ScalarProperty Name="DEE_DUI_ID" ColumnName="DEE_DUI_ID" />
+          <ScalarProperty Name="DEE_Degree_Id" ColumnName="DEE_Degree_Id" />
+          <ScalarProperty Name="DEE_Professional" ColumnName="DEE_Professional" />
+          <ScalarProperty Name="DEE_School" ColumnName="DEE_School" />
+          <ScalarProperty Name="DEE_School_SubjectionId" ColumnName="DEE_School_SubjectionId" />
+          <ScalarProperty Name="DEE_School_Begin" ColumnName="DEE_School_Begin" />
+          <ScalarProperty Name="DEE_School_End" ColumnName="DEE_School_End" />
+          <ScalarProperty Name="DEE_School_Years" ColumnName="DEE_School_Years" />
+          <ScalarProperty Name="DEE_Tutor" ColumnName="DEE_Tutor" />
+          <ScalarProperty Name="DEE_Certificate_Graduation" ColumnName="DEE_Certificate_Graduation" />
+          <ScalarProperty Name="DEE_Certificate_Degree" ColumnName="DEE_Certificate_Degree" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DEE_Status" ColumnName="DEE_Status" />
+          <ScalarProperty Name="DEE_School_Address" ColumnName="DEE_School_Address" />
+          <ScalarProperty Name="DEE_ORDER" ColumnName="DEE_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Handover_Equipment">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Handover_Equipment">
+        <MappingFragment StoreEntitySet="DB_Handover_Equipment">
+          <ScalarProperty Name="DHE_ID" ColumnName="DHE_ID" />
+          <ScalarProperty Name="DHE_TYPE" ColumnName="DHE_TYPE" />
+          <ScalarProperty Name="DHE_USERTYPE" ColumnName="DHE_USERTYPE" />
+          <ScalarProperty Name="DHE_Validity" ColumnName="DHE_Validity" />
+          <ScalarProperty Name="DHE_ROOM" ColumnName="DHE_ROOM" />
+          <ScalarProperty Name="DHE_Equipment_TYPE" ColumnName="DHE_Equipment_TYPE" />
+          <ScalarProperty Name="DHE_Equipment_ID" ColumnName="DHE_Equipment_ID" />
+          <ScalarProperty Name="DHE_Equipment_CODE" ColumnName="DHE_Equipment_CODE" />
+          <ScalarProperty Name="DHE_Equipment_NAME" ColumnName="DHE_Equipment_NAME" />
+          <ScalarProperty Name="DHE_Urgency" ColumnName="DHE_Urgency" />
+          <ScalarProperty Name="DHE_FAULT" ColumnName="DHE_FAULT" />
+          <ScalarProperty Name="DHE_Feedback" ColumnName="DHE_Feedback" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Handover_EVENT">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Handover_EVENT">
+        <MappingFragment StoreEntitySet="DB_Handover_EVENT">
+          <ScalarProperty Name="DHE_ID" ColumnName="DHE_ID" />
+          <ScalarProperty Name="DHE_TYPE" ColumnName="DHE_TYPE" />
+          <ScalarProperty Name="DHE_USERTYPE" ColumnName="DHE_USERTYPE" />
+          <ScalarProperty Name="DHE_Validity" ColumnName="DHE_Validity" />
+          <ScalarProperty Name="DHE_USERS" ColumnName="DHE_USERS" />
+          <ScalarProperty Name="DHE_PATIENT_NAME" ColumnName="DHE_PATIENT_NAME" />
+          <ScalarProperty Name="DHP_PATIENT_SEX" ColumnName="DHP_PATIENT_SEX" />
+          <ScalarProperty Name="DHP_PATIENT_AGE" ColumnName="DHP_PATIENT_AGE" />
+          <ScalarProperty Name="DHP_PATIENT_NUM" ColumnName="DHP_PATIENT_NUM" />
+          <ScalarProperty Name="DHP_PATIENT_BL" ColumnName="DHP_PATIENT_BL" />
+          <ScalarProperty Name="DHP_PATIENT_CHECK" ColumnName="DHP_PATIENT_CHECK" />
+          <ScalarProperty Name="DHP_PATIENT_DEPT" ColumnName="DHP_PATIENT_DEPT" />
+          <ScalarProperty Name="DHP_PATIENT_BED" ColumnName="DHP_PATIENT_BED" />
+          <ScalarProperty Name="DHP_PATIENT_TYPE" ColumnName="DHP_PATIENT_TYPE" />
+          <ScalarProperty Name="DHP_PATIENT_MOBILE" ColumnName="DHP_PATIENT_MOBILE" />
+          <ScalarProperty Name="DHP_PATIENT_HISTORY" ColumnName="DHP_PATIENT_HISTORY" />
+          <ScalarProperty Name="DHP_EVENT_TYPE" ColumnName="DHP_EVENT_TYPE" />
+          <ScalarProperty Name="DHP_Reagent_TYPE" ColumnName="DHP_Reagent_TYPE" />
+          <ScalarProperty Name="DHP_Species" ColumnName="DHP_Species" />
+          <ScalarProperty Name="DHP_Measure" ColumnName="DHP_Measure" />
+          <ScalarProperty Name="DHP_Degree" ColumnName="DHP_Degree" />
+          <ScalarProperty Name="DHP_DESC" ColumnName="DHP_DESC" />
+          <ScalarProperty Name="DHP_DEALWITH" ColumnName="DHP_DEALWITH" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Handover_Patient">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Handover_Patient">
+        <MappingFragment StoreEntitySet="DB_Handover_Patient">
+          <ScalarProperty Name="DHP_ID" ColumnName="DHP_ID" />
+          <ScalarProperty Name="DHP_TYPE" ColumnName="DHP_TYPE" />
+          <ScalarProperty Name="DHP_USERTYPE" ColumnName="DHP_USERTYPE" />
+          <ScalarProperty Name="DHP_Validity" ColumnName="DHP_Validity" />
+          <ScalarProperty Name="DHP_NAME" ColumnName="DHP_NAME" />
+          <ScalarProperty Name="DHP_SEX" ColumnName="DHP_SEX" />
+          <ScalarProperty Name="DHP_AGE" ColumnName="DHP_AGE" />
+          <ScalarProperty Name="DHP_BL_NUM" ColumnName="DHP_BL_NUM" />
+          <ScalarProperty Name="DHP_CHECK_NUM" ColumnName="DHP_CHECK_NUM" />
+          <ScalarProperty Name="DHP_MOBILE" ColumnName="DHP_MOBILE" />
+          <ScalarProperty Name="DHP_Diagnosis" ColumnName="DHP_Diagnosis" />
+          <ScalarProperty Name="DHP_Urgency" ColumnName="DHP_Urgency" />
+          <ScalarProperty Name="DHP_CONTENT" ColumnName="DHP_CONTENT" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Holiday">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Holiday">
+        <MappingFragment StoreEntitySet="DB_Holiday">
+          <ScalarProperty Name="DH_ID" ColumnName="DH_ID" />
+          <ScalarProperty Name="DH_BEGIN" ColumnName="DH_BEGIN" />
+          <ScalarProperty Name="DH_END" ColumnName="DH_END" />
+          <ScalarProperty Name="DH_TYPE" ColumnName="DH_TYPE" />
+          <ScalarProperty Name="DH_TYPECODE" ColumnName="DH_TYPECODE" />
+          <ScalarProperty Name="DH_DAYS" ColumnName="DH_DAYS" />
+          <ScalarProperty Name="DH_REASON" ColumnName="DH_REASON" />
+          <ScalarProperty Name="DH_STATE" ColumnName="DH_STATE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Honor">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Honor">
+        <MappingFragment StoreEntitySet="DB_Honor">
+          <ScalarProperty Name="DH_ID" ColumnName="DH_ID" />
+          <ScalarProperty Name="DH_DUI_ID" ColumnName="DH_DUI_ID" />
+          <ScalarProperty Name="DH_Name" ColumnName="DH_Name" />
+          <ScalarProperty Name="DH_Get_Date" ColumnName="DH_Get_Date" />
+          <ScalarProperty Name="DH_AwardWinningLevel_Id" ColumnName="DH_AwardWinningLevel_Id" />
+          <ScalarProperty Name="DH_Award_Unit" ColumnName="DH_Award_Unit" />
+          <ScalarProperty Name="DH_Peaple_Count" ColumnName="DH_Peaple_Count" />
+          <ScalarProperty Name="DH_Ranking" ColumnName="DH_Ranking" />
+          <ScalarProperty Name="DH_Certificate" ColumnName="DH_Certificate" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DH_Status" ColumnName="DH_Status" />
+          <ScalarProperty Name="DH_ORDER" ColumnName="DH_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_NEWS">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_NEWS">
+        <MappingFragment StoreEntitySet="DB_NEWS">
+          <ScalarProperty Name="BN_ID" ColumnName="BN_ID" />
+          <ScalarProperty Name="BN_TITLE" ColumnName="BN_TITLE" />
+          <ScalarProperty Name="BN_CONTENT" ColumnName="BN_CONTENT" />
+          <ScalarProperty Name="BN_Type" ColumnName="BN_Type" />
+          <ScalarProperty Name="BN_SubType" ColumnName="BN_SubType" />
+          <ScalarProperty Name="BN_STATE" ColumnName="BN_STATE" />
+          <ScalarProperty Name="BN_SOURCE" ColumnName="BN_SOURCE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="BN_FILE" ColumnName="BN_FILE" />
+          <ScalarProperty Name="BN_NOTICE" ColumnName="BN_NOTICE" />
+          <ScalarProperty Name="BN_PERMISSION" ColumnName="BN_PERMISSION" />
+          <ScalarProperty Name="BN_TOP" ColumnName="BN_TOP" />
+          <ScalarProperty Name="BN_LEVEL" ColumnName="BN_LEVEL" />
+          <ScalarProperty Name="BN_USERGROUP" ColumnName="BN_USERGROUP" />
+          <ScalarProperty Name="BN_DATETYPE" ColumnName="BN_DATETYPE" />
+          <ScalarProperty Name="BN_COUNT" ColumnName="BN_COUNT" />
+          <ScalarProperty Name="BN_TOPDATE" ColumnName="BN_TOPDATE" />
+          <ScalarProperty Name="BN_PDF" ColumnName="BN_PDF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Operation_State">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Operation_State">
+        <MappingFragment StoreEntitySet="DB_Operation_State">
+          <ScalarProperty Name="DOS_ID" ColumnName="DOS_ID" />
+          <ScalarProperty Name="CYRS" ColumnName="CYRS" />
+          <ScalarProperty Name="SSZTS" ColumnName="SSZTS" />
+          <ScalarProperty Name="SLYSSS" ColumnName="SLYSSS" />
+          <ScalarProperty Name="ZYWL" ColumnName="ZYWL" />
+          <ScalarProperty Name="MCRFY" ColumnName="MCRFY" />
+          <ScalarProperty Name="YPBL" ColumnName="YPBL" />
+          <ScalarProperty Name="PJZYR" ColumnName="PJZYR" />
+          <ScalarProperty Name="JCFY" ColumnName="JCFY" />
+          <ScalarProperty Name="MZL" ColumnName="MZL" />
+          <ScalarProperty Name="MCRFYPFY" ColumnName="MCRFYPFY" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+          <ScalarProperty Name="MONTH" ColumnName="MONTH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_ParttimeJob_AcademicJournals">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_ParttimeJob_AcademicJournals">
+        <MappingFragment StoreEntitySet="DB_ParttimeJob_AcademicJournals">
+          <ScalarProperty Name="DP_ID" ColumnName="DP_ID" />
+          <ScalarProperty Name="DP_DUI_ID" ColumnName="DP_DUI_ID" />
+          <ScalarProperty Name="DP_School" ColumnName="DP_School" />
+          <ScalarProperty Name="DP_TutorType_Id" ColumnName="DP_TutorType_Id" />
+          <ScalarProperty Name="DP_Begin" ColumnName="DP_Begin" />
+          <ScalarProperty Name="DP_End" ColumnName="DP_End" />
+          <ScalarProperty Name="DP_End_Now" ColumnName="DP_End_Now" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DP_Status" ColumnName="DP_Status" />
+          <ScalarProperty Name="DP_Level" ColumnName="DP_Level" />
+          <ScalarProperty Name="DP_Post" ColumnName="DP_Post" />
+          <ScalarProperty Name="DP_BOOK" ColumnName="DP_BOOK" />
+          <ScalarProperty Name="DP_ORDER" ColumnName="DP_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_ParttimeJob_CommitteeService">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_ParttimeJob_CommitteeService">
+        <MappingFragment StoreEntitySet="DB_ParttimeJob_CommitteeService">
+          <ScalarProperty Name="DP_ID" ColumnName="DP_ID" />
+          <ScalarProperty Name="DP_DUI_ID" ColumnName="DP_DUI_ID" />
+          <ScalarProperty Name="DP_School" ColumnName="DP_School" />
+          <ScalarProperty Name="DP_TutorType_Id" ColumnName="DP_TutorType_Id" />
+          <ScalarProperty Name="DP_Begin" ColumnName="DP_Begin" />
+          <ScalarProperty Name="DP_End" ColumnName="DP_End" />
+          <ScalarProperty Name="DP_End_Now" ColumnName="DP_End_Now" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DP_Status" ColumnName="DP_Status" />
+          <ScalarProperty Name="DP_Level" ColumnName="DP_Level" />
+          <ScalarProperty Name="DP_Post" ColumnName="DP_Post" />
+          <ScalarProperty Name="DP_BOOK" ColumnName="DP_BOOK" />
+          <ScalarProperty Name="DP_ORDER" ColumnName="DP_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_ParttimeJob_GraduateStudentTutor">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_ParttimeJob_GraduateStudentTutor">
+        <MappingFragment StoreEntitySet="DB_ParttimeJob_GraduateStudentTutor">
+          <ScalarProperty Name="DP_ID" ColumnName="DP_ID" />
+          <ScalarProperty Name="DP_DUI_ID" ColumnName="DP_DUI_ID" />
+          <ScalarProperty Name="DP_School" ColumnName="DP_School" />
+          <ScalarProperty Name="DP_TutorType_Id" ColumnName="DP_TutorType_Id" />
+          <ScalarProperty Name="DP_Begin" ColumnName="DP_Begin" />
+          <ScalarProperty Name="DP_End" ColumnName="DP_End" />
+          <ScalarProperty Name="DP_End_Now" ColumnName="DP_End_Now" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DP_Status" ColumnName="DP_Status" />
+          <ScalarProperty Name="DP_BOOK" ColumnName="DP_BOOK" />
+          <ScalarProperty Name="DP_ORDER" ColumnName="DP_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Position_State">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Position_State">
+        <MappingFragment StoreEntitySet="DB_Position_State">
+          <ScalarProperty Name="DOS_ID" ColumnName="DOS_ID" />
+          <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+          <ScalarProperty Name="WORKLOAD" ColumnName="WORKLOAD" />
+          <ScalarProperty Name="AMT" ColumnName="AMT" />
+          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+          <ScalarProperty Name="MONTH" ColumnName="MONTH" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Radiation">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Radiation">
+        <MappingFragment StoreEntitySet="DB_Radiation">
+          <ScalarProperty Name="DR_ID" ColumnName="DR_ID" />
+          <ScalarProperty Name="DR_DUI_ID" ColumnName="DR_DUI_ID" />
+          <ScalarProperty Name="DR_Examine_Date" ColumnName="DR_Examine_Date" />
+          <ScalarProperty Name="DR_Value" ColumnName="DR_Value" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATDATE" ColumnName="CREATDATE" />
+          <ScalarProperty Name="DR_MODFIY" ColumnName="DR_MODFIY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DR_Status" ColumnName="DR_Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Radiation_BasicInfo">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Radiation_BasicInfo">
+        <MappingFragment StoreEntitySet="DB_Radiation_BasicInfo">
+          <ScalarProperty Name="DRB_ID" ColumnName="DRB_ID" />
+          <ScalarProperty Name="DRB_Number" ColumnName="DRB_Number" />
+          <ScalarProperty Name="DRB_Organ" ColumnName="DRB_Organ" />
+          <ScalarProperty Name="DRB_Date" ColumnName="DRB_Date" />
+          <ScalarProperty Name="DRB_Code_Id" ColumnName="DRB_Code_Id" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRB_Order" ColumnName="DRB_Order" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Radiation_EmergencyOrAccident">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Radiation_EmergencyOrAccident">
+        <MappingFragment StoreEntitySet="DB_Radiation_EmergencyOrAccident">
+          <ScalarProperty Name="DRE_ID" ColumnName="DRE_ID" />
+          <ScalarProperty Name="DRE_Date" ColumnName="DRE_Date" />
+          <ScalarProperty Name="DRE_Record" ColumnName="DRE_Record" />
+          <ScalarProperty Name="DRE_HealthSituation" ColumnName="DRE_HealthSituation" />
+          <ScalarProperty Name="DRE_Organ" ColumnName="DRE_Organ" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRE_Order" ColumnName="DRE_Order" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Radiation_HealthExamination">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Radiation_HealthExamination">
+        <MappingFragment StoreEntitySet="DB_Radiation_HealthExamination">
+          <ScalarProperty Name="DRH_ID" ColumnName="DRH_ID" />
+          <ScalarProperty Name="DRH_Date" ColumnName="DRH_Date" />
+          <ScalarProperty Name="DRH_Result" ColumnName="DRH_Result" />
+          <ScalarProperty Name="DRH_Organ" ColumnName="DRH_Organ" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRH_Order" ColumnName="DRH_Order" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Radiation_PersonalDose">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Radiation_PersonalDose">
+        <MappingFragment StoreEntitySet="DB_Radiation_PersonalDose">
+          <ScalarProperty Name="DRP_ID" ColumnName="DRP_ID" />
+          <ScalarProperty Name="DRP_WorkCode" ColumnName="DRP_WorkCode" />
+          <ScalarProperty Name="DRP_Name" ColumnName="DRP_Name" />
+          <ScalarProperty Name="DRP_Date" ColumnName="DRP_Date" />
+          <ScalarProperty Name="DRP_Result" ColumnName="DRP_Result" />
+          <ScalarProperty Name="DRP_Organ" ColumnName="DRP_Organ" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRP_Order" ColumnName="DRP_Order" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Radiation_TrainCheck">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Radiation_TrainCheck">
+        <MappingFragment StoreEntitySet="DB_Radiation_TrainCheck">
+          <ScalarProperty Name="DRT_ID" ColumnName="DRT_ID" />
+          <ScalarProperty Name="DRT_Date" ColumnName="DRT_Date" />
+          <ScalarProperty Name="DRT_Organ" ColumnName="DRT_Organ" />
+          <ScalarProperty Name="DRT_Result" ColumnName="DRT_Result" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRT_Order" ColumnName="DRT_Order" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Record_Punishments">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Record_Punishments">
+        <MappingFragment StoreEntitySet="DB_Record_Punishments">
+          <ScalarProperty Name="DRP_ID" ColumnName="DRP_ID" />
+          <ScalarProperty Name="DRP_Type_Id" ColumnName="DRP_Type_Id" />
+          <ScalarProperty Name="DRP_Name" ColumnName="DRP_Name" />
+          <ScalarProperty Name="DRP_Level_Id" ColumnName="DRP_Level_Id" />
+          <ScalarProperty Name="DRP_Date" ColumnName="DRP_Date" />
+          <ScalarProperty Name="DRP_Dept" ColumnName="DRP_Dept" />
+          <ScalarProperty Name="DRP_Remark" ColumnName="DRP_Remark" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRP_Order" ColumnName="DRP_Order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_Record_Rewards">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_Record_Rewards">
+        <MappingFragment StoreEntitySet="DB_Record_Rewards">
+          <ScalarProperty Name="DRR_ID" ColumnName="DRR_ID" />
+          <ScalarProperty Name="DRR_Type_Id" ColumnName="DRR_Type_Id" />
+          <ScalarProperty Name="DRR_Name" ColumnName="DRR_Name" />
+          <ScalarProperty Name="DRR_Level_Id" ColumnName="DRR_Level_Id" />
+          <ScalarProperty Name="DRR_Date" ColumnName="DRR_Date" />
+          <ScalarProperty Name="DRR_Dept" ColumnName="DRR_Dept" />
+          <ScalarProperty Name="DRR_Count" ColumnName="DRR_Count" />
+          <ScalarProperty Name="DRR_Rank" ColumnName="DRR_Rank" />
+          <ScalarProperty Name="DRR_Remark" ColumnName="DRR_Remark" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRR_Order" ColumnName="DRR_Order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_RESEARCH_ARTICLE">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_RESEARCH_ARTICLE">
+        <MappingFragment StoreEntitySet="DB_RESEARCH_ARTICLE">
+          <ScalarProperty Name="DRA_ID" ColumnName="DRA_ID" />
+          <ScalarProperty Name="DRA_DATE" ColumnName="DRA_DATE" />
+          <ScalarProperty Name="DRA_TITLE" ColumnName="DRA_TITLE" />
+          <ScalarProperty Name="DRA_MAGAZINE" ColumnName="DRA_MAGAZINE" />
+          <ScalarProperty Name="DRA_PAGE" ColumnName="DRA_PAGE" />
+          <ScalarProperty Name="DRA_LEVEL" ColumnName="DRA_LEVEL" />
+          <ScalarProperty Name="DRA_IMPACT" ColumnName="DRA_IMPACT" />
+          <ScalarProperty Name="DRA_AUTHOR" ColumnName="DRA_AUTHOR" />
+          <ScalarProperty Name="DRA_ORDER" ColumnName="DRA_ORDER" />
+          <ScalarProperty Name="DRA_FILE" ColumnName="DRA_FILE" />
+          <ScalarProperty Name="DRA_STATE" ColumnName="DRA_STATE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRA_AUTHOR_NAME" ColumnName="DRA_AUTHOR_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_RESEARCH_ARTICLE_MEETING">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_RESEARCH_ARTICLE_MEETING">
+        <MappingFragment StoreEntitySet="DB_RESEARCH_ARTICLE_MEETING">
+          <ScalarProperty Name="DRAM_ID" ColumnName="DRAM_ID" />
+          <ScalarProperty Name="DRAM_DATE" ColumnName="DRAM_DATE" />
+          <ScalarProperty Name="DRAM_TITLE" ColumnName="DRAM_TITLE" />
+          <ScalarProperty Name="DRAM_LEVEL" ColumnName="DRAM_LEVEL" />
+          <ScalarProperty Name="DRAM_ORDER" ColumnName="DRAM_ORDER" />
+          <ScalarProperty Name="DRAM_FILE" ColumnName="DRAM_FILE" />
+          <ScalarProperty Name="DRAM_STATE" ColumnName="DRAM_STATE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRAM_ARTICLE" ColumnName="DRAM_ARTICLE" />
+          <ScalarProperty Name="DRAM_ADDRESS" ColumnName="DRAM_ADDRESS" />
+          <ScalarProperty Name="DRAM_AUTHOR_NAME" ColumnName="DRAM_AUTHOR_NAME" />
+          <ScalarProperty Name="DRAM_Form_ID" ColumnName="DRAM_Form_ID" />
+          <ScalarProperty Name="DRAM_AUTHOR" ColumnName="DRAM_AUTHOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_RESEARCH_ARTICLE_WORK">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_RESEARCH_ARTICLE_WORK">
+        <MappingFragment StoreEntitySet="DB_RESEARCH_ARTICLE_WORK">
+          <ScalarProperty Name="DRAW_ID" ColumnName="DRAW_ID" />
+          <ScalarProperty Name="DRAW_NAME" ColumnName="DRAW_NAME" />
+          <ScalarProperty Name="DRAW_FIRST" ColumnName="DRAW_FIRST" />
+          <ScalarProperty Name="DRAW_PUBLISH" ColumnName="DRAW_PUBLISH" />
+          <ScalarProperty Name="DRAW_PUBLISH_DATE" ColumnName="DRAW_PUBLISH_DATE" />
+          <ScalarProperty Name="DRAW_PUBLISH_ADDRESS_ID" ColumnName="DRAW_PUBLISH_ADDRESS_ID" />
+          <ScalarProperty Name="DRAW_TYPE_ID" ColumnName="DRAW_TYPE_ID" />
+          <ScalarProperty Name="DRAW_WORD_COUNT" ColumnName="DRAW_WORD_COUNT" />
+          <ScalarProperty Name="DRAW_PUBLISH_LEVEL_ID" ColumnName="DRAW_PUBLISH_LEVEL_ID" />
+          <ScalarProperty Name="DRAW_FILE" ColumnName="DRAW_FILE" />
+          <ScalarProperty Name="DRAW_STATE" ColumnName="DRAW_STATE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRAW_ISBN" ColumnName="DRAW_ISBN" />
+          <ScalarProperty Name="DRAW_AUTHOR" ColumnName="DRAW_AUTHOR" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_RESEARCH_CHECK">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_RESEARCH_CHECK">
+        <MappingFragment StoreEntitySet="DB_RESEARCH_CHECK">
+          <ScalarProperty Name="DRC_ID" ColumnName="DRC_ID" />
+          <ScalarProperty Name="DRC_DATE" ColumnName="DRC_DATE" />
+          <ScalarProperty Name="DRC_ADDRESS" ColumnName="DRC_ADDRESS" />
+          <ScalarProperty Name="DRC_CONTENT" ColumnName="DRC_CONTENT" />
+          <ScalarProperty Name="DRC_LEVEL" ColumnName="DRC_LEVEL" />
+          <ScalarProperty Name="DRC_INVIGILATOR" ColumnName="DRC_INVIGILATOR" />
+          <ScalarProperty Name="DRC_SCORE" ColumnName="DRC_SCORE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRC_JOBNUM" ColumnName="DRC_JOBNUM" />
+          <ScalarProperty Name="DRC_DUI_ID" ColumnName="DRC_DUI_ID" />
+          <ScalarProperty Name="DRC_DUI_NAME" ColumnName="DRC_DUI_NAME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_RESEARCH_ISSUE">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_RESEARCH_ISSUE">
+        <MappingFragment StoreEntitySet="DB_RESEARCH_ISSUE">
+          <ScalarProperty Name="DRI_ID" ColumnName="DRI_ID" />
+          <ScalarProperty Name="DRI_BEGIN" ColumnName="DRI_BEGIN" />
+          <ScalarProperty Name="DRI_END" ColumnName="DRI_END" />
+          <ScalarProperty Name="DRI_SOURCE" ColumnName="DRI_SOURCE" />
+          <ScalarProperty Name="DRI_TYPE" ColumnName="DRI_TYPE" />
+          <ScalarProperty Name="DRI_NAME" ColumnName="DRI_NAME" />
+          <ScalarProperty Name="DRI_AMT" ColumnName="DRI_AMT" />
+          <ScalarProperty Name="DRI_COUNT" ColumnName="DRI_COUNT" />
+          <ScalarProperty Name="DRI_ORDER" ColumnName="DRI_ORDER" />
+          <ScalarProperty Name="DRI_FILES" ColumnName="DRI_FILES" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRI_TYPE_ID" ColumnName="DRI_TYPE_ID" />
+          <ScalarProperty Name="DRI_NUMBER" ColumnName="DRI_NUMBER" />
+          <ScalarProperty Name="DRI_OWNER" ColumnName="DRI_OWNER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_RESEARCH_TEACH">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_RESEARCH_TEACH">
+        <MappingFragment StoreEntitySet="DB_RESEARCH_TEACH">
+          <ScalarProperty Name="DRT_ID" ColumnName="DRT_ID" />
+          <ScalarProperty Name="DRT_DATE" ColumnName="DRT_DATE" />
+          <ScalarProperty Name="DRT_ADDRESS" ColumnName="DRT_ADDRESS" />
+          <ScalarProperty Name="DRT_PROJECT" ColumnName="DRT_PROJECT" />
+          <ScalarProperty Name="DRT_KIND" ColumnName="DRT_KIND" />
+          <ScalarProperty Name="DRT_COUNT" ColumnName="DRT_COUNT" />
+          <ScalarProperty Name="DRT_PPT" ColumnName="DRT_PPT" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_RESEARCH_WINNERS">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_RESEARCH_WINNERS">
+        <MappingFragment StoreEntitySet="DB_RESEARCH_WINNERS">
+          <ScalarProperty Name="DRW_ID" ColumnName="DRW_ID" />
+          <ScalarProperty Name="DRW_DATE" ColumnName="DRW_DATE" />
+          <ScalarProperty Name="DRW_NAME" ColumnName="DRW_NAME" />
+          <ScalarProperty Name="DRW_LEVEL" ColumnName="DRW_LEVEL" />
+          <ScalarProperty Name="DRW_TOTALCOUNT" ColumnName="DRW_TOTALCOUNT" />
+          <ScalarProperty Name="DRW_ORDER" ColumnName="DRW_ORDER" />
+          <ScalarProperty Name="DRW_FILE" ColumnName="DRW_FILE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DRW_PROJECTNAME" ColumnName="DRW_PROJECTNAME" />
+          <ScalarProperty Name="DRW_NUMBER" ColumnName="DRW_NUMBER" />
+          <ScalarProperty Name="DRW_LEVEL_ID" ColumnName="DRW_LEVEL_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_SCHEDULE_GROUP">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_SCHEDULE_GROUP">
+        <MappingFragment StoreEntitySet="DB_SCHEDULE_GROUP">
+          <ScalarProperty Name="DSG_ID" ColumnName="DSG_ID" />
+          <ScalarProperty Name="DSG_NAME" ColumnName="DSG_NAME" />
+          <ScalarProperty Name="DSG_REMARK" ColumnName="DSG_REMARK" />
+          <ScalarProperty Name="DSG_ORDER" ColumnName="DSG_ORDER" />
+          <ScalarProperty Name="DSG_MANAGER" ColumnName="DSG_MANAGER" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_SCHEDULE_GROUP_POSITION">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_SCHEDULE_GROUP_POSITION">
+        <MappingFragment StoreEntitySet="DB_SCHEDULE_GROUP_POSITION">
+          <ScalarProperty Name="DSGP_ID" ColumnName="DSGP_ID" />
+          <ScalarProperty Name="DSGP_DSG_ID" ColumnName="DSGP_DSG_ID" />
+          <ScalarProperty Name="DSGP_POSITIONID" ColumnName="DSGP_POSITIONID" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_SCHEDULE_GROUP_TYPE">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_SCHEDULE_GROUP_TYPE">
+        <MappingFragment StoreEntitySet="DB_SCHEDULE_GROUP_TYPE">
+          <ScalarProperty Name="DSGT_ID" ColumnName="DSGT_ID" />
+          <ScalarProperty Name="DSGT_DSG_ID" ColumnName="DSGT_DSG_ID" />
+          <ScalarProperty Name="DSGT_STAFF_TYPE" ColumnName="DSGT_STAFF_TYPE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_SCHEDULING">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_SCHEDULING">
+        <MappingFragment StoreEntitySet="DB_SCHEDULING">
+          <ScalarProperty Name="DS_ID" ColumnName="DS_ID" />
+          <ScalarProperty Name="DS_DATE" ColumnName="DS_DATE" />
+          <ScalarProperty Name="DS_REMARK" ColumnName="DS_REMARK" />
+          <ScalarProperty Name="DS_STATE" ColumnName="DS_STATE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DS_DSG_ID" ColumnName="DS_DSG_ID" />
+          <ScalarProperty Name="DS_WEEKREMARK" ColumnName="DS_WEEKREMARK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_SCHEDULING_DETAIL">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_SCHEDULING_DETAIL">
+        <MappingFragment StoreEntitySet="DB_SCHEDULING_DETAIL">
+          <ScalarProperty Name="DSD_ID" ColumnName="DSD_ID" />
+          <ScalarProperty Name="DSD_DS_ID" ColumnName="DSD_DS_ID" />
+          <ScalarProperty Name="DSD_DATE" ColumnName="DSD_DATE" />
+          <ScalarProperty Name="DSD_USERID" ColumnName="DSD_USERID" />
+          <ScalarProperty Name="DSD_USERNAME" ColumnName="DSD_USERNAME" />
+          <ScalarProperty Name="DSD_POSTIONID" ColumnName="DSD_POSTIONID" />
+          <ScalarProperty Name="DSD_POSTIONNAME" ColumnName="DSD_POSTIONNAME" />
+          <ScalarProperty Name="DSD_TYPE" ColumnName="DSD_TYPE" />
+          <ScalarProperty Name="DSD_DSG_ID" ColumnName="DSD_DSG_ID" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_TRAIN_CONTINUE">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_TRAIN_CONTINUE">
+        <MappingFragment StoreEntitySet="DB_TRAIN_CONTINUE">
+          <ScalarProperty Name="DT_ID" ColumnName="DT_ID" />
+          <ScalarProperty Name="DT_DUI_ID" ColumnName="DT_DUI_ID" />
+          <ScalarProperty Name="DT_BEGIN" ColumnName="DT_BEGIN" />
+          <ScalarProperty Name="DT_END" ColumnName="DT_END" />
+          <ScalarProperty Name="DT_END_NOW" ColumnName="DT_END_NOW" />
+          <ScalarProperty Name="DT_Project_Name" ColumnName="DT_Project_Name" />
+          <ScalarProperty Name="DT_Project_Code" ColumnName="DT_Project_Code" />
+          <ScalarProperty Name="DT_Host_Unit" ColumnName="DT_Host_Unit" />
+          <ScalarProperty Name="DT_Province_Id" ColumnName="DT_Province_Id" />
+          <ScalarProperty Name="DT_City_Id" ColumnName="DT_City_Id" />
+          <ScalarProperty Name="DT_ScoreType_Id" ColumnName="DT_ScoreType_Id" />
+          <ScalarProperty Name="DT_Score" ColumnName="DT_Score" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DT_Status" ColumnName="DT_Status" />
+          <ScalarProperty Name="DT_BOOK" ColumnName="DT_BOOK" />
+          <ScalarProperty Name="DT_DATE_SUM" ColumnName="DT_DATE_SUM" />
+          <ScalarProperty Name="DT_ORDER" ColumnName="DT_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_TRAIN_FOREIGN">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_TRAIN_FOREIGN">
+        <MappingFragment StoreEntitySet="DB_TRAIN_FOREIGN">
+          <ScalarProperty Name="DT_ID" ColumnName="DT_ID" />
+          <ScalarProperty Name="DT_DUI_ID" ColumnName="DT_DUI_ID" />
+          <ScalarProperty Name="DT_BEGIN" ColumnName="DT_BEGIN" />
+          <ScalarProperty Name="DT_END" ColumnName="DT_END" />
+          <ScalarProperty Name="DT_END_NOW" ColumnName="DT_END_NOW" />
+          <ScalarProperty Name="DT_Project_Name" ColumnName="DT_Project_Name" />
+          <ScalarProperty Name="DT_Project_Code" ColumnName="DT_Project_Code" />
+          <ScalarProperty Name="DT_Host_Unit" ColumnName="DT_Host_Unit" />
+          <ScalarProperty Name="DT_Fee_Support" ColumnName="DT_Fee_Support" />
+          <ScalarProperty Name="DT_Country_Id" ColumnName="DT_Country_Id" />
+          <ScalarProperty Name="DT_Island_Id" ColumnName="DT_Island_Id" />
+          <ScalarProperty Name="DT_ExamResults_Id" ColumnName="DT_ExamResults_Id" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DT_Status" ColumnName="DT_Status" />
+          <ScalarProperty Name="DT_BOOK" ColumnName="DT_BOOK" />
+          <ScalarProperty Name="DT_DATE_SUM" ColumnName="DT_DATE_SUM" />
+          <ScalarProperty Name="DT_HASBOOK" ColumnName="DT_HASBOOK" />
+          <ScalarProperty Name="DT_ORDER" ColumnName="DT_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_TRAIN_INLAND">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_TRAIN_INLAND">
+        <MappingFragment StoreEntitySet="DB_TRAIN_INLAND">
+          <ScalarProperty Name="DT_ID" ColumnName="DT_ID" />
+          <ScalarProperty Name="DT_DUI_ID" ColumnName="DT_DUI_ID" />
+          <ScalarProperty Name="DT_BEGIN" ColumnName="DT_BEGIN" />
+          <ScalarProperty Name="DT_END" ColumnName="DT_END" />
+          <ScalarProperty Name="DT_END_NOW" ColumnName="DT_END_NOW" />
+          <ScalarProperty Name="DT_Project_Name" ColumnName="DT_Project_Name" />
+          <ScalarProperty Name="DT_Project_Code" ColumnName="DT_Project_Code" />
+          <ScalarProperty Name="DT_Host_Unit" ColumnName="DT_Host_Unit" />
+          <ScalarProperty Name="DT_Fee_Support" ColumnName="DT_Fee_Support" />
+          <ScalarProperty Name="DT_Province_Id" ColumnName="DT_Province_Id" />
+          <ScalarProperty Name="DT_City_Id" ColumnName="DT_City_Id" />
+          <ScalarProperty Name="DT_ExamResults_Id" ColumnName="DT_ExamResults_Id" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DT_Status" ColumnName="DT_Status" />
+          <ScalarProperty Name="DT_BOOK" ColumnName="DT_BOOK" />
+          <ScalarProperty Name="DT_DATE_SUM" ColumnName="DT_DATE_SUM" />
+          <ScalarProperty Name="DT_ORDER" ColumnName="DT_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_User_Holiday">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_User_Holiday">
+        <MappingFragment StoreEntitySet="DB_User_Holiday">
+          <ScalarProperty Name="DUH_ID" ColumnName="DUH_ID" />
+          <ScalarProperty Name="DUI_ID" ColumnName="DUI_ID" />
+          <ScalarProperty Name="DUI_JONNUM" ColumnName="DUI_JONNUM" />
+          <ScalarProperty Name="DUI_NAME" ColumnName="DUI_NAME" />
+          <ScalarProperty Name="DUI_YEAR" ColumnName="DUI_YEAR" />
+          <ScalarProperty Name="DUI_TYPE2COUNT" ColumnName="DUI_TYPE2COUNT" />
+          <ScalarProperty Name="DUI_TYPE3COUNT" ColumnName="DUI_TYPE3COUNT" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_USER_INFO">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_USER_INFO">
+        <MappingFragment StoreEntitySet="DB_USER_INFO">
+          <ScalarProperty Name="DUI_ID" ColumnName="DUI_ID" />
+          <ScalarProperty Name="DUI_SU_ID" ColumnName="DUI_SU_ID" />
+          <ScalarProperty Name="DUI_WORKSTATUS" ColumnName="DUI_WORKSTATUS" />
+          <ScalarProperty Name="DUI_PWD" ColumnName="DUI_PWD" />
+          <ScalarProperty Name="DUI_NAME" ColumnName="DUI_NAME" />
+          <ScalarProperty Name="DUI_SEX" ColumnName="DUI_SEX" />
+          <ScalarProperty Name="DUI_BIRTHDAY" ColumnName="DUI_BIRTHDAY" />
+          <ScalarProperty Name="DUI_IDCARD_NUMBER" ColumnName="DUI_IDCARD_NUMBER" />
+          <ScalarProperty Name="DUI_IDCARD1" ColumnName="DUI_IDCARD1" />
+          <ScalarProperty Name="DUI_IDCARD2" ColumnName="DUI_IDCARD2" />
+          <ScalarProperty Name="DUI_AGE" ColumnName="DUI_AGE" />
+          <ScalarProperty Name="DUI_PY1" ColumnName="DUI_PY1" />
+          <ScalarProperty Name="DUI_PY2" ColumnName="DUI_PY2" />
+          <ScalarProperty Name="DUI_Nation_Id" ColumnName="DUI_Nation_Id" />
+          <ScalarProperty Name="DUI_NativePlace_Province_Id" ColumnName="DUI_NativePlace_Province_Id" />
+          <ScalarProperty Name="DUI_NativePlace_City_Id" ColumnName="DUI_NativePlace_City_Id" />
+          <ScalarProperty Name="DUI_NativePlace_County_Id" ColumnName="DUI_NativePlace_County_Id" />
+          <ScalarProperty Name="DUI_BirthPlace_Province_Id" ColumnName="DUI_BirthPlace_Province_Id" />
+          <ScalarProperty Name="DUI_BirthPlace_City_Id" ColumnName="DUI_BirthPlace_City_Id" />
+          <ScalarProperty Name="DUI_BirthPlace_County_Id" ColumnName="DUI_BirthPlace_County_Id" />
+          <ScalarProperty Name="DUI_PoliticalFaction_Id" ColumnName="DUI_PoliticalFaction_Id" />
+          <ScalarProperty Name="DUI_PoliticalFaction_JoinDate" ColumnName="DUI_PoliticalFaction_JoinDate" />
+          <ScalarProperty Name="DUI_JoinInWork_Date" ColumnName="DUI_JoinInWork_Date" />
+          <ScalarProperty Name="DUI_JoinInWork_Years" ColumnName="DUI_JoinInWork_Years" />
+          <ScalarProperty Name="DUI_JoinInRadiat_Date" ColumnName="DUI_JoinInRadiat_Date" />
+          <ScalarProperty Name="DUI_JoinInRadiat_Years" ColumnName="DUI_JoinInRadiat_Years" />
+          <ScalarProperty Name="DUI_JoinInHospital_Date" ColumnName="DUI_JoinInHospital_Date" />
+          <ScalarProperty Name="DUI_JoinInHospital_Years" ColumnName="DUI_JoinInHospital_Years" />
+          <ScalarProperty Name="DUI_EmploymentContract_Begin" ColumnName="DUI_EmploymentContract_Begin" />
+          <ScalarProperty Name="DUI_EmploymentContract_End" ColumnName="DUI_EmploymentContract_End" />
+          <ScalarProperty Name="DUI_EmploymentContract_Folder" ColumnName="DUI_EmploymentContract_Folder" />
+          <ScalarProperty Name="DUI_JobNumber" ColumnName="DUI_JobNumber" />
+          <ScalarProperty Name="DUI_HospitalBranch_In" ColumnName="DUI_HospitalBranch_In" />
+          <ScalarProperty Name="DUI_Staff_Type" ColumnName="DUI_Staff_Type" />
+          <ScalarProperty Name="DUI_Position_Id" ColumnName="DUI_Position_Id" />
+          <ScalarProperty Name="DUI_Job" ColumnName="DUI_Job" />
+          <ScalarProperty Name="DUI_Educational_Id" ColumnName="DUI_Educational_Id" />
+          <ScalarProperty Name="DUI_Degree_Id" ColumnName="DUI_Degree_Id" />
+          <ScalarProperty Name="DUI_Professionals" ColumnName="DUI_Professionals" />
+          <ScalarProperty Name="DUI_Telephone_Long" ColumnName="DUI_Telephone_Long" />
+          <ScalarProperty Name="DUI_Telephone_Short_Operate_Id" ColumnName="DUI_Telephone_Short_Operate_Id" />
+          <ScalarProperty Name="DUI_Telephone_Short_Number" ColumnName="DUI_Telephone_Short_Number" />
+          <ScalarProperty Name="DUI_Telephone_Bakeup" ColumnName="DUI_Telephone_Bakeup" />
+          <ScalarProperty Name="DUI_Email1" ColumnName="DUI_Email1" />
+          <ScalarProperty Name="DUI_Email2" ColumnName="DUI_Email2" />
+          <ScalarProperty Name="DUI_Car_Number" ColumnName="DUI_Car_Number" />
+          <ScalarProperty Name="DUI_MaritalStatus_Id" ColumnName="DUI_MaritalStatus_Id" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DUI_Status" ColumnName="DUI_Status" />
+          <ScalarProperty Name="DUI_MYPIC" ColumnName="DUI_MYPIC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_WORK_EXP_BASE">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_WORK_EXP_BASE">
+        <MappingFragment StoreEntitySet="DB_WORK_EXP_BASE">
+          <ScalarProperty Name="DWE_ID" ColumnName="DWE_ID" />
+          <ScalarProperty Name="DWE_DUI_ID" ColumnName="DWE_DUI_ID" />
+          <ScalarProperty Name="DWE_BEGIN" ColumnName="DWE_BEGIN" />
+          <ScalarProperty Name="DWE_END" ColumnName="DWE_END" />
+          <ScalarProperty Name="DWE_END_NOW" ColumnName="DWE_END_NOW" />
+          <ScalarProperty Name="DWE_COMPANY" ColumnName="DWE_COMPANY" />
+          <ScalarProperty Name="DWE_COMPANY_LEVEL_ID" ColumnName="DWE_COMPANY_LEVEL_ID" />
+          <ScalarProperty Name="DWE_Province_Id" ColumnName="DWE_Province_Id" />
+          <ScalarProperty Name="DWE_City_Id" ColumnName="DWE_City_Id" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DWE_Status" ColumnName="DWE_Status" />
+          <ScalarProperty Name="DWE_DATE_SUM" ColumnName="DWE_DATE_SUM" />
+          <ScalarProperty Name="DWE_ORDER" ColumnName="DWE_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB_WORK_EXP_SELF">
+      <EntityTypeMapping TypeName="HospitalOAModel.DB_WORK_EXP_SELF">
+        <MappingFragment StoreEntitySet="DB_WORK_EXP_SELF">
+          <ScalarProperty Name="DWE_ID" ColumnName="DWE_ID" />
+          <ScalarProperty Name="DWE_DUI_ID" ColumnName="DWE_DUI_ID" />
+          <ScalarProperty Name="DWE_BEGIN" ColumnName="DWE_BEGIN" />
+          <ScalarProperty Name="DWE_END" ColumnName="DWE_END" />
+          <ScalarProperty Name="DWE_END_NOW" ColumnName="DWE_END_NOW" />
+          <ScalarProperty Name="DWE_COMPANY" ColumnName="DWE_COMPANY" />
+          <ScalarProperty Name="DWE_COMPANY_LEVEL_ID" ColumnName="DWE_COMPANY_LEVEL_ID" />
+          <ScalarProperty Name="DWE_DEPT" ColumnName="DWE_DEPT" />
+          <ScalarProperty Name="DWE_Position_Id" ColumnName="DWE_Position_Id" />
+          <ScalarProperty Name="DWE_POST" ColumnName="DWE_POST" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="DWE_Status" ColumnName="DWE_Status" />
+          <ScalarProperty Name="DWE_DATE_SUM" ColumnName="DWE_DATE_SUM" />
+          <ScalarProperty Name="DWE_ORDER" ColumnName="DWE_ORDER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_DEPT">
+      <EntityTypeMapping TypeName="HospitalOAModel.SYS_DEPT">
+        <MappingFragment StoreEntitySet="SYS_DEPT">
+          <ScalarProperty Name="SD_ID" ColumnName="SD_ID" />
+          <ScalarProperty Name="SD_NAME" ColumnName="SD_NAME" />
+          <ScalarProperty Name="SD_CODE" ColumnName="SD_CODE" />
+          <ScalarProperty Name="SD_PARENT_ID" ColumnName="SD_PARENT_ID" />
+          <ScalarProperty Name="SD_ORDER" ColumnName="SD_ORDER" />
+          <ScalarProperty Name="SD_LEVEL" ColumnName="SD_LEVEL" />
+          <ScalarProperty Name="SD_FULL_NAME" ColumnName="SD_FULL_NAME" />
+          <ScalarProperty Name="SD_REMARK" ColumnName="SD_REMARK" />
+          <ScalarProperty Name="SD_MANAGER_ID" ColumnName="SD_MANAGER_ID" />
+          <ScalarProperty Name="SD_MANAGER_NAME" ColumnName="SD_MANAGER_NAME" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+          <ScalarProperty Name="CONTACTS" ColumnName="CONTACTS" />
+          <ScalarProperty Name="CONTACTS_BACK" ColumnName="CONTACTS_BACK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_DISTINCT">
+      <EntityTypeMapping TypeName="HospitalOAModel.SYS_DISTINCT">
+        <MappingFragment StoreEntitySet="SYS_DISTINCT">
+          <ScalarProperty Name="SD_ID" ColumnName="SD_ID" />
+          <ScalarProperty Name="SD_PID" ColumnName="SD_PID" />
+          <ScalarProperty Name="SD_NAME" ColumnName="SD_NAME" />
+          <ScalarProperty Name="SD_ORDER" ColumnName="SD_ORDER" />
+          <ScalarProperty Name="SD_VALUE" ColumnName="SD_VALUE" />
+          <ScalarProperty Name="SD_VALUE1" ColumnName="SD_VALUE1" />
+          <ScalarProperty Name="SD_VALUE2" ColumnName="SD_VALUE2" />
+          <ScalarProperty Name="SD_VALUE3" ColumnName="SD_VALUE3" />
+          <ScalarProperty Name="SD_VALUE4" ColumnName="SD_VALUE4" />
+          <ScalarProperty Name="SD_VALUE5" ColumnName="SD_VALUE5" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_FILES">
+      <EntityTypeMapping TypeName="HospitalOAModel.SYS_FILES">
+        <MappingFragment StoreEntitySet="SYS_FILES">
+          <ScalarProperty Name="SF_ID" ColumnName="SF_ID" />
+          <ScalarProperty Name="SF_FORDER" ColumnName="SF_FORDER" />
+          <ScalarProperty Name="SF_NAME" ColumnName="SF_NAME" />
+          <ScalarProperty Name="SF_FILEURL" ColumnName="SF_FILEURL" />
+          <ScalarProperty Name="SF_EXT" ColumnName="SF_EXT" />
+          <ScalarProperty Name="SF_SIZE" ColumnName="SF_SIZE" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_Location">
+      <EntityTypeMapping TypeName="HospitalOAModel.SYS_Location">
+        <MappingFragment StoreEntitySet="SYS_Location">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CountryRegionCode" ColumnName="CountryRegionCode" />
+          <ScalarProperty Name="StateCode" ColumnName="StateCode" />
+          <ScalarProperty Name="CityCode" ColumnName="CityCode" />
+          <ScalarProperty Name="RegionCode" ColumnName="RegionCode" />
+          <ScalarProperty Name="Level" ColumnName="Level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_MENU">
+      <EntityTypeMapping TypeName="HospitalOAModel.SYS_MENU">
+        <MappingFragment StoreEntitySet="SYS_MENU">
+          <ScalarProperty Name="SM_ID" ColumnName="SM_ID" />
+          <ScalarProperty Name="SM_NAME" ColumnName="SM_NAME" />
+          <ScalarProperty Name="SM_CODE" ColumnName="SM_CODE" />
+          <ScalarProperty Name="SM_URL" ColumnName="SM_URL" />
+          <ScalarProperty Name="SM_PARENT_ID" ColumnName="SM_PARENT_ID" />
+          <ScalarProperty Name="SM_LEVEL" ColumnName="SM_LEVEL" />
+          <ScalarProperty Name="SM_OPEN_NEW" ColumnName="SM_OPEN_NEW" />
+          <ScalarProperty Name="SM_ENABLED" ColumnName="SM_ENABLED" />
+          <ScalarProperty Name="SM_ORDER" ColumnName="SM_ORDER" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER_GROUP">
+      <EntityTypeMapping TypeName="HospitalOAModel.SYS_USER_GROUP">
+        <MappingFragment StoreEntitySet="SYS_USER_GROUP">
+          <ScalarProperty Name="SUG_ID" ColumnName="SUG_ID" />
+          <ScalarProperty Name="SUG_NAME" ColumnName="SUG_NAME" />
+          <ScalarProperty Name="SUG_REMARK" ColumnName="SUG_REMARK" />
+          <ScalarProperty Name="SUG_IS_PUBLIC" ColumnName="SUG_IS_PUBLIC" />
+          <ScalarProperty Name="SUG_ORDER" ColumnName="SUG_ORDER" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER_GROUP_MENU">
+      <EntityTypeMapping TypeName="HospitalOAModel.SYS_USER_GROUP_MENU">
+        <MappingFragment StoreEntitySet="SYS_USER_GROUP_MENU">
+          <ScalarProperty Name="SUGM_ID" ColumnName="SUGM_ID" />
+          <ScalarProperty Name="SUGM_SUG_ID" ColumnName="SUGM_SUG_ID" />
+          <ScalarProperty Name="SUGM_SM_ID" ColumnName="SUGM_SM_ID" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USER_GROUP_USERS">
+      <EntityTypeMapping TypeName="HospitalOAModel.SYS_USER_GROUP_USERS">
+        <MappingFragment StoreEntitySet="SYS_USER_GROUP_USERS">
+          <ScalarProperty Name="SUGU_ID" ColumnName="SUGU_ID" />
+          <ScalarProperty Name="SUGU_SUG_ID" ColumnName="SUGU_SUG_ID" />
+          <ScalarProperty Name="SUGU_SU_ID" ColumnName="SUGU_SU_ID" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_USERS">
+      <EntityTypeMapping TypeName="HospitalOAModel.SYS_USERS">
+        <MappingFragment StoreEntitySet="SYS_USERS">
+          <ScalarProperty Name="SU_ID" ColumnName="SU_ID" />
+          <ScalarProperty Name="SU_OE_ID" ColumnName="SU_OE_ID" />
+          <ScalarProperty Name="SU_NAME" ColumnName="SU_NAME" />
+          <ScalarProperty Name="SU_CODE" ColumnName="SU_CODE" />
+          <ScalarProperty Name="SU_LOGIN" ColumnName="SU_LOGIN" />
+          <ScalarProperty Name="SU_PASSWORD" ColumnName="SU_PASSWORD" />
+          <ScalarProperty Name="SU_SEX" ColumnName="SU_SEX" />
+          <ScalarProperty Name="SU_MOBILE" ColumnName="SU_MOBILE" />
+          <ScalarProperty Name="SU_OFFICEPHONE" ColumnName="SU_OFFICEPHONE" />
+          <ScalarProperty Name="SU_EMAIL" ColumnName="SU_EMAIL" />
+          <ScalarProperty Name="SU_FAX" ColumnName="SU_FAX" />
+          <ScalarProperty Name="SU_ADDRESS" ColumnName="SU_ADDRESS" />
+          <ScalarProperty Name="SU_ACTIVITY" ColumnName="SU_ACTIVITY" />
+          <ScalarProperty Name="SU_ORDER" ColumnName="SU_ORDER" />
+          <ScalarProperty Name="SU_SD_ID" ColumnName="SU_SD_ID" />
+          <ScalarProperty Name="SU_INCOMPANY_TIME" ColumnName="SU_INCOMPANY_TIME" />
+          <ScalarProperty Name="SU_WORKTIME" ColumnName="SU_WORKTIME" />
+          <ScalarProperty Name="SU_SP_ID" ColumnName="SU_SP_ID" />
+          <ScalarProperty Name="SU_SPP_ID" ColumnName="SU_SPP_ID" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="imports">
+      <EntityTypeMapping TypeName="HospitalOAModel.import">
+        <MappingFragment StoreEntitySet="import">
+          <ScalarProperty Name="SD_ID" ColumnName="SD_ID" />
+          <ScalarProperty Name="SD_PID" ColumnName="SD_PID" />
+          <ScalarProperty Name="SD_NAME" ColumnName="SD_NAME" />
+          <ScalarProperty Name="SD_ORDER" ColumnName="SD_ORDER" />
+          <ScalarProperty Name="SD_VALUE" ColumnName="SD_VALUE" />
+          <ScalarProperty Name="SD_VALUE1" ColumnName="SD_VALUE1" />
+          <ScalarProperty Name="SD_VALUE2" ColumnName="SD_VALUE2" />
+          <ScalarProperty Name="SD_VALUE3" ColumnName="SD_VALUE3" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SYS_MENU2">
+      <EntityTypeMapping TypeName="HospitalOAModel.SYS_MENU2">
+        <MappingFragment StoreEntitySet="SYS_MENU2">
+          <ScalarProperty Name="SM_ID" ColumnName="SM_ID" />
+          <ScalarProperty Name="SM_NAME" ColumnName="SM_NAME" />
+          <ScalarProperty Name="SM_CODE" ColumnName="SM_CODE" />
+          <ScalarProperty Name="SM_URL" ColumnName="SM_URL" />
+          <ScalarProperty Name="SM_PARENT_ID" ColumnName="SM_PARENT_ID" />
+          <ScalarProperty Name="SM_LEVEL" ColumnName="SM_LEVEL" />
+          <ScalarProperty Name="SM_OPEN_NEW" ColumnName="SM_OPEN_NEW" />
+          <ScalarProperty Name="SM_ENABLED" ColumnName="SM_ENABLED" />
+          <ScalarProperty Name="SM_ORDER" ColumnName="SM_ORDER" />
+          <ScalarProperty Name="CREATOR" ColumnName="CREATOR" />
+          <ScalarProperty Name="CREATEDATE" ColumnName="CREATEDATE" />
+          <ScalarProperty Name="MODIFY" ColumnName="MODIFY" />
+          <ScalarProperty Name="MODIFYDATE" ColumnName="MODIFYDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

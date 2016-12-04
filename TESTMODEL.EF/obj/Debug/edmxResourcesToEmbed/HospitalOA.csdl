@@ -1,0 +1,1190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HospitalOAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DB_Audit">
+    <Key>
+      <PropertyRef Name="DA_ID" />
+    </Key>
+    <Property Name="DA_ID" Type="Guid" Nullable="false" />
+    <Property Name="DA_DUI_ID" Type="Guid" />
+    <Property Name="DA_Finish_Date" Type="DateTime" Precision="3" />
+    <Property Name="DA_Desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DA_Count_Unfinish" Type="Int32" />
+    <Property Name="DA_Count_Finish" Type="Int32" />
+    <Property Name="DA_IKNOW" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="DB_Bonus">
+    <Key>
+      <PropertyRef Name="DB_ID" />
+    </Key>
+    <Property Name="DB_ID" Type="Guid" Nullable="false" />
+    <Property Name="DB_DUI_ID" Type="Guid" />
+    <Property Name="DB_JOBNUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DB_USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DB_YEAR" Type="Int32" />
+    <Property Name="DB_MONTH" Type="Int32" />
+    <Property Name="DB_XS" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DB_JJ" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DB_YY" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DB_TJ" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DB_YB" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DB_JB" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DB_CB" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DB_JIEB" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DB_JIB" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DB_BU" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DB_ZJ" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_Certificate_Other">
+    <Key>
+      <PropertyRef Name="DC_ID" />
+    </Key>
+    <Property Name="DC_ID" Type="Guid" Nullable="false" />
+    <Property Name="DC_DUI_ID" Type="Guid" />
+    <Property Name="DC_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DC_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DC_Dept" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DC_Date" Type="DateTime" Precision="3" />
+    <Property Name="DC_Expiry" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DC_Remark" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DC_Status" Type="Int32" />
+    <Property Name="DC_FILE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DC_TYPE" Type="Int32" />
+    <Property Name="ZY1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LB1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YSZG2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ZXLB2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ZXFW2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YYSB3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YXQ3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ZYMC4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ZGJB4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LB4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PZRQ4" Type="DateTime" Precision="3" />
+    <Property Name="DAH5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YZXH5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YZ6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YXQ6" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="XY7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YX7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KSSJ7" Type="DateTime" Precision="3" />
+    <Property Name="CJ7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="XY8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YX8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KSSJ8" Type="DateTime" Precision="3" />
+    <Property Name="CJ8" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DC_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_Device_IT">
+    <Key>
+      <PropertyRef Name="DDI_ID" />
+    </Key>
+    <Property Name="DDI_ID" Type="Guid" Nullable="false" />
+    <Property Name="DDI_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DDI_Type_ID" Type="Guid" />
+    <Property Name="DDI_Model" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DDI_Location_ID" Type="Guid" />
+    <Property Name="DDI_Run_State_ID" Type="Guid" />
+    <Property Name="DDI_Two_Dimension_Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DDI_IP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DDI_Price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="DDI_Buy_Date" Type="DateTime" Precision="3" />
+    <Property Name="DDI_Guarantee_Time_Begin" Type="DateTime" Precision="3" />
+    <Property Name="DDI_Guarantee_Time_End" Type="DateTime" Precision="3" />
+    <Property Name="DDI_Expect_Scrap_Date" Type="DateTime" Precision="3" />
+    <Property Name="DDI_Scrap_Date" Type="DateTime" Precision="3" />
+    <Property Name="DDI_Order" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_Device_Large_Image">
+    <Key>
+      <PropertyRef Name="DDLI_ID" />
+    </Key>
+    <Property Name="DDLI_ID" Type="Guid" Nullable="false" />
+    <Property Name="DDLI_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DDLI_Type_ID" Type="Guid" />
+    <Property Name="DDLI_Model" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DDLI_License_Key" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DDLI_Room_Number_ID" Type="Guid" />
+    <Property Name="DDLI_Run_State_ID" Type="Guid" />
+    <Property Name="DDLI_Prce" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="DDLI_Buy_Date" Type="DateTime" Precision="3" />
+    <Property Name="DDLI_First_Time_Open_Date" Type="DateTime" Precision="3" />
+    <Property Name="DDLI_Guarantee_Time_Begin" Type="DateTime" Precision="3" />
+    <Property Name="DDLI_Guarantee_Time_End" Type="DateTime" Precision="3" />
+    <Property Name="DDLI_Expect_Scrap_Date" Type="DateTime" Precision="3" />
+    <Property Name="DDLI_Scrap_Date" Type="DateTime" Precision="3" />
+    <Property Name="DDLI_Order" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_Device_Medical_Assistance">
+    <Key>
+      <PropertyRef Name="DDMA_ID" />
+    </Key>
+    <Property Name="DDMA_ID" Type="Guid" Nullable="false" />
+    <Property Name="DDMA_Number" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DDMA_Type_ID" Type="Guid" />
+    <Property Name="DDMA_Model" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DDMA_Location_ID" Type="Guid" />
+    <Property Name="DDMA_Run_State_ID" Type="Guid" />
+    <Property Name="DDMA_Price" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="DDMA_Buy_Date" Type="DateTime" Precision="3" />
+    <Property Name="DDMA_Guarantee_Time_Begin" Type="DateTime" Precision="3" />
+    <Property Name="DDMA_Guarantee_Time_End" Type="DateTime" Precision="3" />
+    <Property Name="DDMA_Expect_Scrap_Date" Type="DateTime" Precision="3" />
+    <Property Name="DDMA_Scrap_Date" Type="DateTime" Precision="3" />
+    <Property Name="DDMA_Order" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_EDUCATION_EXP">
+    <Key>
+      <PropertyRef Name="DEE_ID" />
+    </Key>
+    <Property Name="DEE_ID" Type="Guid" Nullable="false" />
+    <Property Name="DEE_DUI_ID" Type="Guid" />
+    <Property Name="DEE_Degree_Id" Type="Guid" />
+    <Property Name="DEE_Professional" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DEE_School" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DEE_School_SubjectionId" Type="Guid" />
+    <Property Name="DEE_School_Begin" Type="DateTime" Precision="3" />
+    <Property Name="DEE_School_End" Type="DateTime" Precision="3" />
+    <Property Name="DEE_School_Years" Type="Int32" />
+    <Property Name="DEE_Tutor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DEE_Certificate_Graduation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DEE_Certificate_Degree" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DEE_Status" Type="Int32" />
+    <Property Name="DEE_School_Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="DEE_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_Handover_Equipment">
+    <Key>
+      <PropertyRef Name="DHE_ID" />
+    </Key>
+    <Property Name="DHE_ID" Type="Guid" Nullable="false" />
+    <Property Name="DHE_TYPE" Type="Int32" />
+    <Property Name="DHE_USERTYPE" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="DHE_Validity" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DHE_ROOM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHE_Equipment_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHE_Equipment_ID" Type="Guid" />
+    <Property Name="DHE_Equipment_CODE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DHE_Equipment_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHE_Urgency" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DHE_FAULT" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DHE_Feedback" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_Handover_EVENT">
+    <Key>
+      <PropertyRef Name="DHE_ID" />
+    </Key>
+    <Property Name="DHE_ID" Type="Guid" Nullable="false" />
+    <Property Name="DHE_TYPE" Type="Int32" />
+    <Property Name="DHE_USERTYPE" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="DHE_Validity" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DHE_USERS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHE_PATIENT_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_PATIENT_SEX" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_PATIENT_AGE" Type="Int32" />
+    <Property Name="DHP_PATIENT_NUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_PATIENT_BL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_PATIENT_CHECK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_PATIENT_DEPT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_PATIENT_BED" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_PATIENT_TYPE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_PATIENT_MOBILE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_PATIENT_HISTORY" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_EVENT_TYPE" Type="Guid" />
+    <Property Name="DHP_Reagent_TYPE" Type="Guid" />
+    <Property Name="DHP_Species" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_Measure" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_Degree" Type="Guid" />
+    <Property Name="DHP_DESC" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_DEALWITH" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_Handover_Patient">
+    <Key>
+      <PropertyRef Name="DHP_ID" />
+    </Key>
+    <Property Name="DHP_ID" Type="Guid" Nullable="false" />
+    <Property Name="DHP_TYPE" Type="Int32" />
+    <Property Name="DHP_USERTYPE" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_Validity" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DHP_NAME" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_SEX" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_AGE" Type="Int32" />
+    <Property Name="DHP_BL_NUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_CHECK_NUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_MOBILE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_Diagnosis" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_Urgency" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DHP_CONTENT" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_Holiday">
+    <Key>
+      <PropertyRef Name="DH_ID" />
+    </Key>
+    <Property Name="DH_ID" Type="Guid" Nullable="false" />
+    <Property Name="DH_BEGIN" Type="DateTime" Precision="3" />
+    <Property Name="DH_END" Type="DateTime" Precision="3" />
+    <Property Name="DH_TYPE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DH_TYPECODE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="DH_DAYS" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="DH_REASON" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DH_STATE" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_Honor">
+    <Key>
+      <PropertyRef Name="DH_ID" />
+    </Key>
+    <Property Name="DH_ID" Type="Guid" Nullable="false" />
+    <Property Name="DH_DUI_ID" Type="Guid" />
+    <Property Name="DH_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DH_Get_Date" Type="DateTime" Precision="3" />
+    <Property Name="DH_AwardWinningLevel_Id" Type="Guid" />
+    <Property Name="DH_Award_Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DH_Peaple_Count" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DH_Ranking" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DH_Certificate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DH_Status" Type="Int32" />
+    <Property Name="DH_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_NEWS">
+    <Key>
+      <PropertyRef Name="BN_ID" />
+    </Key>
+    <Property Name="BN_ID" Type="Guid" Nullable="false" />
+    <Property Name="BN_TITLE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BN_CONTENT" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="BN_Type" Type="Guid" />
+    <Property Name="BN_SubType" Type="Guid" />
+    <Property Name="BN_STATE" Type="Int32" />
+    <Property Name="BN_SOURCE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="BN_FILE" Type="Guid" />
+    <Property Name="BN_NOTICE" Type="Boolean" />
+    <Property Name="BN_PERMISSION" Type="Int32" />
+    <Property Name="BN_TOP" Type="Boolean" />
+    <Property Name="BN_LEVEL" Type="Boolean" />
+    <Property Name="BN_USERGROUP" Type="Guid" />
+    <Property Name="BN_DATETYPE" Type="Int32" />
+    <Property Name="BN_COUNT" Type="Int32" />
+    <Property Name="BN_TOPDATE" Type="DateTime" Precision="3" />
+    <Property Name="BN_PDF" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DB_Operation_State">
+    <Key>
+      <PropertyRef Name="DOS_ID" />
+    </Key>
+    <Property Name="DOS_ID" Type="Guid" Nullable="false" />
+    <Property Name="CYRS" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SSZTS" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="SLYSSS" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="ZYWL" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="MCRFY" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="YPBL" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="PJZYR" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="JCFY" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="MZL" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="MCRFYPFY" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="YEAR" Type="Int32" />
+    <Property Name="MONTH" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_ParttimeJob_AcademicJournals">
+    <Key>
+      <PropertyRef Name="DP_ID" />
+    </Key>
+    <Property Name="DP_ID" Type="Guid" Nullable="false" />
+    <Property Name="DP_DUI_ID" Type="Guid" />
+    <Property Name="DP_School" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DP_TutorType_Id" Type="Guid" />
+    <Property Name="DP_Begin" Type="DateTime" Precision="3" />
+    <Property Name="DP_End" Type="DateTime" Precision="3" />
+    <Property Name="DP_End_Now" Type="Boolean" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DP_Status" Type="Int32" />
+    <Property Name="DP_Level" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DP_Post" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DP_BOOK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DP_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_ParttimeJob_CommitteeService">
+    <Key>
+      <PropertyRef Name="DP_ID" />
+    </Key>
+    <Property Name="DP_ID" Type="Guid" Nullable="false" />
+    <Property Name="DP_DUI_ID" Type="Guid" />
+    <Property Name="DP_School" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DP_TutorType_Id" Type="Guid" />
+    <Property Name="DP_Begin" Type="DateTime" Precision="3" />
+    <Property Name="DP_End" Type="DateTime" Precision="3" />
+    <Property Name="DP_End_Now" Type="Boolean" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DP_Status" Type="Int32" />
+    <Property Name="DP_Level" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DP_Post" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DP_BOOK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DP_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_ParttimeJob_GraduateStudentTutor">
+    <Key>
+      <PropertyRef Name="DP_ID" />
+    </Key>
+    <Property Name="DP_ID" Type="Guid" Nullable="false" />
+    <Property Name="DP_DUI_ID" Type="Guid" />
+    <Property Name="DP_School" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DP_TutorType_Id" Type="Guid" />
+    <Property Name="DP_Begin" Type="DateTime" Precision="3" />
+    <Property Name="DP_End" Type="DateTime" Precision="3" />
+    <Property Name="DP_End_Now" Type="Boolean" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DP_Status" Type="Int32" />
+    <Property Name="DP_BOOK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DP_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_Position_State">
+    <Key>
+      <PropertyRef Name="DOS_ID" />
+    </Key>
+    <Property Name="DOS_ID" Type="Guid" Nullable="false" />
+    <Property Name="POSITION" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="WORKLOAD" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="AMT" Type="Decimal" Precision="18" Scale="1" />
+    <Property Name="YEAR" Type="Int32" />
+    <Property Name="MONTH" Type="Int32" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="CREATOR" Type="Guid" />
+  </EntityType>
+  <EntityType Name="DB_Radiation">
+    <Key>
+      <PropertyRef Name="DR_ID" />
+    </Key>
+    <Property Name="DR_ID" Type="Guid" Nullable="false" />
+    <Property Name="DR_DUI_ID" Type="Guid" />
+    <Property Name="DR_Examine_Date" Type="DateTime" Precision="3" />
+    <Property Name="DR_Value" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATDATE" Type="DateTime" Precision="3" />
+    <Property Name="DR_MODFIY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DR_Status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_Radiation_BasicInfo">
+    <Key>
+      <PropertyRef Name="DRB_ID" />
+    </Key>
+    <Property Name="DRB_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRB_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRB_Organ" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRB_Date" Type="DateTime" Precision="3" />
+    <Property Name="DRB_Code_Id" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRB_Order" Type="Int32" />
+    <Property Name="Status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_Radiation_EmergencyOrAccident">
+    <Key>
+      <PropertyRef Name="DRE_ID" />
+    </Key>
+    <Property Name="DRE_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRE_Date" Type="DateTime" Precision="3" />
+    <Property Name="DRE_Record" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DRE_HealthSituation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRE_Organ" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRE_Order" Type="Int32" />
+    <Property Name="Status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_Radiation_HealthExamination">
+    <Key>
+      <PropertyRef Name="DRH_ID" />
+    </Key>
+    <Property Name="DRH_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRH_Date" Type="DateTime" Precision="3" />
+    <Property Name="DRH_Result" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DRH_Organ" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRH_Order" Type="Int32" />
+    <Property Name="Status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_Radiation_PersonalDose">
+    <Key>
+      <PropertyRef Name="DRP_ID" />
+    </Key>
+    <Property Name="DRP_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRP_WorkCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRP_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRP_Date" Type="DateTime" Precision="3" />
+    <Property Name="DRP_Result" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="DRP_Organ" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRP_Order" Type="Int32" />
+    <Property Name="Status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_Radiation_TrainCheck">
+    <Key>
+      <PropertyRef Name="DRT_ID" />
+    </Key>
+    <Property Name="DRT_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRT_Date" Type="DateTime" Precision="3" />
+    <Property Name="DRT_Organ" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRT_Result" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRT_Order" Type="Int32" />
+    <Property Name="Status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_Record_Punishments">
+    <Key>
+      <PropertyRef Name="DRP_ID" />
+    </Key>
+    <Property Name="DRP_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRP_Type_Id" Type="Guid" />
+    <Property Name="DRP_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRP_Level_Id" Type="Guid" />
+    <Property Name="DRP_Date" Type="DateTime" Precision="3" />
+    <Property Name="DRP_Dept" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRP_Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRP_Order" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_Record_Rewards">
+    <Key>
+      <PropertyRef Name="DRR_ID" />
+    </Key>
+    <Property Name="DRR_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRR_Type_Id" Type="Guid" />
+    <Property Name="DRR_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRR_Level_Id" Type="Guid" />
+    <Property Name="DRR_Date" Type="DateTime" Precision="3" />
+    <Property Name="DRR_Dept" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRR_Count" Type="Int32" />
+    <Property Name="DRR_Rank" Type="Int32" />
+    <Property Name="DRR_Remark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRR_Order" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_ARTICLE">
+    <Key>
+      <PropertyRef Name="DRA_ID" />
+    </Key>
+    <Property Name="DRA_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRA_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DRA_TITLE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRA_MAGAZINE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRA_PAGE" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DRA_LEVEL" Type="Guid" />
+    <Property Name="DRA_IMPACT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRA_AUTHOR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRA_ORDER" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DRA_FILE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRA_STATE" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRA_AUTHOR_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_ARTICLE_MEETING">
+    <Key>
+      <PropertyRef Name="DRAM_ID" />
+    </Key>
+    <Property Name="DRAM_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRAM_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DRAM_TITLE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAM_LEVEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAM_ORDER" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DRAM_FILE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAM_STATE" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRAM_ARTICLE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAM_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAM_AUTHOR_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAM_Form_ID" Type="Guid" />
+    <Property Name="DRAM_AUTHOR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_ARTICLE_WORK">
+    <Key>
+      <PropertyRef Name="DRAW_ID" />
+    </Key>
+    <Property Name="DRAW_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRAW_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAW_FIRST" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAW_PUBLISH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAW_PUBLISH_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DRAW_PUBLISH_ADDRESS_ID" Type="Guid" />
+    <Property Name="DRAW_TYPE_ID" Type="Guid" />
+    <Property Name="DRAW_WORD_COUNT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="DRAW_PUBLISH_LEVEL_ID" Type="Guid" />
+    <Property Name="DRAW_FILE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAW_STATE" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRAW_ISBN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRAW_AUTHOR" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_CHECK">
+    <Key>
+      <PropertyRef Name="DRC_ID" />
+    </Key>
+    <Property Name="DRC_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRC_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DRC_ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DRC_CONTENT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DRC_LEVEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRC_INVIGILATOR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DRC_SCORE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRC_JOBNUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRC_DUI_ID" Type="Guid" />
+    <Property Name="DRC_DUI_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_ISSUE">
+    <Key>
+      <PropertyRef Name="DRI_ID" />
+    </Key>
+    <Property Name="DRI_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRI_BEGIN" Type="DateTime" Precision="3" />
+    <Property Name="DRI_END" Type="DateTime" Precision="3" />
+    <Property Name="DRI_SOURCE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRI_TYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRI_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRI_AMT" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="DRI_COUNT" Type="Int32" />
+    <Property Name="DRI_ORDER" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DRI_FILES" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRI_TYPE_ID" Type="Guid" />
+    <Property Name="DRI_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRI_OWNER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_TEACH">
+    <Key>
+      <PropertyRef Name="DRT_ID" />
+    </Key>
+    <Property Name="DRT_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRT_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DRT_ADDRESS" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DRT_PROJECT" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DRT_KIND" Type="String" MaxLength="800" FixedLength="false" Unicode="true" />
+    <Property Name="DRT_COUNT" Type="Int32" />
+    <Property Name="DRT_PPT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_WINNERS">
+    <Key>
+      <PropertyRef Name="DRW_ID" />
+    </Key>
+    <Property Name="DRW_ID" Type="Guid" Nullable="false" />
+    <Property Name="DRW_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DRW_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRW_LEVEL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRW_TOTALCOUNT" Type="Int32" />
+    <Property Name="DRW_ORDER" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DRW_FILE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DRW_PROJECTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRW_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DRW_LEVEL_ID" Type="Guid" />
+  </EntityType>
+  <EntityType Name="DB_SCHEDULE_GROUP">
+    <Key>
+      <PropertyRef Name="DSG_ID" />
+    </Key>
+    <Property Name="DSG_ID" Type="Guid" Nullable="false" />
+    <Property Name="DSG_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DSG_REMARK" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DSG_ORDER" Type="Int32" />
+    <Property Name="DSG_MANAGER" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_SCHEDULE_GROUP_POSITION">
+    <Key>
+      <PropertyRef Name="DSGP_ID" />
+    </Key>
+    <Property Name="DSGP_ID" Type="Guid" Nullable="false" />
+    <Property Name="DSGP_DSG_ID" Type="Guid" />
+    <Property Name="DSGP_POSITIONID" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_SCHEDULE_GROUP_TYPE">
+    <Key>
+      <PropertyRef Name="DSGT_ID" />
+    </Key>
+    <Property Name="DSGT_ID" Type="Guid" Nullable="false" />
+    <Property Name="DSGT_DSG_ID" Type="Guid" />
+    <Property Name="DSGT_STAFF_TYPE" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_SCHEDULING">
+    <Key>
+      <PropertyRef Name="DS_ID" />
+    </Key>
+    <Property Name="DS_ID" Type="Guid" Nullable="false" />
+    <Property Name="DS_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DS_REMARK" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DS_STATE" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DS_DSG_ID" Type="Guid" />
+    <Property Name="DS_WEEKREMARK" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DB_SCHEDULING_DETAIL">
+    <Key>
+      <PropertyRef Name="DSD_ID" />
+    </Key>
+    <Property Name="DSD_ID" Type="Guid" Nullable="false" />
+    <Property Name="DSD_DS_ID" Type="Guid" />
+    <Property Name="DSD_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DSD_USERID" Type="Guid" />
+    <Property Name="DSD_USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DSD_POSTIONID" Type="Guid" />
+    <Property Name="DSD_POSTIONNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DSD_TYPE" Type="Int32" />
+    <Property Name="DSD_DSG_ID" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_TRAIN_CONTINUE">
+    <Key>
+      <PropertyRef Name="DT_ID" />
+    </Key>
+    <Property Name="DT_ID" Type="Guid" Nullable="false" />
+    <Property Name="DT_DUI_ID" Type="Guid" />
+    <Property Name="DT_BEGIN" Type="DateTime" Precision="3" />
+    <Property Name="DT_END" Type="DateTime" Precision="3" />
+    <Property Name="DT_END_NOW" Type="Boolean" />
+    <Property Name="DT_Project_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Project_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Host_Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Province_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_City_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_ScoreType_Id" Type="Guid" />
+    <Property Name="DT_Score" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DT_Status" Type="Int32" />
+    <Property Name="DT_BOOK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_DATE_SUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_TRAIN_FOREIGN">
+    <Key>
+      <PropertyRef Name="DT_ID" />
+    </Key>
+    <Property Name="DT_ID" Type="Guid" Nullable="false" />
+    <Property Name="DT_DUI_ID" Type="Guid" />
+    <Property Name="DT_BEGIN" Type="DateTime" Precision="3" />
+    <Property Name="DT_END" Type="DateTime" Precision="3" />
+    <Property Name="DT_END_NOW" Type="Boolean" />
+    <Property Name="DT_Project_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Project_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Host_Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Fee_Support" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Country_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Island_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_ExamResults_Id" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DT_Status" Type="Int32" />
+    <Property Name="DT_BOOK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_DATE_SUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_HASBOOK" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DT_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_TRAIN_INLAND">
+    <Key>
+      <PropertyRef Name="DT_ID" />
+    </Key>
+    <Property Name="DT_ID" Type="Guid" Nullable="false" />
+    <Property Name="DT_DUI_ID" Type="Guid" />
+    <Property Name="DT_BEGIN" Type="DateTime" Precision="3" />
+    <Property Name="DT_END" Type="DateTime" Precision="3" />
+    <Property Name="DT_END_NOW" Type="Boolean" />
+    <Property Name="DT_Project_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Project_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Host_Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Fee_Support" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_Province_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_City_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_ExamResults_Id" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DT_Status" Type="Int32" />
+    <Property Name="DT_BOOK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_DATE_SUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DT_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_User_Holiday">
+    <Key>
+      <PropertyRef Name="DUH_ID" />
+    </Key>
+    <Property Name="DUH_ID" Type="Guid" Nullable="false" />
+    <Property Name="DUI_ID" Type="Guid" />
+    <Property Name="DUI_JONNUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_YEAR" Type="Int32" />
+    <Property Name="DUI_TYPE2COUNT" Type="Int32" />
+    <Property Name="DUI_TYPE3COUNT" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="DB_USER_INFO">
+    <Key>
+      <PropertyRef Name="DUI_ID" />
+    </Key>
+    <Property Name="DUI_ID" Type="Guid" Nullable="false" />
+    <Property Name="DUI_SU_ID" Type="Guid" />
+    <Property Name="DUI_WORKSTATUS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_PWD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_SEX" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_BIRTHDAY" Type="DateTime" Precision="3" />
+    <Property Name="DUI_IDCARD_NUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_IDCARD1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_IDCARD2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_AGE" Type="Int32" />
+    <Property Name="DUI_PY1" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_PY2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_Nation_Id" Type="Guid" />
+    <Property Name="DUI_NativePlace_Province_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_NativePlace_City_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_NativePlace_County_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_BirthPlace_Province_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_BirthPlace_City_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_BirthPlace_County_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_PoliticalFaction_Id" Type="Guid" />
+    <Property Name="DUI_PoliticalFaction_JoinDate" Type="DateTime" Precision="3" />
+    <Property Name="DUI_JoinInWork_Date" Type="DateTime" Precision="3" />
+    <Property Name="DUI_JoinInWork_Years" Type="Int32" />
+    <Property Name="DUI_JoinInRadiat_Date" Type="DateTime" Precision="3" />
+    <Property Name="DUI_JoinInRadiat_Years" Type="Int32" />
+    <Property Name="DUI_JoinInHospital_Date" Type="DateTime" Precision="3" />
+    <Property Name="DUI_JoinInHospital_Years" Type="Int32" />
+    <Property Name="DUI_EmploymentContract_Begin" Type="DateTime" Precision="3" />
+    <Property Name="DUI_EmploymentContract_End" Type="DateTime" Precision="3" />
+    <Property Name="DUI_EmploymentContract_Folder" Type="Guid" />
+    <Property Name="DUI_JobNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_HospitalBranch_In" Type="Guid" />
+    <Property Name="DUI_Staff_Type" Type="Guid" />
+    <Property Name="DUI_Position_Id" Type="Guid" />
+    <Property Name="DUI_Job" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_Educational_Id" Type="Guid" />
+    <Property Name="DUI_Degree_Id" Type="Guid" />
+    <Property Name="DUI_Professionals" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_Telephone_Long" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_Telephone_Short_Operate_Id" Type="Guid" />
+    <Property Name="DUI_Telephone_Short_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_Telephone_Bakeup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_Email1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_Email2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_Car_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DUI_MaritalStatus_Id" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DUI_Status" Type="Int32" />
+    <Property Name="DUI_MYPIC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DB_WORK_EXP_BASE">
+    <Key>
+      <PropertyRef Name="DWE_ID" />
+    </Key>
+    <Property Name="DWE_ID" Type="Guid" Nullable="false" />
+    <Property Name="DWE_DUI_ID" Type="Guid" />
+    <Property Name="DWE_BEGIN" Type="DateTime" Precision="3" />
+    <Property Name="DWE_END" Type="DateTime" Precision="3" />
+    <Property Name="DWE_END_NOW" Type="Boolean" />
+    <Property Name="DWE_COMPANY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DWE_COMPANY_LEVEL_ID" Type="Guid" />
+    <Property Name="DWE_Province_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DWE_City_Id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DWE_Status" Type="Int32" />
+    <Property Name="DWE_DATE_SUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DWE_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DB_WORK_EXP_SELF">
+    <Key>
+      <PropertyRef Name="DWE_ID" />
+    </Key>
+    <Property Name="DWE_ID" Type="Guid" Nullable="false" />
+    <Property Name="DWE_DUI_ID" Type="Guid" />
+    <Property Name="DWE_BEGIN" Type="DateTime" Precision="3" />
+    <Property Name="DWE_END" Type="DateTime" Precision="3" />
+    <Property Name="DWE_END_NOW" Type="Boolean" />
+    <Property Name="DWE_COMPANY" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DWE_COMPANY_LEVEL_ID" Type="Guid" />
+    <Property Name="DWE_DEPT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DWE_Position_Id" Type="Guid" />
+    <Property Name="DWE_POST" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="DWE_Status" Type="Int32" />
+    <Property Name="DWE_DATE_SUM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DWE_ORDER" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SYS_DEPT">
+    <Key>
+      <PropertyRef Name="SD_ID" />
+    </Key>
+    <Property Name="SD_ID" Type="Guid" Nullable="false" />
+    <Property Name="SD_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_PARENT_ID" Type="Guid" />
+    <Property Name="SD_ORDER" Type="Double" />
+    <Property Name="SD_LEVEL" Type="Int32" />
+    <Property Name="SD_FULL_NAME" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SD_REMARK" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SD_MANAGER_ID" Type="Guid" />
+    <Property Name="SD_MANAGER_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+    <Property Name="CONTACTS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CONTACTS_BACK" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SYS_DISTINCT">
+    <Key>
+      <PropertyRef Name="SD_ID" />
+    </Key>
+    <Property Name="SD_ID" Type="Guid" Nullable="false" />
+    <Property Name="SD_PID" Type="Guid" />
+    <Property Name="SD_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_ORDER" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SD_VALUE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_VALUE1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_VALUE2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_VALUE3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_VALUE4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_VALUE5" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SYS_FILES">
+    <Key>
+      <PropertyRef Name="SF_ID" />
+    </Key>
+    <Property Name="SF_ID" Type="Guid" Nullable="false" />
+    <Property Name="SF_FORDER" Type="Guid" />
+    <Property Name="SF_NAME" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SF_FILEURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SF_EXT" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="SF_SIZE" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SYS_Location">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CountryRegionCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StateCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CityCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RegionCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Level" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SYS_MENU">
+    <Key>
+      <PropertyRef Name="SM_ID" />
+    </Key>
+    <Property Name="SM_ID" Type="Guid" Nullable="false" />
+    <Property Name="SM_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SM_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SM_URL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SM_PARENT_ID" Type="Guid" />
+    <Property Name="SM_LEVEL" Type="Int32" />
+    <Property Name="SM_OPEN_NEW" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="SM_ENABLED" Type="Boolean" />
+    <Property Name="SM_ORDER" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SYS_USER_GROUP">
+    <Key>
+      <PropertyRef Name="SUG_ID" />
+    </Key>
+    <Property Name="SUG_ID" Type="Guid" Nullable="false" />
+    <Property Name="SUG_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SUG_REMARK" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SUG_IS_PUBLIC" Type="Boolean" />
+    <Property Name="SUG_ORDER" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SYS_USER_GROUP_MENU">
+    <Key>
+      <PropertyRef Name="SUGM_ID" />
+    </Key>
+    <Property Name="SUGM_ID" Type="Guid" Nullable="false" />
+    <Property Name="SUGM_SUG_ID" Type="Guid" />
+    <Property Name="SUGM_SM_ID" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SYS_USER_GROUP_USERS">
+    <Key>
+      <PropertyRef Name="SUGU_ID" />
+    </Key>
+    <Property Name="SUGU_ID" Type="Guid" Nullable="false" />
+    <Property Name="SUGU_SUG_ID" Type="Guid" />
+    <Property Name="SUGU_SU_ID" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SYS_USERS">
+    <Key>
+      <PropertyRef Name="SU_ID" />
+    </Key>
+    <Property Name="SU_ID" Type="Guid" Nullable="false" />
+    <Property Name="SU_OE_ID" Type="Guid" />
+    <Property Name="SU_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SU_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SU_LOGIN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SU_PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SU_SEX" Type="Int32" />
+    <Property Name="SU_MOBILE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SU_OFFICEPHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SU_EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SU_FAX" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SU_ADDRESS" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SU_ACTIVITY" Type="Boolean" />
+    <Property Name="SU_ORDER" Type="Double" />
+    <Property Name="SU_SD_ID" Type="Guid" />
+    <Property Name="SU_INCOMPANY_TIME" Type="DateTime" Precision="3" />
+    <Property Name="SU_WORKTIME" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SU_SP_ID" Type="Guid" />
+    <Property Name="SU_SPP_ID" Type="Guid" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="import">
+    <Key>
+      <PropertyRef Name="SD_ID" />
+    </Key>
+    <Property Name="SD_ID" Type="Guid" Nullable="false" />
+    <Property Name="SD_PID" Type="Guid" />
+    <Property Name="SD_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_ORDER" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="SD_VALUE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_VALUE1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_VALUE2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SD_VALUE3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="SYS_MENU2">
+    <Key>
+      <PropertyRef Name="SM_ID" />
+    </Key>
+    <Property Name="SM_ID" Type="Guid" Nullable="false" />
+    <Property Name="SM_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SM_CODE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SM_URL" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="SM_PARENT_ID" Type="Guid" />
+    <Property Name="SM_LEVEL" Type="Int32" />
+    <Property Name="SM_OPEN_NEW" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="SM_ENABLED" Type="Boolean" />
+    <Property Name="SM_ORDER" Type="Int32" />
+    <Property Name="CREATOR" Type="Guid" />
+    <Property Name="CREATEDATE" Type="DateTime" Precision="3" />
+    <Property Name="MODIFY" Type="Guid" />
+    <Property Name="MODIFYDATE" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="HospitalOAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DB_Audit" EntityType="Self.DB_Audit" />
+    <EntitySet Name="DB_Bonus" EntityType="Self.DB_Bonus" />
+    <EntitySet Name="DB_Certificate_Other" EntityType="Self.DB_Certificate_Other" />
+    <EntitySet Name="DB_Device_IT" EntityType="Self.DB_Device_IT" />
+    <EntitySet Name="DB_Device_Large_Image" EntityType="Self.DB_Device_Large_Image" />
+    <EntitySet Name="DB_Device_Medical_Assistance" EntityType="Self.DB_Device_Medical_Assistance" />
+    <EntitySet Name="DB_EDUCATION_EXP" EntityType="Self.DB_EDUCATION_EXP" />
+    <EntitySet Name="DB_Handover_Equipment" EntityType="Self.DB_Handover_Equipment" />
+    <EntitySet Name="DB_Handover_EVENT" EntityType="Self.DB_Handover_EVENT" />
+    <EntitySet Name="DB_Handover_Patient" EntityType="Self.DB_Handover_Patient" />
+    <EntitySet Name="DB_Holiday" EntityType="Self.DB_Holiday" />
+    <EntitySet Name="DB_Honor" EntityType="Self.DB_Honor" />
+    <EntitySet Name="DB_NEWS" EntityType="Self.DB_NEWS" />
+    <EntitySet Name="DB_Operation_State" EntityType="Self.DB_Operation_State" />
+    <EntitySet Name="DB_ParttimeJob_AcademicJournals" EntityType="Self.DB_ParttimeJob_AcademicJournals" />
+    <EntitySet Name="DB_ParttimeJob_CommitteeService" EntityType="Self.DB_ParttimeJob_CommitteeService" />
+    <EntitySet Name="DB_ParttimeJob_GraduateStudentTutor" EntityType="Self.DB_ParttimeJob_GraduateStudentTutor" />
+    <EntitySet Name="DB_Position_State" EntityType="Self.DB_Position_State" />
+    <EntitySet Name="DB_Radiation" EntityType="Self.DB_Radiation" />
+    <EntitySet Name="DB_Radiation_BasicInfo" EntityType="Self.DB_Radiation_BasicInfo" />
+    <EntitySet Name="DB_Radiation_EmergencyOrAccident" EntityType="Self.DB_Radiation_EmergencyOrAccident" />
+    <EntitySet Name="DB_Radiation_HealthExamination" EntityType="Self.DB_Radiation_HealthExamination" />
+    <EntitySet Name="DB_Radiation_PersonalDose" EntityType="Self.DB_Radiation_PersonalDose" />
+    <EntitySet Name="DB_Radiation_TrainCheck" EntityType="Self.DB_Radiation_TrainCheck" />
+    <EntitySet Name="DB_Record_Punishments" EntityType="Self.DB_Record_Punishments" />
+    <EntitySet Name="DB_Record_Rewards" EntityType="Self.DB_Record_Rewards" />
+    <EntitySet Name="DB_RESEARCH_ARTICLE" EntityType="Self.DB_RESEARCH_ARTICLE" />
+    <EntitySet Name="DB_RESEARCH_ARTICLE_MEETING" EntityType="Self.DB_RESEARCH_ARTICLE_MEETING" />
+    <EntitySet Name="DB_RESEARCH_ARTICLE_WORK" EntityType="Self.DB_RESEARCH_ARTICLE_WORK" />
+    <EntitySet Name="DB_RESEARCH_CHECK" EntityType="Self.DB_RESEARCH_CHECK" />
+    <EntitySet Name="DB_RESEARCH_ISSUE" EntityType="Self.DB_RESEARCH_ISSUE" />
+    <EntitySet Name="DB_RESEARCH_TEACH" EntityType="Self.DB_RESEARCH_TEACH" />
+    <EntitySet Name="DB_RESEARCH_WINNERS" EntityType="Self.DB_RESEARCH_WINNERS" />
+    <EntitySet Name="DB_SCHEDULE_GROUP" EntityType="Self.DB_SCHEDULE_GROUP" />
+    <EntitySet Name="DB_SCHEDULE_GROUP_POSITION" EntityType="Self.DB_SCHEDULE_GROUP_POSITION" />
+    <EntitySet Name="DB_SCHEDULE_GROUP_TYPE" EntityType="Self.DB_SCHEDULE_GROUP_TYPE" />
+    <EntitySet Name="DB_SCHEDULING" EntityType="Self.DB_SCHEDULING" />
+    <EntitySet Name="DB_SCHEDULING_DETAIL" EntityType="Self.DB_SCHEDULING_DETAIL" />
+    <EntitySet Name="DB_TRAIN_CONTINUE" EntityType="Self.DB_TRAIN_CONTINUE" />
+    <EntitySet Name="DB_TRAIN_FOREIGN" EntityType="Self.DB_TRAIN_FOREIGN" />
+    <EntitySet Name="DB_TRAIN_INLAND" EntityType="Self.DB_TRAIN_INLAND" />
+    <EntitySet Name="DB_User_Holiday" EntityType="Self.DB_User_Holiday" />
+    <EntitySet Name="DB_USER_INFO" EntityType="Self.DB_USER_INFO" />
+    <EntitySet Name="DB_WORK_EXP_BASE" EntityType="Self.DB_WORK_EXP_BASE" />
+    <EntitySet Name="DB_WORK_EXP_SELF" EntityType="Self.DB_WORK_EXP_SELF" />
+    <EntitySet Name="SYS_DEPT" EntityType="Self.SYS_DEPT" />
+    <EntitySet Name="SYS_DISTINCT" EntityType="Self.SYS_DISTINCT" />
+    <EntitySet Name="SYS_FILES" EntityType="Self.SYS_FILES" />
+    <EntitySet Name="SYS_Location" EntityType="Self.SYS_Location" />
+    <EntitySet Name="SYS_MENU" EntityType="Self.SYS_MENU" />
+    <EntitySet Name="SYS_USER_GROUP" EntityType="Self.SYS_USER_GROUP" />
+    <EntitySet Name="SYS_USER_GROUP_MENU" EntityType="Self.SYS_USER_GROUP_MENU" />
+    <EntitySet Name="SYS_USER_GROUP_USERS" EntityType="Self.SYS_USER_GROUP_USERS" />
+    <EntitySet Name="SYS_USERS" EntityType="Self.SYS_USERS" />
+    <EntitySet Name="imports" EntityType="Self.import" />
+    <EntitySet Name="SYS_MENU2" EntityType="Self.SYS_MENU2" />
+  </EntityContainer>
+</Schema>

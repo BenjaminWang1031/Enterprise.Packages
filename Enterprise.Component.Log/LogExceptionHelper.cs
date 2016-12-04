@@ -75,7 +75,7 @@ namespace Enterprise.Component.Log4Net
             }
             catch (Exception ex)
             {
-                return "OOPS...got new exception when try to get exception line... please check the source codes.";
+                return "OOPS...got new exception [" + ex.Message+"] when try to get exception line... please check the source codes.";
             }
         }
 

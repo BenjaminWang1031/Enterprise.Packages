@@ -1,0 +1,9 @@
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\EF.MODEL.OA\bin\Debug\EF.MODEL.OA.dll.config
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\EF.MODEL.OA\bin\Debug\EF.MODEL.OA.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\EF.MODEL.OA\bin\Debug\EF.MODEL.OA.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\EF.MODEL.OA\bin\Debug\EntityFramework.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\EF.MODEL.OA\bin\Debug\EntityFramework.SqlServer.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\EF.MODEL.OA\bin\Debug\EntityFramework.xml
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\EF.MODEL.OA\bin\Debug\EntityFramework.SqlServer.xml
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\EF.MODEL.OA\obj\Debug\EF.MODEL.OA.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\EF.MODEL.OA\obj\Debug\EF.MODEL.OA.pdb

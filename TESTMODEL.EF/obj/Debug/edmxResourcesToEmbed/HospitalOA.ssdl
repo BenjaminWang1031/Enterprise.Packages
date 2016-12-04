@@ -1,0 +1,1225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HospitalOAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DB_Audit">
+    <Key>
+      <PropertyRef Name="DA_ID" />
+    </Key>
+    <Property Name="DA_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DA_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DA_Finish_Date" Type="datetime" />
+    <Property Name="DA_Desc" Type="nvarchar(max)" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DA_Count_Unfinish" Type="int" />
+    <Property Name="DA_Count_Finish" Type="int" />
+    <Property Name="DA_IKNOW" Type="bit" />
+  </EntityType>
+  <EntityType Name="DB_Bonus">
+    <Key>
+      <PropertyRef Name="DB_ID" />
+    </Key>
+    <Property Name="DB_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DB_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DB_JOBNUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DB_USERNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DB_YEAR" Type="int" />
+    <Property Name="DB_MONTH" Type="int" />
+    <Property Name="DB_XS" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DB_JJ" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DB_YY" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DB_TJ" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DB_YB" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DB_JB" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DB_CB" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DB_JIEB" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DB_JIB" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DB_BU" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DB_ZJ" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_Certificate_Other">
+    <Key>
+      <PropertyRef Name="DC_ID" />
+    </Key>
+    <Property Name="DC_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DC_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DC_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DC_Number" Type="nvarchar" MaxLength="100" />
+    <Property Name="DC_Dept" Type="nvarchar" MaxLength="50" />
+    <Property Name="DC_Date" Type="datetime" />
+    <Property Name="DC_Expiry" Type="nvarchar" MaxLength="50" />
+    <Property Name="DC_Remark" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" Nullable="false" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DC_Status" Type="int" />
+    <Property Name="DC_FILE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DC_TYPE" Type="int" />
+    <Property Name="ZY1" Type="nvarchar" MaxLength="50" />
+    <Property Name="LB1" Type="nvarchar" MaxLength="50" />
+    <Property Name="YSZG2" Type="nvarchar" MaxLength="50" />
+    <Property Name="ZXLB2" Type="nvarchar" MaxLength="50" />
+    <Property Name="ZXFW2" Type="nvarchar" MaxLength="50" />
+    <Property Name="YYSB3" Type="nvarchar" MaxLength="50" />
+    <Property Name="YXQ3" Type="nvarchar" MaxLength="50" />
+    <Property Name="ZYMC4" Type="nvarchar" MaxLength="50" />
+    <Property Name="ZGJB4" Type="nvarchar" MaxLength="50" />
+    <Property Name="LB4" Type="nvarchar" MaxLength="50" />
+    <Property Name="PZRQ4" Type="datetime" />
+    <Property Name="DAH5" Type="nvarchar" MaxLength="50" />
+    <Property Name="YZXH5" Type="nvarchar" MaxLength="50" />
+    <Property Name="YZ6" Type="nvarchar" MaxLength="50" />
+    <Property Name="YXQ6" Type="nvarchar" MaxLength="50" />
+    <Property Name="XY7" Type="nvarchar" MaxLength="50" />
+    <Property Name="YX7" Type="nvarchar" MaxLength="50" />
+    <Property Name="KSSJ7" Type="datetime" />
+    <Property Name="CJ7" Type="nvarchar" MaxLength="50" />
+    <Property Name="XY8" Type="nvarchar" MaxLength="50" />
+    <Property Name="YX8" Type="nvarchar" MaxLength="50" />
+    <Property Name="KSSJ8" Type="datetime" />
+    <Property Name="CJ8" Type="nvarchar" MaxLength="50" />
+    <Property Name="DC_ORDER" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_Device_IT">
+    <Key>
+      <PropertyRef Name="DDI_ID" />
+    </Key>
+    <Property Name="DDI_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DDI_Number" Type="nvarchar" MaxLength="100" />
+    <Property Name="DDI_Type_ID" Type="uniqueidentifier" />
+    <Property Name="DDI_Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="DDI_Location_ID" Type="uniqueidentifier" />
+    <Property Name="DDI_Run_State_ID" Type="uniqueidentifier" />
+    <Property Name="DDI_Two_Dimension_Code" Type="nvarchar" MaxLength="100" />
+    <Property Name="DDI_IP" Type="nvarchar" MaxLength="50" />
+    <Property Name="DDI_Price" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DDI_Buy_Date" Type="datetime" />
+    <Property Name="DDI_Guarantee_Time_Begin" Type="datetime" />
+    <Property Name="DDI_Guarantee_Time_End" Type="datetime" />
+    <Property Name="DDI_Expect_Scrap_Date" Type="datetime" />
+    <Property Name="DDI_Scrap_Date" Type="datetime" />
+    <Property Name="DDI_Order" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_Device_Large_Image">
+    <Key>
+      <PropertyRef Name="DDLI_ID" />
+    </Key>
+    <Property Name="DDLI_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DDLI_Number" Type="nvarchar" MaxLength="100" />
+    <Property Name="DDLI_Type_ID" Type="uniqueidentifier" />
+    <Property Name="DDLI_Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="DDLI_License_Key" Type="nvarchar" MaxLength="100" />
+    <Property Name="DDLI_Room_Number_ID" Type="uniqueidentifier" />
+    <Property Name="DDLI_Run_State_ID" Type="uniqueidentifier" />
+    <Property Name="DDLI_Prce" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DDLI_Buy_Date" Type="datetime" />
+    <Property Name="DDLI_First_Time_Open_Date" Type="datetime" />
+    <Property Name="DDLI_Guarantee_Time_Begin" Type="datetime" />
+    <Property Name="DDLI_Guarantee_Time_End" Type="datetime" />
+    <Property Name="DDLI_Expect_Scrap_Date" Type="datetime" />
+    <Property Name="DDLI_Scrap_Date" Type="datetime" />
+    <Property Name="DDLI_Order" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_Device_Medical_Assistance">
+    <Key>
+      <PropertyRef Name="DDMA_ID" />
+    </Key>
+    <Property Name="DDMA_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DDMA_Number" Type="nvarchar" MaxLength="100" />
+    <Property Name="DDMA_Type_ID" Type="uniqueidentifier" />
+    <Property Name="DDMA_Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="DDMA_Location_ID" Type="uniqueidentifier" />
+    <Property Name="DDMA_Run_State_ID" Type="uniqueidentifier" />
+    <Property Name="DDMA_Price" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DDMA_Buy_Date" Type="datetime" />
+    <Property Name="DDMA_Guarantee_Time_Begin" Type="datetime" />
+    <Property Name="DDMA_Guarantee_Time_End" Type="datetime" />
+    <Property Name="DDMA_Expect_Scrap_Date" Type="datetime" />
+    <Property Name="DDMA_Scrap_Date" Type="datetime" />
+    <Property Name="DDMA_Order" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_EDUCATION_EXP">
+    <Key>
+      <PropertyRef Name="DEE_ID" />
+    </Key>
+    <Property Name="DEE_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DEE_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DEE_Degree_Id" Type="uniqueidentifier" />
+    <Property Name="DEE_Professional" Type="nvarchar" MaxLength="50" />
+    <Property Name="DEE_School" Type="nvarchar" MaxLength="50" />
+    <Property Name="DEE_School_SubjectionId" Type="uniqueidentifier" />
+    <Property Name="DEE_School_Begin" Type="datetime" />
+    <Property Name="DEE_School_End" Type="datetime" />
+    <Property Name="DEE_School_Years" Type="int" />
+    <Property Name="DEE_Tutor" Type="nvarchar" MaxLength="50" />
+    <Property Name="DEE_Certificate_Graduation" Type="nvarchar" MaxLength="50" />
+    <Property Name="DEE_Certificate_Degree" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DEE_Status" Type="int" />
+    <Property Name="DEE_School_Address" Type="nvarchar" MaxLength="150" />
+    <Property Name="DEE_ORDER" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_Handover_Equipment">
+    <Key>
+      <PropertyRef Name="DHE_ID" />
+    </Key>
+    <Property Name="DHE_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DHE_TYPE" Type="int" />
+    <Property Name="DHE_USERTYPE" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DHE_Validity" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="DHE_ROOM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHE_Equipment_TYPE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHE_Equipment_ID" Type="uniqueidentifier" />
+    <Property Name="DHE_Equipment_CODE" Type="nvarchar" MaxLength="20" />
+    <Property Name="DHE_Equipment_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHE_Urgency" Type="nvarchar" MaxLength="10" />
+    <Property Name="DHE_FAULT" Type="nvarchar" MaxLength="500" />
+    <Property Name="DHE_Feedback" Type="nvarchar" MaxLength="500" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_Handover_EVENT">
+    <Key>
+      <PropertyRef Name="DHE_ID" />
+    </Key>
+    <Property Name="DHE_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DHE_TYPE" Type="int" />
+    <Property Name="DHE_USERTYPE" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DHE_Validity" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="DHE_USERS" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHE_PATIENT_NAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="DHP_PATIENT_SEX" Type="nvarchar" MaxLength="2" />
+    <Property Name="DHP_PATIENT_AGE" Type="int" />
+    <Property Name="DHP_PATIENT_NUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHP_PATIENT_BL" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHP_PATIENT_CHECK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHP_PATIENT_DEPT" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHP_PATIENT_BED" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHP_PATIENT_TYPE" Type="nvarchar" MaxLength="20" />
+    <Property Name="DHP_PATIENT_MOBILE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHP_PATIENT_HISTORY" Type="nvarchar" MaxLength="500" />
+    <Property Name="DHP_EVENT_TYPE" Type="uniqueidentifier" />
+    <Property Name="DHP_Reagent_TYPE" Type="uniqueidentifier" />
+    <Property Name="DHP_Species" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHP_Measure" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHP_Degree" Type="uniqueidentifier" />
+    <Property Name="DHP_DESC" Type="nvarchar" MaxLength="500" />
+    <Property Name="DHP_DEALWITH" Type="nvarchar" MaxLength="500" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_Handover_Patient">
+    <Key>
+      <PropertyRef Name="DHP_ID" />
+    </Key>
+    <Property Name="DHP_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DHP_TYPE" Type="int" />
+    <Property Name="DHP_USERTYPE" Type="nvarchar" MaxLength="1000" />
+    <Property Name="DHP_Validity" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="DHP_NAME" Type="nvarchar" MaxLength="30" />
+    <Property Name="DHP_SEX" Type="nvarchar" MaxLength="2" />
+    <Property Name="DHP_AGE" Type="int" />
+    <Property Name="DHP_BL_NUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHP_CHECK_NUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DHP_MOBILE" Type="nvarchar" MaxLength="30" />
+    <Property Name="DHP_Diagnosis" Type="nvarchar" MaxLength="100" />
+    <Property Name="DHP_Urgency" Type="nvarchar" MaxLength="10" />
+    <Property Name="DHP_CONTENT" Type="nvarchar" MaxLength="500" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_Holiday">
+    <Key>
+      <PropertyRef Name="DH_ID" />
+    </Key>
+    <Property Name="DH_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DH_BEGIN" Type="datetime" />
+    <Property Name="DH_END" Type="datetime" />
+    <Property Name="DH_TYPE" Type="nvarchar" MaxLength="30" />
+    <Property Name="DH_TYPECODE" Type="nvarchar" MaxLength="30" />
+    <Property Name="DH_DAYS" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="DH_REASON" Type="nvarchar" MaxLength="300" />
+    <Property Name="DH_STATE" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_Honor">
+    <Key>
+      <PropertyRef Name="DH_ID" />
+    </Key>
+    <Property Name="DH_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DH_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DH_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DH_Get_Date" Type="datetime" />
+    <Property Name="DH_AwardWinningLevel_Id" Type="uniqueidentifier" />
+    <Property Name="DH_Award_Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="DH_Peaple_Count" Type="nvarchar" MaxLength="50" />
+    <Property Name="DH_Ranking" Type="nvarchar" MaxLength="50" />
+    <Property Name="DH_Certificate" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DH_Status" Type="int" />
+    <Property Name="DH_ORDER" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_NEWS">
+    <Key>
+      <PropertyRef Name="BN_ID" />
+    </Key>
+    <Property Name="BN_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="BN_TITLE" Type="nvarchar" MaxLength="50" />
+    <Property Name="BN_CONTENT" Type="text" />
+    <Property Name="BN_Type" Type="uniqueidentifier" />
+    <Property Name="BN_SubType" Type="uniqueidentifier" />
+    <Property Name="BN_STATE" Type="int" />
+    <Property Name="BN_SOURCE" Type="nvarchar" MaxLength="30" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="BN_FILE" Type="uniqueidentifier" />
+    <Property Name="BN_NOTICE" Type="bit" />
+    <Property Name="BN_PERMISSION" Type="int" />
+    <Property Name="BN_TOP" Type="bit" />
+    <Property Name="BN_LEVEL" Type="bit" />
+    <Property Name="BN_USERGROUP" Type="uniqueidentifier" />
+    <Property Name="BN_DATETYPE" Type="int" />
+    <Property Name="BN_COUNT" Type="int" />
+    <Property Name="BN_TOPDATE" Type="datetime" />
+    <Property Name="BN_PDF" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="DB_Operation_State">
+    <Key>
+      <PropertyRef Name="DOS_ID" />
+    </Key>
+    <Property Name="DOS_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="CYRS" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="SSZTS" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="SLYSSS" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="ZYWL" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="MCRFY" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="YPBL" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="PJZYR" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="JCFY" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="MZL" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="MCRFYPFY" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="YEAR" Type="int" />
+    <Property Name="MONTH" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_ParttimeJob_AcademicJournals">
+    <Key>
+      <PropertyRef Name="DP_ID" />
+    </Key>
+    <Property Name="DP_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DP_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DP_School" Type="nvarchar" MaxLength="50" />
+    <Property Name="DP_TutorType_Id" Type="uniqueidentifier" />
+    <Property Name="DP_Begin" Type="datetime" />
+    <Property Name="DP_End" Type="datetime" />
+    <Property Name="DP_End_Now" Type="bit" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DP_Status" Type="int" />
+    <Property Name="DP_Level" Type="nvarchar" MaxLength="50" />
+    <Property Name="DP_Post" Type="nvarchar" MaxLength="50" />
+    <Property Name="DP_BOOK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DP_ORDER" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_ParttimeJob_CommitteeService">
+    <Key>
+      <PropertyRef Name="DP_ID" />
+    </Key>
+    <Property Name="DP_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DP_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DP_School" Type="nvarchar" MaxLength="50" />
+    <Property Name="DP_TutorType_Id" Type="uniqueidentifier" />
+    <Property Name="DP_Begin" Type="datetime" />
+    <Property Name="DP_End" Type="datetime" />
+    <Property Name="DP_End_Now" Type="bit" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DP_Status" Type="int" />
+    <Property Name="DP_Level" Type="nvarchar" MaxLength="50" />
+    <Property Name="DP_Post" Type="nvarchar" MaxLength="50" />
+    <Property Name="DP_BOOK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DP_ORDER" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_ParttimeJob_GraduateStudentTutor">
+    <Key>
+      <PropertyRef Name="DP_ID" />
+    </Key>
+    <Property Name="DP_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DP_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DP_School" Type="nvarchar" MaxLength="50" />
+    <Property Name="DP_TutorType_Id" Type="uniqueidentifier" />
+    <Property Name="DP_Begin" Type="datetime" />
+    <Property Name="DP_End" Type="datetime" />
+    <Property Name="DP_End_Now" Type="bit" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DP_Status" Type="int" />
+    <Property Name="DP_BOOK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DP_ORDER" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_Position_State">
+    <Key>
+      <PropertyRef Name="DOS_ID" />
+    </Key>
+    <Property Name="DOS_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="POSITION" Type="nvarchar" MaxLength="30" />
+    <Property Name="WORKLOAD" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="AMT" Type="decimal" Precision="18" Scale="1" />
+    <Property Name="YEAR" Type="int" />
+    <Property Name="MONTH" Type="int" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="DB_Radiation">
+    <Key>
+      <PropertyRef Name="DR_ID" />
+    </Key>
+    <Property Name="DR_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DR_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DR_Examine_Date" Type="datetime" />
+    <Property Name="DR_Value" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATDATE" Type="datetime" />
+    <Property Name="DR_MODFIY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DR_Status" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_Radiation_BasicInfo">
+    <Key>
+      <PropertyRef Name="DRB_ID" />
+    </Key>
+    <Property Name="DRB_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRB_Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRB_Organ" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRB_Date" Type="datetime" />
+    <Property Name="DRB_Code_Id" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRB_Order" Type="int" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_Radiation_EmergencyOrAccident">
+    <Key>
+      <PropertyRef Name="DRE_ID" />
+    </Key>
+    <Property Name="DRE_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRE_Date" Type="datetime" />
+    <Property Name="DRE_Record" Type="nvarchar" MaxLength="100" />
+    <Property Name="DRE_HealthSituation" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRE_Organ" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRE_Order" Type="int" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_Radiation_HealthExamination">
+    <Key>
+      <PropertyRef Name="DRH_ID" />
+    </Key>
+    <Property Name="DRH_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRH_Date" Type="datetime" />
+    <Property Name="DRH_Result" Type="nvarchar" MaxLength="100" />
+    <Property Name="DRH_Organ" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRH_Order" Type="int" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_Radiation_PersonalDose">
+    <Key>
+      <PropertyRef Name="DRP_ID" />
+    </Key>
+    <Property Name="DRP_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRP_WorkCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRP_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRP_Date" Type="datetime" />
+    <Property Name="DRP_Result" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="DRP_Organ" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRP_Order" Type="int" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_Radiation_TrainCheck">
+    <Key>
+      <PropertyRef Name="DRT_ID" />
+    </Key>
+    <Property Name="DRT_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRT_Date" Type="datetime" />
+    <Property Name="DRT_Organ" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRT_Result" Type="nvarchar" MaxLength="100" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRT_Order" Type="int" />
+    <Property Name="Status" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_Record_Punishments">
+    <Key>
+      <PropertyRef Name="DRP_ID" />
+    </Key>
+    <Property Name="DRP_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRP_Type_Id" Type="uniqueidentifier" />
+    <Property Name="DRP_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRP_Level_Id" Type="uniqueidentifier" />
+    <Property Name="DRP_Date" Type="datetime" />
+    <Property Name="DRP_Dept" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRP_Remark" Type="nvarchar(max)" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRP_Order" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_Record_Rewards">
+    <Key>
+      <PropertyRef Name="DRR_ID" />
+    </Key>
+    <Property Name="DRR_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRR_Type_Id" Type="uniqueidentifier" />
+    <Property Name="DRR_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRR_Level_Id" Type="uniqueidentifier" />
+    <Property Name="DRR_Date" Type="datetime" />
+    <Property Name="DRR_Dept" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRR_Count" Type="int" />
+    <Property Name="DRR_Rank" Type="int" />
+    <Property Name="DRR_Remark" Type="nvarchar(max)" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRR_Order" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_ARTICLE">
+    <Key>
+      <PropertyRef Name="DRA_ID" />
+    </Key>
+    <Property Name="DRA_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRA_DATE" Type="datetime" />
+    <Property Name="DRA_TITLE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRA_MAGAZINE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRA_PAGE" Type="nvarchar" MaxLength="10" />
+    <Property Name="DRA_LEVEL" Type="uniqueidentifier" />
+    <Property Name="DRA_IMPACT" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRA_AUTHOR" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRA_ORDER" Type="nvarchar" MaxLength="10" />
+    <Property Name="DRA_FILE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRA_STATE" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRA_AUTHOR_NAME" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_ARTICLE_MEETING">
+    <Key>
+      <PropertyRef Name="DRAM_ID" />
+    </Key>
+    <Property Name="DRAM_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRAM_DATE" Type="datetime" />
+    <Property Name="DRAM_TITLE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAM_LEVEL" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAM_ORDER" Type="nvarchar" MaxLength="10" />
+    <Property Name="DRAM_FILE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAM_STATE" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRAM_ARTICLE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAM_ADDRESS" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAM_AUTHOR_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAM_Form_ID" Type="uniqueidentifier" />
+    <Property Name="DRAM_AUTHOR" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_ARTICLE_WORK">
+    <Key>
+      <PropertyRef Name="DRAW_ID" />
+    </Key>
+    <Property Name="DRAW_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRAW_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAW_FIRST" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAW_PUBLISH" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAW_PUBLISH_DATE" Type="datetime" />
+    <Property Name="DRAW_PUBLISH_ADDRESS_ID" Type="uniqueidentifier" />
+    <Property Name="DRAW_TYPE_ID" Type="uniqueidentifier" />
+    <Property Name="DRAW_WORD_COUNT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DRAW_PUBLISH_LEVEL_ID" Type="uniqueidentifier" />
+    <Property Name="DRAW_FILE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAW_STATE" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRAW_ISBN" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRAW_AUTHOR" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_CHECK">
+    <Key>
+      <PropertyRef Name="DRC_ID" />
+    </Key>
+    <Property Name="DRC_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRC_DATE" Type="datetime" />
+    <Property Name="DRC_ADDRESS" Type="nvarchar" MaxLength="100" />
+    <Property Name="DRC_CONTENT" Type="nvarchar" MaxLength="100" />
+    <Property Name="DRC_LEVEL" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRC_INVIGILATOR" Type="nvarchar" MaxLength="10" />
+    <Property Name="DRC_SCORE" Type="nvarchar" MaxLength="20" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRC_JOBNUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRC_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DRC_DUI_NAME" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_ISSUE">
+    <Key>
+      <PropertyRef Name="DRI_ID" />
+    </Key>
+    <Property Name="DRI_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRI_BEGIN" Type="datetime" />
+    <Property Name="DRI_END" Type="datetime" />
+    <Property Name="DRI_SOURCE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRI_TYPE" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRI_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRI_AMT" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="DRI_COUNT" Type="int" />
+    <Property Name="DRI_ORDER" Type="nvarchar" MaxLength="10" />
+    <Property Name="DRI_FILES" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRI_TYPE_ID" Type="uniqueidentifier" />
+    <Property Name="DRI_NUMBER" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRI_OWNER" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_TEACH">
+    <Key>
+      <PropertyRef Name="DRT_ID" />
+    </Key>
+    <Property Name="DRT_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRT_DATE" Type="datetime" />
+    <Property Name="DRT_ADDRESS" Type="nvarchar" MaxLength="100" />
+    <Property Name="DRT_PROJECT" Type="nvarchar" MaxLength="100" />
+    <Property Name="DRT_KIND" Type="nvarchar" MaxLength="800" />
+    <Property Name="DRT_COUNT" Type="int" />
+    <Property Name="DRT_PPT" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_RESEARCH_WINNERS">
+    <Key>
+      <PropertyRef Name="DRW_ID" />
+    </Key>
+    <Property Name="DRW_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DRW_DATE" Type="datetime" />
+    <Property Name="DRW_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRW_LEVEL" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRW_TOTALCOUNT" Type="int" />
+    <Property Name="DRW_ORDER" Type="nvarchar" MaxLength="20" />
+    <Property Name="DRW_FILE" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DRW_PROJECTNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRW_NUMBER" Type="nvarchar" MaxLength="50" />
+    <Property Name="DRW_LEVEL_ID" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="DB_SCHEDULE_GROUP">
+    <Key>
+      <PropertyRef Name="DSG_ID" />
+    </Key>
+    <Property Name="DSG_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DSG_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DSG_REMARK" Type="nvarchar" MaxLength="300" />
+    <Property Name="DSG_ORDER" Type="int" />
+    <Property Name="DSG_MANAGER" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_SCHEDULE_GROUP_POSITION">
+    <Key>
+      <PropertyRef Name="DSGP_ID" />
+    </Key>
+    <Property Name="DSGP_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DSGP_DSG_ID" Type="uniqueidentifier" />
+    <Property Name="DSGP_POSITIONID" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_SCHEDULE_GROUP_TYPE">
+    <Key>
+      <PropertyRef Name="DSGT_ID" />
+    </Key>
+    <Property Name="DSGT_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DSGT_DSG_ID" Type="uniqueidentifier" />
+    <Property Name="DSGT_STAFF_TYPE" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_SCHEDULING">
+    <Key>
+      <PropertyRef Name="DS_ID" />
+    </Key>
+    <Property Name="DS_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DS_DATE" Type="datetime" />
+    <Property Name="DS_REMARK" Type="nvarchar" MaxLength="300" />
+    <Property Name="DS_STATE" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DS_DSG_ID" Type="uniqueidentifier" />
+    <Property Name="DS_WEEKREMARK" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="DB_SCHEDULING_DETAIL">
+    <Key>
+      <PropertyRef Name="DSD_ID" />
+    </Key>
+    <Property Name="DSD_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DSD_DS_ID" Type="uniqueidentifier" />
+    <Property Name="DSD_DATE" Type="datetime" />
+    <Property Name="DSD_USERID" Type="uniqueidentifier" />
+    <Property Name="DSD_USERNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DSD_POSTIONID" Type="uniqueidentifier" />
+    <Property Name="DSD_POSTIONNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DSD_TYPE" Type="int" />
+    <Property Name="DSD_DSG_ID" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_TRAIN_CONTINUE">
+    <Key>
+      <PropertyRef Name="DT_ID" />
+    </Key>
+    <Property Name="DT_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DT_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DT_BEGIN" Type="datetime" />
+    <Property Name="DT_END" Type="datetime" />
+    <Property Name="DT_END_NOW" Type="bit" />
+    <Property Name="DT_Project_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Project_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Host_Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Province_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_City_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_ScoreType_Id" Type="uniqueidentifier" />
+    <Property Name="DT_Score" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DT_Status" Type="int" />
+    <Property Name="DT_BOOK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_DATE_SUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_ORDER" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_TRAIN_FOREIGN">
+    <Key>
+      <PropertyRef Name="DT_ID" />
+    </Key>
+    <Property Name="DT_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DT_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DT_BEGIN" Type="datetime" />
+    <Property Name="DT_END" Type="datetime" />
+    <Property Name="DT_END_NOW" Type="bit" />
+    <Property Name="DT_Project_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Project_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Host_Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Fee_Support" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Country_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Island_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_ExamResults_Id" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DT_Status" Type="int" />
+    <Property Name="DT_BOOK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_DATE_SUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_HASBOOK" Type="nvarchar" MaxLength="10" />
+    <Property Name="DT_ORDER" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_TRAIN_INLAND">
+    <Key>
+      <PropertyRef Name="DT_ID" />
+    </Key>
+    <Property Name="DT_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DT_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DT_BEGIN" Type="datetime" />
+    <Property Name="DT_END" Type="datetime" />
+    <Property Name="DT_END_NOW" Type="bit" />
+    <Property Name="DT_Project_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Project_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Host_Unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Fee_Support" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_Province_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_City_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_ExamResults_Id" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DT_Status" Type="int" />
+    <Property Name="DT_BOOK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_DATE_SUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DT_ORDER" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_User_Holiday">
+    <Key>
+      <PropertyRef Name="DUH_ID" />
+    </Key>
+    <Property Name="DUH_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DUI_JONNUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_YEAR" Type="int" />
+    <Property Name="DUI_TYPE2COUNT" Type="int" />
+    <Property Name="DUI_TYPE3COUNT" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DB_USER_INFO">
+    <Key>
+      <PropertyRef Name="DUI_ID" />
+    </Key>
+    <Property Name="DUI_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DUI_SU_ID" Type="uniqueidentifier" />
+    <Property Name="DUI_WORKSTATUS" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_PWD" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_SEX" Type="nvarchar" MaxLength="2" />
+    <Property Name="DUI_BIRTHDAY" Type="datetime" />
+    <Property Name="DUI_IDCARD_NUMBER" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_IDCARD1" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_IDCARD2" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_AGE" Type="int" />
+    <Property Name="DUI_PY1" Type="nvarchar" MaxLength="5" />
+    <Property Name="DUI_PY2" Type="nvarchar" MaxLength="10" />
+    <Property Name="DUI_Nation_Id" Type="uniqueidentifier" />
+    <Property Name="DUI_NativePlace_Province_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_NativePlace_City_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_NativePlace_County_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_BirthPlace_Province_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_BirthPlace_City_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_BirthPlace_County_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_PoliticalFaction_Id" Type="uniqueidentifier" />
+    <Property Name="DUI_PoliticalFaction_JoinDate" Type="datetime" />
+    <Property Name="DUI_JoinInWork_Date" Type="datetime" />
+    <Property Name="DUI_JoinInWork_Years" Type="int" />
+    <Property Name="DUI_JoinInRadiat_Date" Type="datetime" />
+    <Property Name="DUI_JoinInRadiat_Years" Type="int" />
+    <Property Name="DUI_JoinInHospital_Date" Type="datetime" />
+    <Property Name="DUI_JoinInHospital_Years" Type="int" />
+    <Property Name="DUI_EmploymentContract_Begin" Type="datetime" />
+    <Property Name="DUI_EmploymentContract_End" Type="datetime" />
+    <Property Name="DUI_EmploymentContract_Folder" Type="uniqueidentifier" />
+    <Property Name="DUI_JobNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_HospitalBranch_In" Type="uniqueidentifier" />
+    <Property Name="DUI_Staff_Type" Type="uniqueidentifier" />
+    <Property Name="DUI_Position_Id" Type="uniqueidentifier" />
+    <Property Name="DUI_Job" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_Educational_Id" Type="uniqueidentifier" />
+    <Property Name="DUI_Degree_Id" Type="uniqueidentifier" />
+    <Property Name="DUI_Professionals" Type="nvarchar(max)" />
+    <Property Name="DUI_Telephone_Long" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_Telephone_Short_Operate_Id" Type="uniqueidentifier" />
+    <Property Name="DUI_Telephone_Short_Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_Telephone_Bakeup" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_Email1" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_Email2" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_Car_Number" Type="nvarchar" MaxLength="50" />
+    <Property Name="DUI_MaritalStatus_Id" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DUI_Status" Type="int" />
+    <Property Name="DUI_MYPIC" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DB_WORK_EXP_BASE">
+    <Key>
+      <PropertyRef Name="DWE_ID" />
+    </Key>
+    <Property Name="DWE_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DWE_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DWE_BEGIN" Type="datetime" />
+    <Property Name="DWE_END" Type="datetime" />
+    <Property Name="DWE_END_NOW" Type="bit" />
+    <Property Name="DWE_COMPANY" Type="nvarchar" MaxLength="50" />
+    <Property Name="DWE_COMPANY_LEVEL_ID" Type="uniqueidentifier" />
+    <Property Name="DWE_Province_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="DWE_City_Id" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DWE_Status" Type="int" />
+    <Property Name="DWE_DATE_SUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DWE_ORDER" Type="int" />
+  </EntityType>
+  <EntityType Name="DB_WORK_EXP_SELF">
+    <Key>
+      <PropertyRef Name="DWE_ID" />
+    </Key>
+    <Property Name="DWE_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DWE_DUI_ID" Type="uniqueidentifier" />
+    <Property Name="DWE_BEGIN" Type="datetime" />
+    <Property Name="DWE_END" Type="datetime" />
+    <Property Name="DWE_END_NOW" Type="bit" />
+    <Property Name="DWE_COMPANY" Type="nvarchar" MaxLength="50" />
+    <Property Name="DWE_COMPANY_LEVEL_ID" Type="uniqueidentifier" />
+    <Property Name="DWE_DEPT" Type="nvarchar" MaxLength="50" />
+    <Property Name="DWE_Position_Id" Type="uniqueidentifier" />
+    <Property Name="DWE_POST" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="DWE_Status" Type="int" />
+    <Property Name="DWE_DATE_SUM" Type="nvarchar" MaxLength="50" />
+    <Property Name="DWE_ORDER" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HospitalOA.dbo.import' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="import">
+    <Key>
+      <PropertyRef Name="SD_ID" />
+    </Key>
+    <Property Name="SD_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SD_PID" Type="uniqueidentifier" />
+    <Property Name="SD_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_ORDER" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SD_VALUE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_VALUE1" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_VALUE2" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_VALUE3" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SYS_DEPT">
+    <Key>
+      <PropertyRef Name="SD_ID" />
+    </Key>
+    <Property Name="SD_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SD_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_CODE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_PARENT_ID" Type="uniqueidentifier" />
+    <Property Name="SD_ORDER" Type="float" />
+    <Property Name="SD_LEVEL" Type="int" />
+    <Property Name="SD_FULL_NAME" Type="nvarchar" MaxLength="500" />
+    <Property Name="SD_REMARK" Type="nvarchar" MaxLength="500" />
+    <Property Name="SD_MANAGER_ID" Type="uniqueidentifier" />
+    <Property Name="SD_MANAGER_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+    <Property Name="CONTACTS" Type="varchar" MaxLength="20" />
+    <Property Name="CONTACTS_BACK" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="SYS_DISTINCT">
+    <Key>
+      <PropertyRef Name="SD_ID" />
+    </Key>
+    <Property Name="SD_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SD_PID" Type="uniqueidentifier" />
+    <Property Name="SD_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_ORDER" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="SD_VALUE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_VALUE1" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_VALUE2" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_VALUE3" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_VALUE4" Type="nvarchar" MaxLength="50" />
+    <Property Name="SD_VALUE5" Type="nvarchar" MaxLength="50" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SYS_FILES">
+    <Key>
+      <PropertyRef Name="SF_ID" />
+    </Key>
+    <Property Name="SF_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SF_FORDER" Type="uniqueidentifier" />
+    <Property Name="SF_NAME" Type="nvarchar(max)" />
+    <Property Name="SF_FILEURL" Type="nvarchar(max)" />
+    <Property Name="SF_EXT" Type="nvarchar" MaxLength="5" />
+    <Property Name="SF_SIZE" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SYS_Location">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CountryRegionCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="StateCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="CityCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegionCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Level" Type="int" />
+  </EntityType>
+  <EntityType Name="SYS_MENU">
+    <Key>
+      <PropertyRef Name="SM_ID" />
+    </Key>
+    <Property Name="SM_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SM_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="SM_CODE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SM_URL" Type="nvarchar" MaxLength="500" />
+    <Property Name="SM_PARENT_ID" Type="uniqueidentifier" />
+    <Property Name="SM_LEVEL" Type="int" />
+    <Property Name="SM_OPEN_NEW" Type="nvarchar" MaxLength="20" />
+    <Property Name="SM_ENABLED" Type="bit" />
+    <Property Name="SM_ORDER" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'HospitalOA.dbo.SYS_MENU2' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SYS_MENU2">
+    <Key>
+      <PropertyRef Name="SM_ID" />
+    </Key>
+    <Property Name="SM_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SM_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="SM_CODE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SM_URL" Type="nvarchar" MaxLength="500" />
+    <Property Name="SM_PARENT_ID" Type="uniqueidentifier" />
+    <Property Name="SM_LEVEL" Type="int" />
+    <Property Name="SM_OPEN_NEW" Type="nvarchar" MaxLength="20" />
+    <Property Name="SM_ENABLED" Type="bit" />
+    <Property Name="SM_ORDER" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SYS_USER_GROUP">
+    <Key>
+      <PropertyRef Name="SUG_ID" />
+    </Key>
+    <Property Name="SUG_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SUG_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="SUG_REMARK" Type="nvarchar" MaxLength="500" />
+    <Property Name="SUG_IS_PUBLIC" Type="bit" />
+    <Property Name="SUG_ORDER" Type="int" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SYS_USER_GROUP_MENU">
+    <Key>
+      <PropertyRef Name="SUGM_ID" />
+    </Key>
+    <Property Name="SUGM_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SUGM_SUG_ID" Type="uniqueidentifier" />
+    <Property Name="SUGM_SM_ID" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SYS_USER_GROUP_USERS">
+    <Key>
+      <PropertyRef Name="SUGU_ID" />
+    </Key>
+    <Property Name="SUGU_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SUGU_SUG_ID" Type="uniqueidentifier" />
+    <Property Name="SUGU_SU_ID" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SYS_USERS">
+    <Key>
+      <PropertyRef Name="SU_ID" />
+    </Key>
+    <Property Name="SU_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SU_OE_ID" Type="uniqueidentifier" />
+    <Property Name="SU_NAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="SU_CODE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SU_LOGIN" Type="nvarchar" MaxLength="50" />
+    <Property Name="SU_PASSWORD" Type="nvarchar" MaxLength="50" />
+    <Property Name="SU_SEX" Type="int" />
+    <Property Name="SU_MOBILE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SU_OFFICEPHONE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SU_EMAIL" Type="nvarchar" MaxLength="100" />
+    <Property Name="SU_FAX" Type="nvarchar" MaxLength="50" />
+    <Property Name="SU_ADDRESS" Type="nvarchar" MaxLength="300" />
+    <Property Name="SU_ACTIVITY" Type="bit" />
+    <Property Name="SU_ORDER" Type="float" />
+    <Property Name="SU_SD_ID" Type="uniqueidentifier" />
+    <Property Name="SU_INCOMPANY_TIME" Type="datetime" />
+    <Property Name="SU_WORKTIME" Type="nvarchar" MaxLength="30" />
+    <Property Name="SU_SP_ID" Type="uniqueidentifier" />
+    <Property Name="SU_SPP_ID" Type="uniqueidentifier" />
+    <Property Name="CREATOR" Type="uniqueidentifier" />
+    <Property Name="CREATEDATE" Type="datetime" />
+    <Property Name="MODIFY" Type="uniqueidentifier" />
+    <Property Name="MODIFYDATE" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="HospitalOAModelStoreContainer">
+    <EntitySet Name="DB_Audit" EntityType="Self.DB_Audit" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Bonus" EntityType="Self.DB_Bonus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Certificate_Other" EntityType="Self.DB_Certificate_Other" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Device_IT" EntityType="Self.DB_Device_IT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Device_Large_Image" EntityType="Self.DB_Device_Large_Image" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Device_Medical_Assistance" EntityType="Self.DB_Device_Medical_Assistance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_EDUCATION_EXP" EntityType="Self.DB_EDUCATION_EXP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Handover_Equipment" EntityType="Self.DB_Handover_Equipment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Handover_EVENT" EntityType="Self.DB_Handover_EVENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Handover_Patient" EntityType="Self.DB_Handover_Patient" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Holiday" EntityType="Self.DB_Holiday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Honor" EntityType="Self.DB_Honor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_NEWS" EntityType="Self.DB_NEWS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Operation_State" EntityType="Self.DB_Operation_State" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_ParttimeJob_AcademicJournals" EntityType="Self.DB_ParttimeJob_AcademicJournals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_ParttimeJob_CommitteeService" EntityType="Self.DB_ParttimeJob_CommitteeService" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_ParttimeJob_GraduateStudentTutor" EntityType="Self.DB_ParttimeJob_GraduateStudentTutor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Position_State" EntityType="Self.DB_Position_State" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Radiation" EntityType="Self.DB_Radiation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Radiation_BasicInfo" EntityType="Self.DB_Radiation_BasicInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Radiation_EmergencyOrAccident" EntityType="Self.DB_Radiation_EmergencyOrAccident" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Radiation_HealthExamination" EntityType="Self.DB_Radiation_HealthExamination" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Radiation_PersonalDose" EntityType="Self.DB_Radiation_PersonalDose" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Radiation_TrainCheck" EntityType="Self.DB_Radiation_TrainCheck" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Record_Punishments" EntityType="Self.DB_Record_Punishments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_Record_Rewards" EntityType="Self.DB_Record_Rewards" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_RESEARCH_ARTICLE" EntityType="Self.DB_RESEARCH_ARTICLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_RESEARCH_ARTICLE_MEETING" EntityType="Self.DB_RESEARCH_ARTICLE_MEETING" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_RESEARCH_ARTICLE_WORK" EntityType="Self.DB_RESEARCH_ARTICLE_WORK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_RESEARCH_CHECK" EntityType="Self.DB_RESEARCH_CHECK" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_RESEARCH_ISSUE" EntityType="Self.DB_RESEARCH_ISSUE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_RESEARCH_TEACH" EntityType="Self.DB_RESEARCH_TEACH" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_RESEARCH_WINNERS" EntityType="Self.DB_RESEARCH_WINNERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_SCHEDULE_GROUP" EntityType="Self.DB_SCHEDULE_GROUP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_SCHEDULE_GROUP_POSITION" EntityType="Self.DB_SCHEDULE_GROUP_POSITION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_SCHEDULE_GROUP_TYPE" EntityType="Self.DB_SCHEDULE_GROUP_TYPE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_SCHEDULING" EntityType="Self.DB_SCHEDULING" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_SCHEDULING_DETAIL" EntityType="Self.DB_SCHEDULING_DETAIL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_TRAIN_CONTINUE" EntityType="Self.DB_TRAIN_CONTINUE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_TRAIN_FOREIGN" EntityType="Self.DB_TRAIN_FOREIGN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_TRAIN_INLAND" EntityType="Self.DB_TRAIN_INLAND" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_User_Holiday" EntityType="Self.DB_User_Holiday" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_USER_INFO" EntityType="Self.DB_USER_INFO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_WORK_EXP_BASE" EntityType="Self.DB_WORK_EXP_BASE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DB_WORK_EXP_SELF" EntityType="Self.DB_WORK_EXP_SELF" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_DEPT" EntityType="Self.SYS_DEPT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_DISTINCT" EntityType="Self.SYS_DISTINCT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_FILES" EntityType="Self.SYS_FILES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_Location" EntityType="Self.SYS_Location" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_MENU" EntityType="Self.SYS_MENU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_USER_GROUP" EntityType="Self.SYS_USER_GROUP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_USER_GROUP_MENU" EntityType="Self.SYS_USER_GROUP_MENU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_USER_GROUP_USERS" EntityType="Self.SYS_USER_GROUP_USERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SYS_USERS" EntityType="Self.SYS_USERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="import" EntityType="Self.import" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[import].[SD_ID] AS [SD_ID], 
+[import].[SD_PID] AS [SD_PID], 
+[import].[SD_NAME] AS [SD_NAME], 
+[import].[SD_ORDER] AS [SD_ORDER], 
+[import].[SD_VALUE] AS [SD_VALUE], 
+[import].[SD_VALUE1] AS [SD_VALUE1], 
+[import].[SD_VALUE2] AS [SD_VALUE2], 
+[import].[SD_VALUE3] AS [SD_VALUE3], 
+[import].[CREATOR] AS [CREATOR], 
+[import].[CREATEDATE] AS [CREATEDATE], 
+[import].[MODIFY] AS [MODIFY], 
+[import].[MODIFYDATE] AS [MODIFYDATE]
+FROM [dbo].[import] AS [import]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SYS_MENU2" EntityType="Self.SYS_MENU2" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[SYS_MENU2].[SM_ID] AS [SM_ID], 
+[SYS_MENU2].[SM_NAME] AS [SM_NAME], 
+[SYS_MENU2].[SM_CODE] AS [SM_CODE], 
+[SYS_MENU2].[SM_URL] AS [SM_URL], 
+[SYS_MENU2].[SM_PARENT_ID] AS [SM_PARENT_ID], 
+[SYS_MENU2].[SM_LEVEL] AS [SM_LEVEL], 
+[SYS_MENU2].[SM_OPEN_NEW] AS [SM_OPEN_NEW], 
+[SYS_MENU2].[SM_ENABLED] AS [SM_ENABLED], 
+[SYS_MENU2].[SM_ORDER] AS [SM_ORDER], 
+[SYS_MENU2].[CREATOR] AS [CREATOR], 
+[SYS_MENU2].[CREATEDATE] AS [CREATEDATE], 
+[SYS_MENU2].[MODIFY] AS [MODIFY], 
+[SYS_MENU2].[MODIFYDATE] AS [MODIFYDATE]
+FROM [dbo].[SYS_MENU2] AS [SYS_MENU2]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
