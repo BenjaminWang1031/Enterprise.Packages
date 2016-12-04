@@ -152,6 +152,8 @@ namespace Enterprise.Component.EntityFramework
         {
             if (Key == null)
                 return null;
+            //TODO: verify if this works
+            mdbContext.Set<TEntityRoot>().Find(Key);
             return null;
         }
 
