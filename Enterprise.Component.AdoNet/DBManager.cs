@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
 using Enterprise.Core.Interface.Data;
+using Enterprise.Core.Interface.Log;
 
 namespace Enterprise.Component.AdoNet
 {
@@ -224,6 +221,19 @@ namespace Enterprise.Component.AdoNet
         {
             get { return this.mErrorMsg; }
             set { this.mErrorMsg = value; }
+        }
+
+        public ILogHelper DBLogHelper
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
 
         private string GetConnectstring()

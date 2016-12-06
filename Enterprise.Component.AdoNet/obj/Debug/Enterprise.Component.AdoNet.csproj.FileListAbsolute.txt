@@ -12,3 +12,10 @@ C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Ent
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.dll
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.pdb
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Component.AdoNet.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Component.AdoNet.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Core.Interface.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\bin\Debug\Enterprise.Core.Interface.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.AdoNet\obj\Debug\Enterprise.Component.AdoNet.pdb

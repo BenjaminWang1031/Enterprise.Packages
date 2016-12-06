@@ -1,17 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.Entity;
 using System.Linq.Expressions;
-using System.Reflection;
-using EntityFramework;
-using EntityFramework.Extensions ;
 using Enterprise.Core.Interface.Data;
 using Enterprise.Core.Interface.Data.Specification;
+using Enterprise.Core.Interface.Log;
 
 namespace Enterprise.Component.EntityFramework
 {
@@ -152,9 +148,7 @@ namespace Enterprise.Component.EntityFramework
         {
             if (Key == null)
                 return null;
-            //TODO: verify if this works
-            mdbContext.Set<TEntityRoot>().Find(Key);
-            return null;
+            return mdbContext.Set<TEntityRoot>().Find(Key);
         }
 
         /// <summary>
@@ -581,6 +575,19 @@ namespace Enterprise.Component.EntityFramework
             set
             {
                 this.mCommandTimeout = value;
+            }
+        }
+
+        public ILogHelper DBLogHelper
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
             }
         }
 

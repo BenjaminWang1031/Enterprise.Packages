@@ -16,3 +16,12 @@ C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\bin\Debug\Enter
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\obj\Debug\Enterprise.Component.Nhiberate.csprojResolveAssemblyReference.cache
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\obj\Debug\Enterprise.Component.Nhiberate.dll
 C:\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\obj\Debug\Enterprise.Component.Nhiberate.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\bin\Debug\Enterprise.Component.Nhiberate.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\bin\Debug\Enterprise.Component.Nhiberate.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\bin\Debug\Enterprise.Core.Interface.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\bin\Debug\Iesi.Collections.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\bin\Debug\NHibernate.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\bin\Debug\Enterprise.Core.Interface.pdb
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\obj\Debug\Enterprise.Component.Nhiberate.csprojResolveAssemblyReference.cache
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\obj\Debug\Enterprise.Component.Nhiberate.dll
+\\Mac\Home\Desktop\Benjamin\GitHub\Enterprise.Packages\Enterprise.Component.Data\obj\Debug\Enterprise.Component.Nhiberate.pdb
