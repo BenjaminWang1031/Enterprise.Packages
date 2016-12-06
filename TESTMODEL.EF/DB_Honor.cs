@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Honor
+    public partial class DB_Honor : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DH_ID { get; set; }
         public Nullable<System.Guid> DH_DUI_ID { get; set; }

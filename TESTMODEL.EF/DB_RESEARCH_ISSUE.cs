@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_RESEARCH_ISSUE
+    public partial class DB_RESEARCH_ISSUE : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRI_ID { get; set; }
         public Nullable<System.DateTime> DRI_BEGIN { get; set; }

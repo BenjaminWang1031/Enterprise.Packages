@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Audit
+    public partial class DB_Audit : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DA_ID { get; set; }
         public Nullable<System.Guid> DA_DUI_ID { get; set; }

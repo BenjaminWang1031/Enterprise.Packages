@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_SCHEDULE_GROUP_TYPE
+    public partial class DB_SCHEDULE_GROUP_TYPE : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DSGT_ID { get; set; }
         public Nullable<System.Guid> DSGT_DSG_ID { get; set; }

@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_TRAIN_FOREIGN
+    public partial class DB_TRAIN_FOREIGN : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DT_ID { get; set; }
         public Nullable<System.Guid> DT_DUI_ID { get; set; }

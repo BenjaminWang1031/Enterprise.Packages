@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class SYS_DEPT
+    public partial class SYS_DEPT : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid SD_ID { get; set; }
         public string SD_NAME { get; set; }

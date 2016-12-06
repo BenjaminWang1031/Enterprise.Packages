@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class SYS_USER_GROUP_USERS
+    public partial class SYS_USER_GROUP_USERS : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid SUGU_ID { get; set; }
         public Nullable<System.Guid> SUGU_SUG_ID { get; set; }

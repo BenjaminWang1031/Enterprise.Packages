@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_RESEARCH_ARTICLE_WORK
+    public partial class DB_RESEARCH_ARTICLE_WORK : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRAW_ID { get; set; }
         public string DRAW_NAME { get; set; }

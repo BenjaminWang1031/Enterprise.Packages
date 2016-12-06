@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class SYS_FILES
+    public partial class SYS_FILES : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid SF_ID { get; set; }
         public Nullable<System.Guid> SF_FORDER { get; set; }

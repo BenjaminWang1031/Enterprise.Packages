@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_USER_INFO:Enterprise.Core.Interface.Data.IEntityRoot
+    public partial class DB_USER_INFO : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DUI_ID { get; set; }
         public Nullable<System.Guid> DUI_SU_ID { get; set; }

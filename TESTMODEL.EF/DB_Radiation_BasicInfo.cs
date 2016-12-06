@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Radiation_BasicInfo
+    public partial class DB_Radiation_BasicInfo : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRB_ID { get; set; }
         public string DRB_Number { get; set; }

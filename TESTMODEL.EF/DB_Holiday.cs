@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Holiday
+    public partial class DB_Holiday : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DH_ID { get; set; }
         public Nullable<System.DateTime> DH_BEGIN { get; set; }

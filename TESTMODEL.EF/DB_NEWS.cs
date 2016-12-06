@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_NEWS
+    public partial class DB_NEWS : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid BN_ID { get; set; }
         public string BN_TITLE { get; set; }

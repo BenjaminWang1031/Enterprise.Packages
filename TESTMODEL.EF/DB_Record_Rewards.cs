@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Record_Rewards
+    public partial class DB_Record_Rewards : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRR_ID { get; set; }
         public Nullable<System.Guid> DRR_Type_Id { get; set; }

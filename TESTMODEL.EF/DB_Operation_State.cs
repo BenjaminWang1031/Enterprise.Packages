@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Operation_State
+    public partial class DB_Operation_State : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DOS_ID { get; set; }
         public Nullable<decimal> CYRS { get; set; }

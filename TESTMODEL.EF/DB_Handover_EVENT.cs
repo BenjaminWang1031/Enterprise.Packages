@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Handover_EVENT
+    public partial class DB_Handover_EVENT : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DHE_ID { get; set; }
         public Nullable<int> DHE_TYPE { get; set; }

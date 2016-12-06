@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_SCHEDULING
+    public partial class DB_SCHEDULING : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DS_ID { get; set; }
         public Nullable<System.DateTime> DS_DATE { get; set; }

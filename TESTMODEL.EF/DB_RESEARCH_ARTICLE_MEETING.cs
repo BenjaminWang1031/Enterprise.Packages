@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_RESEARCH_ARTICLE_MEETING
+    public partial class DB_RESEARCH_ARTICLE_MEETING : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRAM_ID { get; set; }
         public Nullable<System.DateTime> DRAM_DATE { get; set; }

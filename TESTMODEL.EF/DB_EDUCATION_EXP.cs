@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_EDUCATION_EXP
+    public partial class DB_EDUCATION_EXP : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DEE_ID { get; set; }
         public Nullable<System.Guid> DEE_DUI_ID { get; set; }

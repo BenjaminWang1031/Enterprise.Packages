@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_RESEARCH_CHECK
+    public partial class DB_RESEARCH_CHECK : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRC_ID { get; set; }
         public Nullable<System.DateTime> DRC_DATE { get; set; }

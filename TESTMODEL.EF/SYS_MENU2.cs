@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class SYS_MENU2
+    public partial class SYS_MENU2 : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid SM_ID { get; set; }
         public string SM_NAME { get; set; }

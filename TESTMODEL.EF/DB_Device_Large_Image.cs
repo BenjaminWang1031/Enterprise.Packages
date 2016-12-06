@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Device_Large_Image
+    public partial class DB_Device_Large_Image : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DDLI_ID { get; set; }
         public string DDLI_Number { get; set; }

@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Radiation_PersonalDose
+    public partial class DB_Radiation_PersonalDose : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRP_ID { get; set; }
         public string DRP_WorkCode { get; set; }

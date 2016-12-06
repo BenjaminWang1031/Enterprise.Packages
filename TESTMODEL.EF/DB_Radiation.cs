@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Radiation
+    public partial class DB_Radiation : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DR_ID { get; set; }
         public Nullable<System.Guid> DR_DUI_ID { get; set; }

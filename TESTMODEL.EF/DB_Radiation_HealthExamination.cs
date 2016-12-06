@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Radiation_HealthExamination
+    public partial class DB_Radiation_HealthExamination : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRH_ID { get; set; }
         public Nullable<System.DateTime> DRH_Date { get; set; }

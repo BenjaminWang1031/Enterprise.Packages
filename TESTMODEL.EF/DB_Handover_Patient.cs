@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Handover_Patient
+    public partial class DB_Handover_Patient : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DHP_ID { get; set; }
         public Nullable<int> DHP_TYPE { get; set; }

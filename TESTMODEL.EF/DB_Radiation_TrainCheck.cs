@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Radiation_TrainCheck
+    public partial class DB_Radiation_TrainCheck : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRT_ID { get; set; }
         public Nullable<System.DateTime> DRT_Date { get; set; }

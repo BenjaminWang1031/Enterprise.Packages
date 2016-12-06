@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_WORK_EXP_BASE
+    public partial class DB_WORK_EXP_BASE : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DWE_ID { get; set; }
         public Nullable<System.Guid> DWE_DUI_ID { get; set; }

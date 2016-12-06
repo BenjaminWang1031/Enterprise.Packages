@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_SCHEDULING_DETAIL
+    public partial class DB_SCHEDULING_DETAIL : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DSD_ID { get; set; }
         public Nullable<System.Guid> DSD_DS_ID { get; set; }

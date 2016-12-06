@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class import
+    public partial class import : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid SD_ID { get; set; }
         public Nullable<System.Guid> SD_PID { get; set; }

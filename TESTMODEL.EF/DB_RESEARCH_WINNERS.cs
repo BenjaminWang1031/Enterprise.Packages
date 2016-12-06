@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_RESEARCH_WINNERS
+    public partial class DB_RESEARCH_WINNERS : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRW_ID { get; set; }
         public Nullable<System.DateTime> DRW_DATE { get; set; }

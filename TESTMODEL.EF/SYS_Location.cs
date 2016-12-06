@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class SYS_Location
+    public partial class SYS_Location : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid ID { get; set; }
         public string Name { get; set; }

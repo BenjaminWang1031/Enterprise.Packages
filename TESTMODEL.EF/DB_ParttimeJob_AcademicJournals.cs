@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_ParttimeJob_AcademicJournals
+    public partial class DB_ParttimeJob_AcademicJournals : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DP_ID { get; set; }
         public Nullable<System.Guid> DP_DUI_ID { get; set; }

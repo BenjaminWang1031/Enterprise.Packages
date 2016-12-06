@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Bonus
+    public partial class DB_Bonus : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DB_ID { get; set; }
         public Nullable<System.Guid> DB_DUI_ID { get; set; }

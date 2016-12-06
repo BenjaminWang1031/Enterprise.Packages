@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Device_Medical_Assistance
+    public partial class DB_Device_Medical_Assistance : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DDMA_ID { get; set; }
         public string DDMA_Number { get; set; }

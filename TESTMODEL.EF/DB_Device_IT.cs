@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Device_IT
+    public partial class DB_Device_IT : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DDI_ID { get; set; }
         public string DDI_Number { get; set; }

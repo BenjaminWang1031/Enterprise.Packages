@@ -12,7 +12,7 @@ namespace TESTMODEL.EF
     using System;
     using System.Collections.Generic;
     
-    public partial class DB_Record_Punishments
+    public partial class DB_Record_Punishments : Enterprise.Core.Interface.Data.IEntityRoot
     {
         public System.Guid DRP_ID { get; set; }
         public Nullable<System.Guid> DRP_Type_Id { get; set; }
